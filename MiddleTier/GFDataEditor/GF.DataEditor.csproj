@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7D1AAF3-D1BC-41B9-942F-D57B7900A9BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Horizon4.GFDataEditor</RootNamespace>
+    <AssemblyName>GFDataEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonDataEditor.cs" />
+    <Compile Include="frmDistanceCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistanceCalculator.Designer.cs">
+      <DependentUpon>frmDistanceCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditDepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditDepot.Designer.cs">
+      <DependentUpon>frmEditDepot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditSystemPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSystemPath.Designer.cs">
+      <DependentUpon>frmEditSystemPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPaths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPaths.Designer.cs">
+      <DependentUpon>frmEditPaths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditToken.Designer.cs">
+      <DependentUpon>frmEditToken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enum.cs" />
+    <Compile Include="frmEditSystemObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSystemObject.Designer.cs">
+      <DependentUpon>frmEditSystemObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidationErrors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidationErrors.Designer.cs">
+      <DependentUpon>frmValidationErrors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainModules\Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainModules\Logical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainModules\Traction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDistanceCalculator.resx">
+      <DependentUpon>frmDistanceCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditDepot.resx">
+      <DependentUpon>frmEditDepot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditSystemPath.resx">
+      <DependentUpon>frmEditSystemPath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPaths.resx">
+      <DependentUpon>frmEditPaths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditToken.resx">
+      <DependentUpon>frmEditToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditSystemObject.resx">
+      <DependentUpon>frmEditSystemObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidationErrors.resx">
+      <DependentUpon>frmValidationErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GF\GF.csproj">
+      <Project>{BF9C4AFD-DE0D-47F5-A30F-4EA5113FAE6D}</Project>
+      <Name>GF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

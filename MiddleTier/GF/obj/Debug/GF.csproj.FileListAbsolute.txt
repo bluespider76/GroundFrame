@@ -1,0 +1,11 @@
+c:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\GF\bin\Debug\GF.dll
+c:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\GF\bin\Debug\GF.pdb
+c:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\GF\obj\Debug\GF.dll
+c:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\GF\obj\Debug\GF.pdb
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\GF\obj\Debug\GF.csprojResolveAssemblyReference.cache
+G:\GitHub\GroundFrame\MiddleTier\GF\bin\Debug\GF.dll
+G:\GitHub\GroundFrame\MiddleTier\GF\bin\Debug\GF.pdb
+G:\GitHub\GroundFrame\MiddleTier\GF\obj\Debug\GF.csprojResolveAssemblyReference.cache
+G:\GitHub\GroundFrame\MiddleTier\GF\obj\Debug\GF.csproj.CoreCompileInputs.cache
+G:\GitHub\GroundFrame\MiddleTier\GF\obj\Debug\GF.dll
+G:\GitHub\GroundFrame\MiddleTier\GF\obj\Debug\GF.pdb

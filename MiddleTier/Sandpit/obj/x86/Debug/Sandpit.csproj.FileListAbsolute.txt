@@ -1,0 +1,28 @@
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\obj\x86\Debug\Sandpit.csprojResolveAssemblyReference.cache
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\bin\Debug\Sandpit.exe
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\bin\Debug\Sandpit.pdb
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\bin\Debug\GF.dll
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\bin\Debug\GF.pdb
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\obj\x86\Debug\Sandpit.exe
+c:\users\tcaceres\documents\visual studio 2010\Projects\Horizon4\Sandpit\obj\x86\Debug\Sandpit.pdb
+C:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\Sandpit\bin\Debug\GF.Build.dll
+C:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\Sandpit\bin\Debug\GF.Build.pdb
+C:\Users\tcaceres\Documents\Visual Studio 2010\Projects\Horizon4\Sandpit\bin\Debug\Sandpit.exe.config
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Sandpit.exe.config
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Sandpit.exe
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Sandpit.pdb
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\GF.Build.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\GF.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\GF.Build.pdb
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\GF.Build.dll.config
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\GF.pdb
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\obj\x86\Debug\Sandpit.csprojResolveAssemblyReference.cache
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\obj\x86\Debug\Sandpit.csproj.CoreCompileInputs.cache
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\obj\x86\Debug\Sandpit.exe
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\obj\x86\Debug\Sandpit.pdb
+G:\GitHub\GroundFrame\MiddleTier\Sandpit\bin\Debug\Microsoft.SqlServer.Dmf.dll
