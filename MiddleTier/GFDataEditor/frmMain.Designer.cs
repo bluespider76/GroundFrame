@@ -221,10 +221,11 @@
             this.tabControlMain.Controls.Add(this.tabPageLogical);
             this.tabControlMain.Controls.Add(this.tabPageLocation);
             this.tabControlMain.Controls.Add(this.tabPageTraction);
-            this.tabControlMain.Location = new System.Drawing.Point(12, 37);
+            this.tabControlMain.Location = new System.Drawing.Point(16, 46);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(1170, 503);
+            this.tabControlMain.Size = new System.Drawing.Size(1560, 619);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.SelectedIndexChanged += new System.EventHandler(this.tabControlMain_SelectedIndexChanged);
             // 
@@ -232,10 +233,11 @@
             // 
             this.tabPageLogical.Controls.Add(this.groupBoxSectorCodes);
             this.tabPageLogical.Controls.Add(this.groupBoxRegions);
-            this.tabPageLogical.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLogical.Location = new System.Drawing.Point(4, 25);
+            this.tabPageLogical.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageLogical.Name = "tabPageLogical";
-            this.tabPageLogical.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLogical.Size = new System.Drawing.Size(1162, 477);
+            this.tabPageLogical.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLogical.Size = new System.Drawing.Size(1552, 590);
             this.tabPageLogical.TabIndex = 0;
             this.tabPageLogical.Text = "Logical";
             this.tabPageLogical.UseVisualStyleBackColor = true;
@@ -248,9 +250,11 @@
             this.groupBoxSectorCodes.Controls.Add(this.listViewSectors);
             this.groupBoxSectorCodes.Controls.Add(this.lblLogicalSectorCodeLabel);
             this.groupBoxSectorCodes.Controls.Add(this.comboLogicalSystemSectors);
-            this.groupBoxSectorCodes.Location = new System.Drawing.Point(504, 12);
+            this.groupBoxSectorCodes.Location = new System.Drawing.Point(672, 15);
+            this.groupBoxSectorCodes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxSectorCodes.Name = "groupBoxSectorCodes";
-            this.groupBoxSectorCodes.Size = new System.Drawing.Size(645, 450);
+            this.groupBoxSectorCodes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxSectorCodes.Size = new System.Drawing.Size(860, 554);
             this.groupBoxSectorCodes.TabIndex = 1;
             this.groupBoxSectorCodes.TabStop = false;
             this.groupBoxSectorCodes.Text = "Sector Codes";
@@ -258,9 +262,10 @@
             // linkLogicalEditSystemSector
             // 
             this.linkLogicalEditSystemSector.AutoSize = true;
-            this.linkLogicalEditSystemSector.Location = new System.Drawing.Point(242, 28);
+            this.linkLogicalEditSystemSector.Location = new System.Drawing.Point(323, 34);
+            this.linkLogicalEditSystemSector.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLogicalEditSystemSector.Name = "linkLogicalEditSystemSector";
-            this.linkLogicalEditSystemSector.Size = new System.Drawing.Size(31, 13);
+            this.linkLogicalEditSystemSector.Size = new System.Drawing.Size(40, 17);
             this.linkLogicalEditSystemSector.TabIndex = 5;
             this.linkLogicalEditSystemSector.TabStop = true;
             this.linkLogicalEditSystemSector.Text = "Edit..";
@@ -269,9 +274,10 @@
             // linkLogicalNewSystemSector
             // 
             this.linkLogicalNewSystemSector.AutoSize = true;
-            this.linkLogicalNewSystemSector.Location = new System.Drawing.Point(279, 28);
+            this.linkLogicalNewSystemSector.Location = new System.Drawing.Point(372, 34);
+            this.linkLogicalNewSystemSector.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLogicalNewSystemSector.Name = "linkLogicalNewSystemSector";
-            this.linkLogicalNewSystemSector.Size = new System.Drawing.Size(35, 13);
+            this.linkLogicalNewSystemSector.Size = new System.Drawing.Size(43, 17);
             this.linkLogicalNewSystemSector.TabIndex = 4;
             this.linkLogicalNewSystemSector.TabStop = true;
             this.linkLogicalNewSystemSector.Text = "New..";
@@ -287,36 +293,41 @@
             this.groupBoxLogicalSectorDetails.Controls.Add(this.dateTimeLogicalSectorStartYMDV);
             this.groupBoxLogicalSectorDetails.Controls.Add(this.dateTimeLogicalSectorEndYMDV);
             this.groupBoxLogicalSectorDetails.Controls.Add(this.lblLogicalSectorActiveFrom);
-            this.groupBoxLogicalSectorDetails.Location = new System.Drawing.Point(15, 218);
+            this.groupBoxLogicalSectorDetails.Location = new System.Drawing.Point(20, 268);
+            this.groupBoxLogicalSectorDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxLogicalSectorDetails.Name = "groupBoxLogicalSectorDetails";
-            this.groupBoxLogicalSectorDetails.Size = new System.Drawing.Size(615, 217);
+            this.groupBoxLogicalSectorDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLogicalSectorDetails.Size = new System.Drawing.Size(820, 267);
             this.groupBoxLogicalSectorDetails.TabIndex = 3;
             this.groupBoxLogicalSectorDetails.TabStop = false;
             this.groupBoxLogicalSectorDetails.Text = "Details";
             // 
             // butLogicalSectorNew
             // 
-            this.butLogicalSectorNew.Location = new System.Drawing.Point(483, 177);
+            this.butLogicalSectorNew.Location = new System.Drawing.Point(644, 218);
+            this.butLogicalSectorNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.butLogicalSectorNew.Name = "butLogicalSectorNew";
-            this.butLogicalSectorNew.Size = new System.Drawing.Size(53, 23);
+            this.butLogicalSectorNew.Size = new System.Drawing.Size(71, 28);
             this.butLogicalSectorNew.TabIndex = 17;
             this.butLogicalSectorNew.Text = "New..";
             this.butLogicalSectorNew.UseVisualStyleBackColor = true;
             // 
             // txtLogicalSectorDescription
             // 
-            this.txtLogicalSectorDescription.Location = new System.Drawing.Point(125, 27);
+            this.txtLogicalSectorDescription.Location = new System.Drawing.Point(167, 33);
+            this.txtLogicalSectorDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogicalSectorDescription.Name = "txtLogicalSectorDescription";
-            this.txtLogicalSectorDescription.Size = new System.Drawing.Size(470, 98);
+            this.txtLogicalSectorDescription.Size = new System.Drawing.Size(625, 120);
             this.txtLogicalSectorDescription.TabIndex = 11;
             this.txtLogicalSectorDescription.Text = "";
             this.txtLogicalSectorDescription.TextChanged += new System.EventHandler(this.txtLogicalSectorDescription_TextChanged);
             // 
             // butLogicalSectorSave
             // 
-            this.butLogicalSectorSave.Location = new System.Drawing.Point(542, 177);
+            this.butLogicalSectorSave.Location = new System.Drawing.Point(723, 218);
+            this.butLogicalSectorSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.butLogicalSectorSave.Name = "butLogicalSectorSave";
-            this.butLogicalSectorSave.Size = new System.Drawing.Size(53, 23);
+            this.butLogicalSectorSave.Size = new System.Drawing.Size(71, 28);
             this.butLogicalSectorSave.TabIndex = 16;
             this.butLogicalSectorSave.Text = "Save..";
             this.butLogicalSectorSave.UseVisualStyleBackColor = true;
@@ -325,27 +336,30 @@
             // lblLogicalSectorDescription
             // 
             this.lblLogicalSectorDescription.AutoSize = true;
-            this.lblLogicalSectorDescription.Location = new System.Drawing.Point(10, 27);
+            this.lblLogicalSectorDescription.Location = new System.Drawing.Point(13, 33);
+            this.lblLogicalSectorDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalSectorDescription.Name = "lblLogicalSectorDescription";
-            this.lblLogicalSectorDescription.Size = new System.Drawing.Size(63, 13);
+            this.lblLogicalSectorDescription.Size = new System.Drawing.Size(83, 17);
             this.lblLogicalSectorDescription.TabIndex = 10;
             this.lblLogicalSectorDescription.Text = "Description:";
             // 
             // lblLogicalSectorActiveTo
             // 
             this.lblLogicalSectorActiveTo.AutoSize = true;
-            this.lblLogicalSectorActiveTo.Location = new System.Drawing.Point(233, 145);
+            this.lblLogicalSectorActiveTo.Location = new System.Drawing.Point(311, 178);
+            this.lblLogicalSectorActiveTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalSectorActiveTo.Name = "lblLogicalSectorActiveTo";
-            this.lblLogicalSectorActiveTo.Size = new System.Drawing.Size(19, 13);
+            this.lblLogicalSectorActiveTo.Size = new System.Drawing.Size(24, 17);
             this.lblLogicalSectorActiveTo.TabIndex = 15;
             this.lblLogicalSectorActiveTo.Text = "to:";
             // 
             // dateTimeLogicalSectorStartYMDV
             // 
             this.dateTimeLogicalSectorStartYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLogicalSectorStartYMDV.Location = new System.Drawing.Point(125, 141);
+            this.dateTimeLogicalSectorStartYMDV.Location = new System.Drawing.Point(167, 174);
+            this.dateTimeLogicalSectorStartYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeLogicalSectorStartYMDV.Name = "dateTimeLogicalSectorStartYMDV";
-            this.dateTimeLogicalSectorStartYMDV.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeLogicalSectorStartYMDV.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLogicalSectorStartYMDV.TabIndex = 12;
             this.dateTimeLogicalSectorStartYMDV.ValueChanged += new System.EventHandler(this.dateTimeLogicalSectorStartYMDV_ValueChanged);
             // 
@@ -353,19 +367,21 @@
             // 
             this.dateTimeLogicalSectorEndYMDV.Enabled = false;
             this.dateTimeLogicalSectorEndYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLogicalSectorEndYMDV.Location = new System.Drawing.Point(256, 141);
+            this.dateTimeLogicalSectorEndYMDV.Location = new System.Drawing.Point(341, 174);
+            this.dateTimeLogicalSectorEndYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeLogicalSectorEndYMDV.Name = "dateTimeLogicalSectorEndYMDV";
             this.dateTimeLogicalSectorEndYMDV.ShowCheckBox = true;
-            this.dateTimeLogicalSectorEndYMDV.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeLogicalSectorEndYMDV.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLogicalSectorEndYMDV.TabIndex = 14;
             this.dateTimeLogicalSectorEndYMDV.ValueChanged += new System.EventHandler(this.dateTimeLogicalSectorEndYMDV_ValueChanged);
             // 
             // lblLogicalSectorActiveFrom
             // 
             this.lblLogicalSectorActiveFrom.AutoSize = true;
-            this.lblLogicalSectorActiveFrom.Location = new System.Drawing.Point(10, 145);
+            this.lblLogicalSectorActiveFrom.Location = new System.Drawing.Point(13, 178);
+            this.lblLogicalSectorActiveFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalSectorActiveFrom.Name = "lblLogicalSectorActiveFrom";
-            this.lblLogicalSectorActiveFrom.Size = new System.Drawing.Size(100, 13);
+            this.lblLogicalSectorActiveFrom.Size = new System.Drawing.Size(131, 17);
             this.lblLogicalSectorActiveFrom.TabIndex = 13;
             this.lblLogicalSectorActiveFrom.Text = "Sector Active From:";
             // 
@@ -377,9 +393,10 @@
             this.columnSectorEnd});
             this.listViewSectors.FullRowSelect = true;
             this.listViewSectors.HideSelection = false;
-            this.listViewSectors.Location = new System.Drawing.Point(15, 62);
+            this.listViewSectors.Location = new System.Drawing.Point(20, 76);
+            this.listViewSectors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewSectors.Name = "listViewSectors";
-            this.listViewSectors.Size = new System.Drawing.Size(615, 150);
+            this.listViewSectors.Size = new System.Drawing.Size(819, 184);
             this.listViewSectors.TabIndex = 2;
             this.listViewSectors.UseCompatibleStateImageBehavior = false;
             this.listViewSectors.View = System.Windows.Forms.View.Details;
@@ -403,18 +420,20 @@
             // lblLogicalSectorCodeLabel
             // 
             this.lblLogicalSectorCodeLabel.AutoSize = true;
-            this.lblLogicalSectorCodeLabel.Location = new System.Drawing.Point(15, 28);
+            this.lblLogicalSectorCodeLabel.Location = new System.Drawing.Point(20, 34);
+            this.lblLogicalSectorCodeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalSectorCodeLabel.Name = "lblLogicalSectorCodeLabel";
-            this.lblLogicalSectorCodeLabel.Size = new System.Drawing.Size(35, 13);
+            this.lblLogicalSectorCodeLabel.Size = new System.Drawing.Size(45, 17);
             this.lblLogicalSectorCodeLabel.TabIndex = 1;
             this.lblLogicalSectorCodeLabel.Text = "Code:";
             // 
             // comboLogicalSystemSectors
             // 
             this.comboLogicalSystemSectors.FormattingEnabled = true;
-            this.comboLogicalSystemSectors.Location = new System.Drawing.Point(90, 25);
+            this.comboLogicalSystemSectors.Location = new System.Drawing.Point(120, 31);
+            this.comboLogicalSystemSectors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLogicalSystemSectors.Name = "comboLogicalSystemSectors";
-            this.comboLogicalSystemSectors.Size = new System.Drawing.Size(145, 21);
+            this.comboLogicalSystemSectors.Size = new System.Drawing.Size(192, 24);
             this.comboLogicalSystemSectors.TabIndex = 0;
             this.comboLogicalSystemSectors.SelectedIndexChanged += new System.EventHandler(this.comboLogicalSystemSectors_SelectedIndexChanged);
             // 
@@ -422,9 +441,11 @@
             // 
             this.groupBoxRegions.Controls.Add(this.groupBoxRegionsDetails);
             this.groupBoxRegions.Controls.Add(this.listViewRegions);
-            this.groupBoxRegions.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxRegions.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxRegions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxRegions.Name = "groupBoxRegions";
-            this.groupBoxRegions.Size = new System.Drawing.Size(480, 450);
+            this.groupBoxRegions.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRegions.Size = new System.Drawing.Size(640, 554);
             this.groupBoxRegions.TabIndex = 0;
             this.groupBoxRegions.TabStop = false;
             this.groupBoxRegions.Text = "Regions";
@@ -441,18 +462,21 @@
             this.groupBoxRegionsDetails.Controls.Add(this.lblLogicalRegionDescription);
             this.groupBoxRegionsDetails.Controls.Add(this.txtLogicalRegionName);
             this.groupBoxRegionsDetails.Controls.Add(this.lblLogicalRegionName);
-            this.groupBoxRegionsDetails.Location = new System.Drawing.Point(15, 190);
+            this.groupBoxRegionsDetails.Location = new System.Drawing.Point(20, 234);
+            this.groupBoxRegionsDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxRegionsDetails.Name = "groupBoxRegionsDetails";
-            this.groupBoxRegionsDetails.Size = new System.Drawing.Size(450, 245);
+            this.groupBoxRegionsDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRegionsDetails.Size = new System.Drawing.Size(600, 302);
             this.groupBoxRegionsDetails.TabIndex = 1;
             this.groupBoxRegionsDetails.TabStop = false;
             this.groupBoxRegionsDetails.Text = "Details";
             // 
             // butLogicalRegionNew
             // 
-            this.butLogicalRegionNew.Location = new System.Drawing.Point(321, 205);
+            this.butLogicalRegionNew.Location = new System.Drawing.Point(428, 252);
+            this.butLogicalRegionNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.butLogicalRegionNew.Name = "butLogicalRegionNew";
-            this.butLogicalRegionNew.Size = new System.Drawing.Size(53, 23);
+            this.butLogicalRegionNew.Size = new System.Drawing.Size(71, 28);
             this.butLogicalRegionNew.TabIndex = 9;
             this.butLogicalRegionNew.Text = "New..";
             this.butLogicalRegionNew.UseVisualStyleBackColor = true;
@@ -460,9 +484,10 @@
             // 
             // butLogicalRegionSave
             // 
-            this.butLogicalRegionSave.Location = new System.Drawing.Point(380, 205);
+            this.butLogicalRegionSave.Location = new System.Drawing.Point(507, 252);
+            this.butLogicalRegionSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.butLogicalRegionSave.Name = "butLogicalRegionSave";
-            this.butLogicalRegionSave.Size = new System.Drawing.Size(53, 23);
+            this.butLogicalRegionSave.Size = new System.Drawing.Size(71, 28);
             this.butLogicalRegionSave.TabIndex = 8;
             this.butLogicalRegionSave.Text = "Save..";
             this.butLogicalRegionSave.UseVisualStyleBackColor = true;
@@ -471,45 +496,50 @@
             // lblLogicalRegionActiveTo
             // 
             this.lblLogicalRegionActiveTo.AutoSize = true;
-            this.lblLogicalRegionActiveTo.Location = new System.Drawing.Point(238, 173);
+            this.lblLogicalRegionActiveTo.Location = new System.Drawing.Point(317, 213);
+            this.lblLogicalRegionActiveTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalRegionActiveTo.Name = "lblLogicalRegionActiveTo";
-            this.lblLogicalRegionActiveTo.Size = new System.Drawing.Size(19, 13);
+            this.lblLogicalRegionActiveTo.Size = new System.Drawing.Size(24, 17);
             this.lblLogicalRegionActiveTo.TabIndex = 7;
             this.lblLogicalRegionActiveTo.Text = "to:";
             // 
             // dateTimeLogicalRegionEndYMDV
             // 
             this.dateTimeLogicalRegionEndYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLogicalRegionEndYMDV.Location = new System.Drawing.Point(261, 169);
+            this.dateTimeLogicalRegionEndYMDV.Location = new System.Drawing.Point(348, 208);
+            this.dateTimeLogicalRegionEndYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeLogicalRegionEndYMDV.Name = "dateTimeLogicalRegionEndYMDV";
             this.dateTimeLogicalRegionEndYMDV.ShowCheckBox = true;
-            this.dateTimeLogicalRegionEndYMDV.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeLogicalRegionEndYMDV.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLogicalRegionEndYMDV.TabIndex = 6;
             this.dateTimeLogicalRegionEndYMDV.ValueChanged += new System.EventHandler(this.dateTimeLogicalRegionEndYMDV_ValueChanged);
             // 
             // lblLogicalRegionActiveFrom
             // 
             this.lblLogicalRegionActiveFrom.AutoSize = true;
-            this.lblLogicalRegionActiveFrom.Location = new System.Drawing.Point(15, 173);
+            this.lblLogicalRegionActiveFrom.Location = new System.Drawing.Point(20, 213);
+            this.lblLogicalRegionActiveFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalRegionActiveFrom.Name = "lblLogicalRegionActiveFrom";
-            this.lblLogicalRegionActiveFrom.Size = new System.Drawing.Size(103, 13);
+            this.lblLogicalRegionActiveFrom.Size = new System.Drawing.Size(135, 17);
             this.lblLogicalRegionActiveFrom.TabIndex = 5;
             this.lblLogicalRegionActiveFrom.Text = "Region Active From:";
             // 
             // dateTimeLogicalRegionStartYMDV
             // 
             this.dateTimeLogicalRegionStartYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLogicalRegionStartYMDV.Location = new System.Drawing.Point(130, 169);
+            this.dateTimeLogicalRegionStartYMDV.Location = new System.Drawing.Point(173, 208);
+            this.dateTimeLogicalRegionStartYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeLogicalRegionStartYMDV.Name = "dateTimeLogicalRegionStartYMDV";
-            this.dateTimeLogicalRegionStartYMDV.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeLogicalRegionStartYMDV.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLogicalRegionStartYMDV.TabIndex = 4;
             this.dateTimeLogicalRegionStartYMDV.ValueChanged += new System.EventHandler(this.dateTimeLogicalRegionStartYMDV_ValueChanged);
             // 
             // txtLogicalRegionDescription
             // 
-            this.txtLogicalRegionDescription.Location = new System.Drawing.Point(130, 55);
+            this.txtLogicalRegionDescription.Location = new System.Drawing.Point(173, 68);
+            this.txtLogicalRegionDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogicalRegionDescription.Name = "txtLogicalRegionDescription";
-            this.txtLogicalRegionDescription.Size = new System.Drawing.Size(303, 98);
+            this.txtLogicalRegionDescription.Size = new System.Drawing.Size(403, 120);
             this.txtLogicalRegionDescription.TabIndex = 3;
             this.txtLogicalRegionDescription.Text = "";
             this.txtLogicalRegionDescription.TextChanged += new System.EventHandler(this.txtLogicalRegionDescription_TextChanged);
@@ -517,26 +547,29 @@
             // lblLogicalRegionDescription
             // 
             this.lblLogicalRegionDescription.AutoSize = true;
-            this.lblLogicalRegionDescription.Location = new System.Drawing.Point(15, 55);
+            this.lblLogicalRegionDescription.Location = new System.Drawing.Point(20, 68);
+            this.lblLogicalRegionDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalRegionDescription.Name = "lblLogicalRegionDescription";
-            this.lblLogicalRegionDescription.Size = new System.Drawing.Size(63, 13);
+            this.lblLogicalRegionDescription.Size = new System.Drawing.Size(83, 17);
             this.lblLogicalRegionDescription.TabIndex = 2;
             this.lblLogicalRegionDescription.Text = "Description:";
             // 
             // txtLogicalRegionName
             // 
-            this.txtLogicalRegionName.Location = new System.Drawing.Point(130, 22);
+            this.txtLogicalRegionName.Location = new System.Drawing.Point(173, 27);
+            this.txtLogicalRegionName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogicalRegionName.Name = "txtLogicalRegionName";
-            this.txtLogicalRegionName.Size = new System.Drawing.Size(303, 20);
+            this.txtLogicalRegionName.Size = new System.Drawing.Size(403, 22);
             this.txtLogicalRegionName.TabIndex = 1;
             this.txtLogicalRegionName.TextChanged += new System.EventHandler(this.txtLogicalRegionName_TextChanged);
             // 
             // lblLogicalRegionName
             // 
             this.lblLogicalRegionName.AutoSize = true;
-            this.lblLogicalRegionName.Location = new System.Drawing.Point(15, 25);
+            this.lblLogicalRegionName.Location = new System.Drawing.Point(20, 31);
+            this.lblLogicalRegionName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogicalRegionName.Name = "lblLogicalRegionName";
-            this.lblLogicalRegionName.Size = new System.Drawing.Size(38, 13);
+            this.lblLogicalRegionName.Size = new System.Drawing.Size(49, 17);
             this.lblLogicalRegionName.TabIndex = 0;
             this.lblLogicalRegionName.Text = "Name:";
             // 
@@ -548,9 +581,10 @@
             this.columnHeaderEndYMDV});
             this.listViewRegions.FullRowSelect = true;
             this.listViewRegions.HideSelection = false;
-            this.listViewRegions.Location = new System.Drawing.Point(15, 25);
+            this.listViewRegions.Location = new System.Drawing.Point(20, 31);
+            this.listViewRegions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewRegions.Name = "listViewRegions";
-            this.listViewRegions.Size = new System.Drawing.Size(450, 150);
+            this.listViewRegions.Size = new System.Drawing.Size(599, 184);
             this.listViewRegions.TabIndex = 0;
             this.listViewRegions.UseCompatibleStateImageBehavior = false;
             this.listViewRegions.View = System.Windows.Forms.View.Details;
@@ -574,10 +608,11 @@
             // tabPageLocation
             // 
             this.tabPageLocation.Controls.Add(this.groupBoxLocations);
-            this.tabPageLocation.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLocation.Location = new System.Drawing.Point(4, 25);
+            this.tabPageLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageLocation.Name = "tabPageLocation";
-            this.tabPageLocation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLocation.Size = new System.Drawing.Size(1162, 477);
+            this.tabPageLocation.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLocation.Size = new System.Drawing.Size(1552, 590);
             this.tabPageLocation.TabIndex = 1;
             this.tabPageLocation.Text = "Location";
             this.tabPageLocation.UseVisualStyleBackColor = true;
@@ -637,9 +672,11 @@
             this.groupBoxLocations.Controls.Add(this.linkLocationNew);
             this.groupBoxLocations.Controls.Add(this.lblLocationLocation);
             this.groupBoxLocations.Controls.Add(this.comboLocationLocation);
-            this.groupBoxLocations.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxLocations.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxLocations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxLocations.Name = "groupBoxLocations";
-            this.groupBoxLocations.Size = new System.Drawing.Size(1135, 450);
+            this.groupBoxLocations.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocations.Size = new System.Drawing.Size(1513, 554);
             this.groupBoxLocations.TabIndex = 0;
             this.groupBoxLocations.TabStop = false;
             this.groupBoxLocations.Text = "Locations";
@@ -647,9 +684,10 @@
             // linkDepotDetails
             // 
             this.linkDepotDetails.AutoSize = true;
-            this.linkDepotDetails.Location = new System.Drawing.Point(641, 102);
+            this.linkDepotDetails.Location = new System.Drawing.Point(855, 126);
+            this.linkDepotDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkDepotDetails.Name = "linkDepotDetails";
-            this.linkDepotDetails.Size = new System.Drawing.Size(77, 13);
+            this.linkDepotDetails.Size = new System.Drawing.Size(101, 17);
             this.linkDepotDetails.TabIndex = 61;
             this.linkDepotDetails.TabStop = true;
             this.linkDepotDetails.Text = "Depot Details..";
@@ -658,9 +696,10 @@
             // linkLocationEditToken
             // 
             this.linkLocationEditToken.AutoSize = true;
-            this.linkLocationEditToken.Location = new System.Drawing.Point(748, 179);
+            this.linkLocationEditToken.Location = new System.Drawing.Point(997, 220);
+            this.linkLocationEditToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLocationEditToken.Name = "linkLocationEditToken";
-            this.linkLocationEditToken.Size = new System.Drawing.Size(31, 13);
+            this.linkLocationEditToken.Size = new System.Drawing.Size(40, 17);
             this.linkLocationEditToken.TabIndex = 60;
             this.linkLocationEditToken.TabStop = true;
             this.linkLocationEditToken.Text = "Edit..";
@@ -669,9 +708,10 @@
             // linkLocationNewToken
             // 
             this.linkLocationNewToken.AutoSize = true;
-            this.linkLocationNewToken.Location = new System.Drawing.Point(785, 179);
+            this.linkLocationNewToken.Location = new System.Drawing.Point(1047, 220);
+            this.linkLocationNewToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLocationNewToken.Name = "linkLocationNewToken";
-            this.linkLocationNewToken.Size = new System.Drawing.Size(35, 13);
+            this.linkLocationNewToken.Size = new System.Drawing.Size(43, 17);
             this.linkLocationNewToken.TabIndex = 59;
             this.linkLocationNewToken.TabStop = true;
             this.linkLocationNewToken.Text = "New..";
@@ -689,9 +729,11 @@
             this.groupBoxLocationOptions.Controls.Add(this.lblLocationOptionCannotStop);
             this.groupBoxLocationOptions.Controls.Add(this.checkBoxLocationOptionCallOn);
             this.groupBoxLocationOptions.Controls.Add(this.labelLocationOptionCallOn);
-            this.groupBoxLocationOptions.Location = new System.Drawing.Point(800, 286);
+            this.groupBoxLocationOptions.Location = new System.Drawing.Point(1067, 352);
+            this.groupBoxLocationOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxLocationOptions.Name = "groupBoxLocationOptions";
-            this.groupBoxLocationOptions.Size = new System.Drawing.Size(319, 145);
+            this.groupBoxLocationOptions.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocationOptions.Size = new System.Drawing.Size(425, 178);
             this.groupBoxLocationOptions.TabIndex = 58;
             this.groupBoxLocationOptions.TabStop = false;
             this.groupBoxLocationOptions.Text = "Options:";
@@ -699,9 +741,10 @@
             // checkBoxLocationOptionCannotSurrenderToken
             // 
             this.checkBoxLocationOptionCannotSurrenderToken.AutoSize = true;
-            this.checkBoxLocationOptionCannotSurrenderToken.Location = new System.Drawing.Point(240, 65);
+            this.checkBoxLocationOptionCannotSurrenderToken.Location = new System.Drawing.Point(320, 80);
+            this.checkBoxLocationOptionCannotSurrenderToken.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationOptionCannotSurrenderToken.Name = "checkBoxLocationOptionCannotSurrenderToken";
-            this.checkBoxLocationOptionCannotSurrenderToken.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationOptionCannotSurrenderToken.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionCannotSurrenderToken.TabIndex = 73;
             this.checkBoxLocationOptionCannotSurrenderToken.Tag = "16";
             this.checkBoxLocationOptionCannotSurrenderToken.UseVisualStyleBackColor = true;
@@ -709,18 +752,20 @@
             // 
             // labelLocationOptionCannotSurrenderToken
             // 
-            this.labelLocationOptionCannotSurrenderToken.Location = new System.Drawing.Point(127, 65);
+            this.labelLocationOptionCannotSurrenderToken.Location = new System.Drawing.Point(169, 80);
+            this.labelLocationOptionCannotSurrenderToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationOptionCannotSurrenderToken.Name = "labelLocationOptionCannotSurrenderToken";
-            this.labelLocationOptionCannotSurrenderToken.Size = new System.Drawing.Size(107, 36);
+            this.labelLocationOptionCannotSurrenderToken.Size = new System.Drawing.Size(143, 44);
             this.labelLocationOptionCannotSurrenderToken.TabIndex = 72;
             this.labelLocationOptionCannotSurrenderToken.Text = "Cannot Surrender Token?";
             // 
             // checkBoxLocationOptionPassengerTrainCannotStop
             // 
             this.checkBoxLocationOptionPassengerTrainCannotStop.AutoSize = true;
-            this.checkBoxLocationOptionPassengerTrainCannotStop.Location = new System.Drawing.Point(105, 102);
+            this.checkBoxLocationOptionPassengerTrainCannotStop.Location = new System.Drawing.Point(140, 126);
+            this.checkBoxLocationOptionPassengerTrainCannotStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationOptionPassengerTrainCannotStop.Name = "checkBoxLocationOptionPassengerTrainCannotStop";
-            this.checkBoxLocationOptionPassengerTrainCannotStop.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationOptionPassengerTrainCannotStop.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionPassengerTrainCannotStop.TabIndex = 71;
             this.checkBoxLocationOptionPassengerTrainCannotStop.Tag = "4";
             this.checkBoxLocationOptionPassengerTrainCannotStop.UseVisualStyleBackColor = true;
@@ -729,9 +774,10 @@
             // checkBoxLocationOptionOnlyStopIfReversing
             // 
             this.checkBoxLocationOptionOnlyStopIfReversing.AutoSize = true;
-            this.checkBoxLocationOptionOnlyStopIfReversing.Location = new System.Drawing.Point(106, 65);
+            this.checkBoxLocationOptionOnlyStopIfReversing.Location = new System.Drawing.Point(141, 80);
+            this.checkBoxLocationOptionOnlyStopIfReversing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationOptionOnlyStopIfReversing.Name = "checkBoxLocationOptionOnlyStopIfReversing";
-            this.checkBoxLocationOptionOnlyStopIfReversing.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationOptionOnlyStopIfReversing.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionOnlyStopIfReversing.TabIndex = 70;
             this.checkBoxLocationOptionOnlyStopIfReversing.Tag = "2";
             this.checkBoxLocationOptionOnlyStopIfReversing.UseVisualStyleBackColor = true;
@@ -739,26 +785,29 @@
             // 
             // lblLocationOptionPassengerTrainsCannotStop
             // 
-            this.lblLocationOptionPassengerTrainsCannotStop.Location = new System.Drawing.Point(14, 101);
+            this.lblLocationOptionPassengerTrainsCannotStop.Location = new System.Drawing.Point(19, 124);
+            this.lblLocationOptionPassengerTrainsCannotStop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationOptionPassengerTrainsCannotStop.Name = "lblLocationOptionPassengerTrainsCannotStop";
-            this.lblLocationOptionPassengerTrainsCannotStop.Size = new System.Drawing.Size(87, 31);
+            this.lblLocationOptionPassengerTrainsCannotStop.Size = new System.Drawing.Size(116, 38);
             this.lblLocationOptionPassengerTrainsCannotStop.TabIndex = 69;
             this.lblLocationOptionPassengerTrainsCannotStop.Text = "Passenger Train Cannot Stop?";
             // 
             // lblLocationOptionOnlyStopIfReversing
             // 
-            this.lblLocationOptionOnlyStopIfReversing.Location = new System.Drawing.Point(14, 65);
+            this.lblLocationOptionOnlyStopIfReversing.Location = new System.Drawing.Point(19, 80);
+            this.lblLocationOptionOnlyStopIfReversing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationOptionOnlyStopIfReversing.Name = "lblLocationOptionOnlyStopIfReversing";
-            this.lblLocationOptionOnlyStopIfReversing.Size = new System.Drawing.Size(72, 36);
+            this.lblLocationOptionOnlyStopIfReversing.Size = new System.Drawing.Size(96, 44);
             this.lblLocationOptionOnlyStopIfReversing.TabIndex = 68;
             this.lblLocationOptionOnlyStopIfReversing.Text = "Only Stop If Reversing?";
             // 
             // checkBoxLocationOptionCannotStop
             // 
             this.checkBoxLocationOptionCannotStop.AutoSize = true;
-            this.checkBoxLocationOptionCannotStop.Location = new System.Drawing.Point(106, 27);
+            this.checkBoxLocationOptionCannotStop.Location = new System.Drawing.Point(141, 33);
+            this.checkBoxLocationOptionCannotStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationOptionCannotStop.Name = "checkBoxLocationOptionCannotStop";
-            this.checkBoxLocationOptionCannotStop.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationOptionCannotStop.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionCannotStop.TabIndex = 67;
             this.checkBoxLocationOptionCannotStop.Tag = "1";
             this.checkBoxLocationOptionCannotStop.UseVisualStyleBackColor = true;
@@ -767,18 +816,20 @@
             // lblLocationOptionCannotStop
             // 
             this.lblLocationOptionCannotStop.AutoSize = true;
-            this.lblLocationOptionCannotStop.Location = new System.Drawing.Point(14, 26);
+            this.lblLocationOptionCannotStop.Location = new System.Drawing.Point(19, 32);
+            this.lblLocationOptionCannotStop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationOptionCannotStop.Name = "lblLocationOptionCannotStop";
-            this.lblLocationOptionCannotStop.Size = new System.Drawing.Size(72, 13);
+            this.lblLocationOptionCannotStop.Size = new System.Drawing.Size(94, 17);
             this.lblLocationOptionCannotStop.TabIndex = 66;
             this.lblLocationOptionCannotStop.Text = "Cannot Stop?";
             // 
             // checkBoxLocationOptionCallOn
             // 
             this.checkBoxLocationOptionCallOn.AutoSize = true;
-            this.checkBoxLocationOptionCallOn.Location = new System.Drawing.Point(240, 27);
+            this.checkBoxLocationOptionCallOn.Location = new System.Drawing.Point(320, 33);
+            this.checkBoxLocationOptionCallOn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationOptionCallOn.Name = "checkBoxLocationOptionCallOn";
-            this.checkBoxLocationOptionCallOn.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationOptionCallOn.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionCallOn.TabIndex = 65;
             this.checkBoxLocationOptionCallOn.Tag = "8";
             this.checkBoxLocationOptionCallOn.UseVisualStyleBackColor = true;
@@ -787,9 +838,10 @@
             // labelLocationOptionCallOn
             // 
             this.labelLocationOptionCallOn.AutoSize = true;
-            this.labelLocationOptionCallOn.Location = new System.Drawing.Point(127, 26);
+            this.labelLocationOptionCallOn.Location = new System.Drawing.Point(169, 32);
+            this.labelLocationOptionCallOn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationOptionCallOn.Name = "labelLocationOptionCallOn";
-            this.labelLocationOptionCallOn.Size = new System.Drawing.Size(69, 13);
+            this.labelLocationOptionCallOn.Size = new System.Drawing.Size(91, 17);
             this.labelLocationOptionCallOn.TabIndex = 64;
             this.labelLocationOptionCallOn.Text = "Has Call On?";
             // 
@@ -813,9 +865,11 @@
             this.groupBoxLocationPower.Controls.Add(this.labelLocationPower4th600);
             this.groupBoxLocationPower.Controls.Add(this.labelLocationPowerDiesel);
             this.groupBoxLocationPower.Controls.Add(this.labelLocationPowerSteam);
-            this.groupBoxLocationPower.Location = new System.Drawing.Point(413, 286);
+            this.groupBoxLocationPower.Location = new System.Drawing.Point(551, 352);
+            this.groupBoxLocationPower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxLocationPower.Name = "groupBoxLocationPower";
-            this.groupBoxLocationPower.Size = new System.Drawing.Size(374, 145);
+            this.groupBoxLocationPower.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocationPower.Size = new System.Drawing.Size(499, 178);
             this.groupBoxLocationPower.TabIndex = 57;
             this.groupBoxLocationPower.TabStop = false;
             this.groupBoxLocationPower.Text = "Power:";
@@ -823,9 +877,10 @@
             // checkBoxLocationPowerBattery
             // 
             this.checkBoxLocationPowerBattery.AutoSize = true;
-            this.checkBoxLocationPowerBattery.Location = new System.Drawing.Point(351, 101);
+            this.checkBoxLocationPowerBattery.Location = new System.Drawing.Point(468, 124);
+            this.checkBoxLocationPowerBattery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPowerBattery.Name = "checkBoxLocationPowerBattery";
-            this.checkBoxLocationPowerBattery.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPowerBattery.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerBattery.TabIndex = 65;
             this.checkBoxLocationPowerBattery.Tag = "256";
             this.checkBoxLocationPowerBattery.UseVisualStyleBackColor = true;
@@ -834,9 +889,10 @@
             // checkBoxLocationPowerOHead25
             // 
             this.checkBoxLocationPowerOHead25.AutoSize = true;
-            this.checkBoxLocationPowerOHead25.Location = new System.Drawing.Point(351, 64);
+            this.checkBoxLocationPowerOHead25.Location = new System.Drawing.Point(468, 79);
+            this.checkBoxLocationPowerOHead25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPowerOHead25.Name = "checkBoxLocationPowerOHead25";
-            this.checkBoxLocationPowerOHead25.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPowerOHead25.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerOHead25.TabIndex = 64;
             this.checkBoxLocationPowerOHead25.Tag = "128";
             this.checkBoxLocationPowerOHead25.UseVisualStyleBackColor = true;
@@ -845,9 +901,10 @@
             // checkBoxLocationPowerOH625
             // 
             this.checkBoxLocationPowerOH625.AutoSize = true;
-            this.checkBoxLocationPowerOH625.Location = new System.Drawing.Point(351, 26);
+            this.checkBoxLocationPowerOH625.Location = new System.Drawing.Point(468, 32);
+            this.checkBoxLocationPowerOH625.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPowerOH625.Name = "checkBoxLocationPowerOH625";
-            this.checkBoxLocationPowerOH625.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPowerOH625.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerOH625.TabIndex = 63;
             this.checkBoxLocationPowerOH625.Tag = "64";
             this.checkBoxLocationPowerOH625.UseVisualStyleBackColor = true;
@@ -856,9 +913,10 @@
             // checkBoxLocationPowerOH1500
             // 
             this.checkBoxLocationPowerOH1500.AutoSize = true;
-            this.checkBoxLocationPowerOH1500.Location = new System.Drawing.Point(231, 102);
+            this.checkBoxLocationPowerOH1500.Location = new System.Drawing.Point(308, 126);
+            this.checkBoxLocationPowerOH1500.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPowerOH1500.Name = "checkBoxLocationPowerOH1500";
-            this.checkBoxLocationPowerOH1500.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPowerOH1500.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerOH1500.TabIndex = 62;
             this.checkBoxLocationPowerOH1500.Tag = "32";
             this.checkBoxLocationPowerOH1500.UseVisualStyleBackColor = true;
@@ -867,9 +925,10 @@
             // checkBoxLocationPower3rd1500
             // 
             this.checkBoxLocationPower3rd1500.AutoSize = true;
-            this.checkBoxLocationPower3rd1500.Location = new System.Drawing.Point(231, 64);
+            this.checkBoxLocationPower3rd1500.Location = new System.Drawing.Point(308, 79);
+            this.checkBoxLocationPower3rd1500.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPower3rd1500.Name = "checkBoxLocationPower3rd1500";
-            this.checkBoxLocationPower3rd1500.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPower3rd1500.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPower3rd1500.TabIndex = 61;
             this.checkBoxLocationPower3rd1500.Tag = "16";
             this.checkBoxLocationPower3rd1500.UseVisualStyleBackColor = true;
@@ -878,9 +937,10 @@
             // checkBoxLocationPower3rd750
             // 
             this.checkBoxLocationPower3rd750.AutoSize = true;
-            this.checkBoxLocationPower3rd750.Location = new System.Drawing.Point(231, 26);
+            this.checkBoxLocationPower3rd750.Location = new System.Drawing.Point(308, 32);
+            this.checkBoxLocationPower3rd750.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPower3rd750.Name = "checkBoxLocationPower3rd750";
-            this.checkBoxLocationPower3rd750.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPower3rd750.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPower3rd750.TabIndex = 60;
             this.checkBoxLocationPower3rd750.Tag = "8";
             this.checkBoxLocationPower3rd750.UseVisualStyleBackColor = true;
@@ -889,9 +949,10 @@
             // checkBoxLocationPower4th600
             // 
             this.checkBoxLocationPower4th600.AutoSize = true;
-            this.checkBoxLocationPower4th600.Location = new System.Drawing.Point(95, 101);
+            this.checkBoxLocationPower4th600.Location = new System.Drawing.Point(127, 124);
+            this.checkBoxLocationPower4th600.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPower4th600.Name = "checkBoxLocationPower4th600";
-            this.checkBoxLocationPower4th600.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPower4th600.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPower4th600.TabIndex = 59;
             this.checkBoxLocationPower4th600.Tag = "4";
             this.checkBoxLocationPower4th600.UseVisualStyleBackColor = true;
@@ -900,9 +961,10 @@
             // checkBoxLocationPowerDiesel
             // 
             this.checkBoxLocationPowerDiesel.AutoSize = true;
-            this.checkBoxLocationPowerDiesel.Location = new System.Drawing.Point(95, 64);
+            this.checkBoxLocationPowerDiesel.Location = new System.Drawing.Point(127, 79);
+            this.checkBoxLocationPowerDiesel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPowerDiesel.Name = "checkBoxLocationPowerDiesel";
-            this.checkBoxLocationPowerDiesel.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPowerDiesel.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerDiesel.TabIndex = 58;
             this.checkBoxLocationPowerDiesel.Tag = "2";
             this.checkBoxLocationPowerDiesel.UseVisualStyleBackColor = true;
@@ -911,9 +973,10 @@
             // checkBoxLocationPowerSteam
             // 
             this.checkBoxLocationPowerSteam.AutoSize = true;
-            this.checkBoxLocationPowerSteam.Location = new System.Drawing.Point(95, 25);
+            this.checkBoxLocationPowerSteam.Location = new System.Drawing.Point(127, 31);
+            this.checkBoxLocationPowerSteam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationPowerSteam.Name = "checkBoxLocationPowerSteam";
-            this.checkBoxLocationPowerSteam.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationPowerSteam.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerSteam.TabIndex = 57;
             this.checkBoxLocationPowerSteam.Tag = "1";
             this.checkBoxLocationPowerSteam.UseVisualStyleBackColor = true;
@@ -922,112 +985,124 @@
             // labelLocationPowerBattery
             // 
             this.labelLocationPowerBattery.AutoSize = true;
-            this.labelLocationPowerBattery.Location = new System.Drawing.Point(302, 101);
+            this.labelLocationPowerBattery.Location = new System.Drawing.Point(403, 124);
+            this.labelLocationPowerBattery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPowerBattery.Name = "labelLocationPowerBattery";
-            this.labelLocationPowerBattery.Size = new System.Drawing.Size(43, 13);
+            this.labelLocationPowerBattery.Size = new System.Drawing.Size(57, 17);
             this.labelLocationPowerBattery.TabIndex = 56;
             this.labelLocationPowerBattery.Text = "Battery:";
             // 
             // labelLocationPowerOH25
             // 
             this.labelLocationPowerOH25.AutoSize = true;
-            this.labelLocationPowerOH25.Location = new System.Drawing.Point(268, 65);
+            this.labelLocationPowerOH25.Location = new System.Drawing.Point(357, 80);
+            this.labelLocationPowerOH25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPowerOH25.Name = "labelLocationPowerOH25";
-            this.labelLocationPowerOH25.Size = new System.Drawing.Size(77, 13);
+            this.labelLocationPowerOH25.Size = new System.Drawing.Size(97, 17);
             this.labelLocationPowerOH25.TabIndex = 55;
             this.labelLocationPowerOH25.Text = "O/Head 25kV:";
             // 
             // labelLocationPowerOH625
             // 
             this.labelLocationPowerOH625.AutoSize = true;
-            this.labelLocationPowerOH625.Location = new System.Drawing.Point(259, 25);
+            this.labelLocationPowerOH625.Location = new System.Drawing.Point(345, 31);
+            this.labelLocationPowerOH625.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPowerOH625.Name = "labelLocationPowerOH625";
-            this.labelLocationPowerOH625.Size = new System.Drawing.Size(86, 13);
+            this.labelLocationPowerOH625.Size = new System.Drawing.Size(109, 17);
             this.labelLocationPowerOH625.TabIndex = 54;
             this.labelLocationPowerOH625.Text = "O/Head 6.25kV:";
             // 
             // labelLocationPowerOH1500
             // 
             this.labelLocationPowerOH1500.AutoSize = true;
-            this.labelLocationPowerOH1500.Location = new System.Drawing.Point(127, 102);
+            this.labelLocationPowerOH1500.Location = new System.Drawing.Point(169, 126);
+            this.labelLocationPowerOH1500.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPowerOH1500.Name = "labelLocationPowerOH1500";
-            this.labelLocationPowerOH1500.Size = new System.Drawing.Size(101, 13);
+            this.labelLocationPowerOH1500.Size = new System.Drawing.Size(129, 17);
             this.labelLocationPowerOH1500.TabIndex = 53;
             this.labelLocationPowerOH1500.Text = "O/Head 1500V DC:";
             // 
             // labelLocationPower3rd1500
             // 
             this.labelLocationPower3rd1500.AutoSize = true;
-            this.labelLocationPower3rd1500.Location = new System.Drawing.Point(148, 65);
+            this.labelLocationPower3rd1500.Location = new System.Drawing.Point(197, 80);
+            this.labelLocationPower3rd1500.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPower3rd1500.Name = "labelLocationPower3rd1500";
-            this.labelLocationPower3rd1500.Size = new System.Drawing.Size(80, 13);
+            this.labelLocationPower3rd1500.Size = new System.Drawing.Size(106, 17);
             this.labelLocationPower3rd1500.TabIndex = 52;
             this.labelLocationPower3rd1500.Text = "3rd Rail 1500V:";
             // 
             // labelLocationPower3rd750
             // 
             this.labelLocationPower3rd750.AutoSize = true;
-            this.labelLocationPower3rd750.Location = new System.Drawing.Point(154, 26);
+            this.labelLocationPower3rd750.Location = new System.Drawing.Point(205, 32);
+            this.labelLocationPower3rd750.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPower3rd750.Name = "labelLocationPower3rd750";
-            this.labelLocationPower3rd750.Size = new System.Drawing.Size(74, 13);
+            this.labelLocationPower3rd750.Size = new System.Drawing.Size(98, 17);
             this.labelLocationPower3rd750.TabIndex = 51;
             this.labelLocationPower3rd750.Text = "3rd Rail 750V:";
             // 
             // labelLocationPower4th600
             // 
             this.labelLocationPower4th600.AutoSize = true;
-            this.labelLocationPower4th600.Location = new System.Drawing.Point(15, 101);
+            this.labelLocationPower4th600.Location = new System.Drawing.Point(20, 124);
+            this.labelLocationPower4th600.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPower4th600.Name = "labelLocationPower4th600";
-            this.labelLocationPower4th600.Size = new System.Drawing.Size(74, 13);
+            this.labelLocationPower4th600.Size = new System.Drawing.Size(97, 17);
             this.labelLocationPower4th600.TabIndex = 50;
             this.labelLocationPower4th600.Text = "4th Rail 600V:";
             // 
             // labelLocationPowerDiesel
             // 
             this.labelLocationPowerDiesel.AutoSize = true;
-            this.labelLocationPowerDiesel.Location = new System.Drawing.Point(50, 64);
+            this.labelLocationPowerDiesel.Location = new System.Drawing.Point(67, 79);
+            this.labelLocationPowerDiesel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPowerDiesel.Name = "labelLocationPowerDiesel";
-            this.labelLocationPowerDiesel.Size = new System.Drawing.Size(39, 13);
+            this.labelLocationPowerDiesel.Size = new System.Drawing.Size(51, 17);
             this.labelLocationPowerDiesel.TabIndex = 49;
             this.labelLocationPowerDiesel.Text = "Diesel:";
             // 
             // labelLocationPowerSteam
             // 
             this.labelLocationPowerSteam.AutoSize = true;
-            this.labelLocationPowerSteam.Location = new System.Drawing.Point(49, 26);
+            this.labelLocationPowerSteam.Location = new System.Drawing.Point(65, 32);
+            this.labelLocationPowerSteam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationPowerSteam.Name = "labelLocationPowerSteam";
-            this.labelLocationPowerSteam.Size = new System.Drawing.Size(40, 13);
+            this.labelLocationPowerSteam.Size = new System.Drawing.Size(52, 17);
             this.labelLocationPowerSteam.TabIndex = 48;
             this.labelLocationPowerSteam.Text = "Steam:";
             // 
             // numericUpDownLocationScore
             // 
-            this.numericUpDownLocationScore.Location = new System.Drawing.Point(800, 252);
+            this.numericUpDownLocationScore.Location = new System.Drawing.Point(1067, 310);
+            this.numericUpDownLocationScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownLocationScore.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownLocationScore.Name = "numericUpDownLocationScore";
-            this.numericUpDownLocationScore.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDownLocationScore.Size = new System.Drawing.Size(72, 22);
             this.numericUpDownLocationScore.TabIndex = 56;
             this.numericUpDownLocationScore.ValueChanged += new System.EventHandler(this.numericUpDownLocationScore_ValueChanged);
             // 
             // labelLocationScore
             // 
             this.labelLocationScore.AutoSize = true;
-            this.labelLocationScore.Location = new System.Drawing.Point(739, 254);
+            this.labelLocationScore.Location = new System.Drawing.Point(985, 313);
+            this.labelLocationScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationScore.Name = "labelLocationScore";
-            this.labelLocationScore.Size = new System.Drawing.Size(38, 13);
+            this.labelLocationScore.Size = new System.Drawing.Size(49, 17);
             this.labelLocationScore.TabIndex = 55;
             this.labelLocationScore.Text = "Score:";
             // 
             // checkBoxLocationUseAsTimingPoint
             // 
             this.checkBoxLocationUseAsTimingPoint.AutoSize = true;
-            this.checkBoxLocationUseAsTimingPoint.Location = new System.Drawing.Point(800, 215);
+            this.checkBoxLocationUseAsTimingPoint.Location = new System.Drawing.Point(1067, 265);
+            this.checkBoxLocationUseAsTimingPoint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationUseAsTimingPoint.Name = "checkBoxLocationUseAsTimingPoint";
-            this.checkBoxLocationUseAsTimingPoint.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationUseAsTimingPoint.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationUseAsTimingPoint.TabIndex = 54;
             this.checkBoxLocationUseAsTimingPoint.UseVisualStyleBackColor = true;
             this.checkBoxLocationUseAsTimingPoint.CheckedChanged += new System.EventHandler(this.checkBoxLocationUseAsTimingPoint_CheckedChanged);
@@ -1035,18 +1110,20 @@
             // lblLocationUseAsTimingPoint
             // 
             this.lblLocationUseAsTimingPoint.AutoSize = true;
-            this.lblLocationUseAsTimingPoint.Location = new System.Drawing.Point(689, 216);
+            this.lblLocationUseAsTimingPoint.Location = new System.Drawing.Point(919, 266);
+            this.lblLocationUseAsTimingPoint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationUseAsTimingPoint.Name = "lblLocationUseAsTimingPoint";
-            this.lblLocationUseAsTimingPoint.Size = new System.Drawing.Size(105, 13);
+            this.lblLocationUseAsTimingPoint.Size = new System.Drawing.Size(139, 17);
             this.lblLocationUseAsTimingPoint.TabIndex = 53;
             this.lblLocationUseAsTimingPoint.Text = "Use As Timing Point:";
             // 
             // checkBoxLocationTOPSOffice
             // 
             this.checkBoxLocationTOPSOffice.AutoSize = true;
-            this.checkBoxLocationTOPSOffice.Location = new System.Drawing.Point(963, 217);
+            this.checkBoxLocationTOPSOffice.Location = new System.Drawing.Point(1284, 267);
+            this.checkBoxLocationTOPSOffice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationTOPSOffice.Name = "checkBoxLocationTOPSOffice";
-            this.checkBoxLocationTOPSOffice.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationTOPSOffice.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationTOPSOffice.TabIndex = 52;
             this.checkBoxLocationTOPSOffice.UseVisualStyleBackColor = true;
             this.checkBoxLocationTOPSOffice.CheckedChanged += new System.EventHandler(this.checkBoxLocationTOPSOffice_CheckedChanged);
@@ -1054,18 +1131,20 @@
             // labelLocationTOPSOffice
             // 
             this.labelLocationTOPSOffice.AutoSize = true;
-            this.labelLocationTOPSOffice.Location = new System.Drawing.Point(889, 219);
+            this.labelLocationTOPSOffice.Location = new System.Drawing.Point(1185, 270);
+            this.labelLocationTOPSOffice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationTOPSOffice.Name = "labelLocationTOPSOffice";
-            this.labelLocationTOPSOffice.Size = new System.Drawing.Size(70, 13);
+            this.labelLocationTOPSOffice.Size = new System.Drawing.Size(91, 17);
             this.labelLocationTOPSOffice.TabIndex = 51;
             this.labelLocationTOPSOffice.Text = "TOPS Office:";
             // 
             // checkBoxLocationDisembarkPassengers
             // 
             this.checkBoxLocationDisembarkPassengers.AutoSize = true;
-            this.checkBoxLocationDisembarkPassengers.Location = new System.Drawing.Point(635, 254);
+            this.checkBoxLocationDisembarkPassengers.Location = new System.Drawing.Point(847, 313);
+            this.checkBoxLocationDisembarkPassengers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationDisembarkPassengers.Name = "checkBoxLocationDisembarkPassengers";
-            this.checkBoxLocationDisembarkPassengers.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationDisembarkPassengers.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationDisembarkPassengers.TabIndex = 50;
             this.checkBoxLocationDisembarkPassengers.UseVisualStyleBackColor = true;
             this.checkBoxLocationDisembarkPassengers.CheckedChanged += new System.EventHandler(this.checkBoxLocationDisembarkPassengers_CheckedChanged);
@@ -1073,18 +1152,20 @@
             // lblLocationDisembarkPassengers
             // 
             this.lblLocationDisembarkPassengers.AutoSize = true;
-            this.lblLocationDisembarkPassengers.Location = new System.Drawing.Point(514, 254);
+            this.lblLocationDisembarkPassengers.Location = new System.Drawing.Point(685, 313);
+            this.lblLocationDisembarkPassengers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationDisembarkPassengers.Name = "lblLocationDisembarkPassengers";
-            this.lblLocationDisembarkPassengers.Size = new System.Drawing.Size(118, 13);
+            this.lblLocationDisembarkPassengers.Size = new System.Drawing.Size(158, 17);
             this.lblLocationDisembarkPassengers.TabIndex = 49;
             this.lblLocationDisembarkPassengers.Text = "Disembark Passengers:";
             // 
             // checkBoxLocationEmbarkPassengers
             // 
             this.checkBoxLocationEmbarkPassengers.AutoSize = true;
-            this.checkBoxLocationEmbarkPassengers.Location = new System.Drawing.Point(635, 216);
+            this.checkBoxLocationEmbarkPassengers.Location = new System.Drawing.Point(847, 266);
+            this.checkBoxLocationEmbarkPassengers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationEmbarkPassengers.Name = "checkBoxLocationEmbarkPassengers";
-            this.checkBoxLocationEmbarkPassengers.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationEmbarkPassengers.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationEmbarkPassengers.TabIndex = 48;
             this.checkBoxLocationEmbarkPassengers.UseVisualStyleBackColor = true;
             this.checkBoxLocationEmbarkPassengers.CheckedChanged += new System.EventHandler(this.checkBoxLocationEmbarkPassengers_CheckedChanged);
@@ -1092,18 +1173,20 @@
             // lblLocationEmbarkPassengers
             // 
             this.lblLocationEmbarkPassengers.AutoSize = true;
-            this.lblLocationEmbarkPassengers.Location = new System.Drawing.Point(528, 216);
+            this.lblLocationEmbarkPassengers.Location = new System.Drawing.Point(704, 266);
+            this.lblLocationEmbarkPassengers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationEmbarkPassengers.Name = "lblLocationEmbarkPassengers";
-            this.lblLocationEmbarkPassengers.Size = new System.Drawing.Size(104, 13);
+            this.lblLocationEmbarkPassengers.Size = new System.Drawing.Size(139, 17);
             this.lblLocationEmbarkPassengers.TabIndex = 47;
             this.lblLocationEmbarkPassengers.Text = "Embark Passengers:";
             // 
             // checkBoxLocationFreightOnly
             // 
             this.checkBoxLocationFreightOnly.AutoSize = true;
-            this.checkBoxLocationFreightOnly.Location = new System.Drawing.Point(482, 216);
+            this.checkBoxLocationFreightOnly.Location = new System.Drawing.Point(643, 266);
+            this.checkBoxLocationFreightOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationFreightOnly.Name = "checkBoxLocationFreightOnly";
-            this.checkBoxLocationFreightOnly.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationFreightOnly.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationFreightOnly.TabIndex = 46;
             this.checkBoxLocationFreightOnly.UseVisualStyleBackColor = true;
             this.checkBoxLocationFreightOnly.CheckedChanged += new System.EventHandler(this.checkBoxLocationFreightOnly_CheckedChanged);
@@ -1111,18 +1194,20 @@
             // lblLocationFreightOnly
             // 
             this.lblLocationFreightOnly.AutoSize = true;
-            this.lblLocationFreightOnly.Location = new System.Drawing.Point(410, 216);
+            this.lblLocationFreightOnly.Location = new System.Drawing.Point(547, 266);
+            this.lblLocationFreightOnly.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationFreightOnly.Name = "lblLocationFreightOnly";
-            this.lblLocationFreightOnly.Size = new System.Drawing.Size(66, 13);
+            this.lblLocationFreightOnly.Size = new System.Drawing.Size(89, 17);
             this.lblLocationFreightOnly.TabIndex = 45;
             this.lblLocationFreightOnly.Text = "Freight Only:";
             // 
             // checkBoxLocationSingleTrainWorking
             // 
             this.checkBoxLocationSingleTrainWorking.AutoSize = true;
-            this.checkBoxLocationSingleTrainWorking.Location = new System.Drawing.Point(963, 178);
+            this.checkBoxLocationSingleTrainWorking.Location = new System.Drawing.Point(1284, 219);
+            this.checkBoxLocationSingleTrainWorking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxLocationSingleTrainWorking.Name = "checkBoxLocationSingleTrainWorking";
-            this.checkBoxLocationSingleTrainWorking.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxLocationSingleTrainWorking.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationSingleTrainWorking.TabIndex = 44;
             this.checkBoxLocationSingleTrainWorking.UseVisualStyleBackColor = true;
             this.checkBoxLocationSingleTrainWorking.CheckedChanged += new System.EventHandler(this.checkBoxLocationSingleTrainWorking_CheckedChanged);
@@ -1130,53 +1215,59 @@
             // labelLocationSingleTrainWorking
             // 
             this.labelLocationSingleTrainWorking.AutoSize = true;
-            this.labelLocationSingleTrainWorking.Location = new System.Drawing.Point(848, 178);
+            this.labelLocationSingleTrainWorking.Location = new System.Drawing.Point(1131, 219);
+            this.labelLocationSingleTrainWorking.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLocationSingleTrainWorking.Name = "labelLocationSingleTrainWorking";
-            this.labelLocationSingleTrainWorking.Size = new System.Drawing.Size(109, 13);
+            this.labelLocationSingleTrainWorking.Size = new System.Drawing.Size(144, 17);
             this.labelLocationSingleTrainWorking.TabIndex = 43;
             this.labelLocationSingleTrainWorking.Text = "Single Train Working:";
             // 
             // comboLocationToken
             // 
             this.comboLocationToken.FormattingEnabled = true;
-            this.comboLocationToken.Location = new System.Drawing.Point(482, 175);
+            this.comboLocationToken.Location = new System.Drawing.Point(643, 215);
+            this.comboLocationToken.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLocationToken.Name = "comboLocationToken";
-            this.comboLocationToken.Size = new System.Drawing.Size(257, 21);
+            this.comboLocationToken.Size = new System.Drawing.Size(341, 24);
             this.comboLocationToken.TabIndex = 42;
             this.comboLocationToken.SelectedIndexChanged += new System.EventHandler(this.comboBoxToken_SelectedIndexChanged);
             // 
             // comboLocationDirections
             // 
             this.comboLocationDirections.FormattingEnabled = true;
-            this.comboLocationDirections.Location = new System.Drawing.Point(963, 136);
+            this.comboLocationDirections.Location = new System.Drawing.Point(1284, 167);
+            this.comboLocationDirections.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLocationDirections.Name = "comboLocationDirections";
-            this.comboLocationDirections.Size = new System.Drawing.Size(156, 21);
+            this.comboLocationDirections.Size = new System.Drawing.Size(207, 24);
             this.comboLocationDirections.TabIndex = 41;
             this.comboLocationDirections.SelectedIndexChanged += new System.EventHandler(this.comboLocationDirections_SelectedIndexChanged);
             // 
             // lblLocationDirection
             // 
             this.lblLocationDirection.AutoSize = true;
-            this.lblLocationDirection.Location = new System.Drawing.Point(902, 140);
+            this.lblLocationDirection.Location = new System.Drawing.Point(1203, 172);
+            this.lblLocationDirection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationDirection.Name = "lblLocationDirection";
-            this.lblLocationDirection.Size = new System.Drawing.Size(57, 13);
+            this.lblLocationDirection.Size = new System.Drawing.Size(75, 17);
             this.lblLocationDirection.TabIndex = 40;
             this.lblLocationDirection.Text = "Directions:";
             // 
             // lblLocationBerths
             // 
             this.lblLocationBerths.AutoSize = true;
-            this.lblLocationBerths.Location = new System.Drawing.Point(739, 144);
+            this.lblLocationBerths.Location = new System.Drawing.Point(985, 177);
+            this.lblLocationBerths.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationBerths.Name = "lblLocationBerths";
-            this.lblLocationBerths.Size = new System.Drawing.Size(40, 13);
+            this.lblLocationBerths.Size = new System.Drawing.Size(53, 17);
             this.lblLocationBerths.TabIndex = 39;
             this.lblLocationBerths.Text = "Berths:";
             // 
             // numericUpDownLocationBerths
             // 
-            this.numericUpDownLocationBerths.Location = new System.Drawing.Point(800, 140);
+            this.numericUpDownLocationBerths.Location = new System.Drawing.Point(1067, 172);
+            this.numericUpDownLocationBerths.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownLocationBerths.Name = "numericUpDownLocationBerths";
-            this.numericUpDownLocationBerths.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDownLocationBerths.Size = new System.Drawing.Size(72, 22);
             this.numericUpDownLocationBerths.TabIndex = 38;
             this.numericUpDownLocationBerths.Value = new decimal(new int[] {
             1,
@@ -1188,173 +1279,193 @@
             // lblLocationToken
             // 
             this.lblLocationToken.AutoSize = true;
-            this.lblLocationToken.Location = new System.Drawing.Point(410, 178);
+            this.lblLocationToken.Location = new System.Drawing.Point(547, 219);
+            this.lblLocationToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationToken.Name = "lblLocationToken";
-            this.lblLocationToken.Size = new System.Drawing.Size(41, 13);
+            this.lblLocationToken.Size = new System.Drawing.Size(52, 17);
             this.lblLocationToken.TabIndex = 37;
             this.lblLocationToken.Text = "Token:";
             // 
             // lblLengthMeters
             // 
             this.lblLengthMeters.AutoSize = true;
-            this.lblLengthMeters.Location = new System.Drawing.Point(561, 140);
+            this.lblLengthMeters.Location = new System.Drawing.Point(748, 172);
+            this.lblLengthMeters.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLengthMeters.Name = "lblLengthMeters";
-            this.lblLengthMeters.Size = new System.Drawing.Size(38, 13);
+            this.lblLengthMeters.Size = new System.Drawing.Size(51, 17);
             this.lblLengthMeters.TabIndex = 36;
             this.lblLengthMeters.Text = "meters";
             // 
             // txtLocationLength
             // 
-            this.txtLocationLength.Location = new System.Drawing.Point(482, 137);
+            this.txtLocationLength.Location = new System.Drawing.Point(643, 169);
+            this.txtLocationLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationLength.Name = "txtLocationLength";
-            this.txtLocationLength.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationLength.Size = new System.Drawing.Size(96, 22);
             this.txtLocationLength.TabIndex = 35;
             this.txtLocationLength.TextChanged += new System.EventHandler(this.txtLocationLength_TextChanged);
             // 
             // lblLocationLength
             // 
             this.lblLocationLength.AutoSize = true;
-            this.lblLocationLength.Location = new System.Drawing.Point(410, 140);
+            this.lblLocationLength.Location = new System.Drawing.Point(547, 172);
+            this.lblLocationLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationLength.Name = "lblLocationLength";
-            this.lblLocationLength.Size = new System.Drawing.Size(43, 13);
+            this.lblLocationLength.Size = new System.Drawing.Size(56, 17);
             this.lblLocationLength.TabIndex = 34;
             this.lblLocationLength.Text = "Length:";
             // 
             // txtLocationLongitude
             // 
-            this.txtLocationLongitude.Location = new System.Drawing.Point(963, 99);
+            this.txtLocationLongitude.Location = new System.Drawing.Point(1284, 122);
+            this.txtLocationLongitude.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationLongitude.Name = "txtLocationLongitude";
-            this.txtLocationLongitude.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationLongitude.Size = new System.Drawing.Size(96, 22);
             this.txtLocationLongitude.TabIndex = 33;
             this.txtLocationLongitude.TextChanged += new System.EventHandler(this.txtLocationLongitude_TextChanged);
             // 
             // lblLocationLongitude
             // 
             this.lblLocationLongitude.AutoSize = true;
-            this.lblLocationLongitude.Location = new System.Drawing.Point(902, 102);
+            this.lblLocationLongitude.Location = new System.Drawing.Point(1203, 126);
+            this.lblLocationLongitude.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationLongitude.Name = "lblLocationLongitude";
-            this.lblLocationLongitude.Size = new System.Drawing.Size(57, 13);
+            this.lblLocationLongitude.Size = new System.Drawing.Size(75, 17);
             this.lblLocationLongitude.TabIndex = 32;
             this.lblLocationLongitude.Text = "Longitude:";
             // 
             // txtLocationLatitude
             // 
-            this.txtLocationLatitude.Location = new System.Drawing.Point(800, 99);
+            this.txtLocationLatitude.Location = new System.Drawing.Point(1067, 122);
+            this.txtLocationLatitude.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationLatitude.Name = "txtLocationLatitude";
-            this.txtLocationLatitude.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationLatitude.Size = new System.Drawing.Size(96, 22);
             this.txtLocationLatitude.TabIndex = 31;
             this.txtLocationLatitude.TextChanged += new System.EventHandler(this.txtLocationLatitude_TextChanged);
             // 
             // lblLocationLatitude
             // 
             this.lblLocationLatitude.AutoSize = true;
-            this.lblLocationLatitude.Location = new System.Drawing.Point(739, 102);
+            this.lblLocationLatitude.Location = new System.Drawing.Point(985, 126);
+            this.lblLocationLatitude.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationLatitude.Name = "lblLocationLatitude";
-            this.lblLocationLatitude.Size = new System.Drawing.Size(48, 13);
+            this.lblLocationLatitude.Size = new System.Drawing.Size(63, 17);
             this.lblLocationLatitude.TabIndex = 30;
             this.lblLocationLatitude.Text = "Latitude:";
             // 
             // comboLocationType
             // 
             this.comboLocationType.FormattingEnabled = true;
-            this.comboLocationType.Location = new System.Drawing.Point(482, 99);
+            this.comboLocationType.Location = new System.Drawing.Point(643, 122);
+            this.comboLocationType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLocationType.Name = "comboLocationType";
-            this.comboLocationType.Size = new System.Drawing.Size(150, 21);
+            this.comboLocationType.Size = new System.Drawing.Size(199, 24);
             this.comboLocationType.TabIndex = 29;
             this.comboLocationType.SelectedIndexChanged += new System.EventHandler(this.comboLocationType_SelectedIndexChanged);
             // 
             // lblLocationType
             // 
             this.lblLocationType.AutoSize = true;
-            this.lblLocationType.Location = new System.Drawing.Point(410, 102);
+            this.lblLocationType.Location = new System.Drawing.Point(547, 126);
+            this.lblLocationType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationType.Name = "lblLocationType";
-            this.lblLocationType.Size = new System.Drawing.Size(34, 13);
+            this.lblLocationType.Size = new System.Drawing.Size(44, 17);
             this.lblLocationType.TabIndex = 28;
             this.lblLocationType.Text = "Type:";
             // 
             // txtLocationNLC
             // 
-            this.txtLocationNLC.Location = new System.Drawing.Point(963, 61);
+            this.txtLocationNLC.Location = new System.Drawing.Point(1284, 75);
+            this.txtLocationNLC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationNLC.Name = "txtLocationNLC";
-            this.txtLocationNLC.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationNLC.Size = new System.Drawing.Size(96, 22);
             this.txtLocationNLC.TabIndex = 27;
             this.txtLocationNLC.TextChanged += new System.EventHandler(this.txtLocationNLC_TextChanged);
             // 
             // lblLocationNLC
             // 
             this.lblLocationNLC.AutoSize = true;
-            this.lblLocationNLC.Location = new System.Drawing.Point(902, 64);
+            this.lblLocationNLC.Location = new System.Drawing.Point(1203, 79);
+            this.lblLocationNLC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationNLC.Name = "lblLocationNLC";
-            this.lblLocationNLC.Size = new System.Drawing.Size(31, 13);
+            this.lblLocationNLC.Size = new System.Drawing.Size(39, 17);
             this.lblLocationNLC.TabIndex = 26;
             this.lblLocationNLC.Text = "NLC:";
             // 
             // txtLocationSTANME
             // 
-            this.txtLocationSTANME.Location = new System.Drawing.Point(800, 61);
+            this.txtLocationSTANME.Location = new System.Drawing.Point(1067, 75);
+            this.txtLocationSTANME.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationSTANME.Name = "txtLocationSTANME";
-            this.txtLocationSTANME.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationSTANME.Size = new System.Drawing.Size(96, 22);
             this.txtLocationSTANME.TabIndex = 25;
             this.txtLocationSTANME.TextChanged += new System.EventHandler(this.txtLocationSTANME_TextChanged);
             // 
             // lblLocationSTANME
             // 
             this.lblLocationSTANME.AutoSize = true;
-            this.lblLocationSTANME.Location = new System.Drawing.Point(739, 64);
+            this.lblLocationSTANME.Location = new System.Drawing.Point(985, 79);
+            this.lblLocationSTANME.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationSTANME.Name = "lblLocationSTANME";
-            this.lblLocationSTANME.Size = new System.Drawing.Size(55, 13);
+            this.lblLocationSTANME.Size = new System.Drawing.Size(69, 17);
             this.lblLocationSTANME.TabIndex = 24;
             this.lblLocationSTANME.Text = "STANME:";
             // 
             // txtLocationSTANOX
             // 
-            this.txtLocationSTANOX.Location = new System.Drawing.Point(639, 61);
+            this.txtLocationSTANOX.Location = new System.Drawing.Point(852, 75);
+            this.txtLocationSTANOX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationSTANOX.Name = "txtLocationSTANOX";
-            this.txtLocationSTANOX.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationSTANOX.Size = new System.Drawing.Size(96, 22);
             this.txtLocationSTANOX.TabIndex = 23;
             this.txtLocationSTANOX.TextChanged += new System.EventHandler(this.txtLocationSTANOX_TextChanged);
             // 
             // lblLocationSTANOX
             // 
             this.lblLocationSTANOX.AutoSize = true;
-            this.lblLocationSTANOX.Location = new System.Drawing.Point(578, 64);
+            this.lblLocationSTANOX.Location = new System.Drawing.Point(771, 79);
+            this.lblLocationSTANOX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationSTANOX.Name = "lblLocationSTANOX";
-            this.lblLocationSTANOX.Size = new System.Drawing.Size(54, 13);
+            this.lblLocationSTANOX.Size = new System.Drawing.Size(69, 17);
             this.lblLocationSTANOX.TabIndex = 22;
             this.lblLocationSTANOX.Text = "STANOX:";
             // 
             // txtLocationTIPLOC
             // 
-            this.txtLocationTIPLOC.Location = new System.Drawing.Point(482, 61);
+            this.txtLocationTIPLOC.Location = new System.Drawing.Point(643, 75);
+            this.txtLocationTIPLOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationTIPLOC.Name = "txtLocationTIPLOC";
-            this.txtLocationTIPLOC.Size = new System.Drawing.Size(73, 20);
+            this.txtLocationTIPLOC.Size = new System.Drawing.Size(96, 22);
             this.txtLocationTIPLOC.TabIndex = 21;
             this.txtLocationTIPLOC.TextChanged += new System.EventHandler(this.txtLocationTIPLOC_TextChanged);
             // 
             // lblLocationTIPLOC
             // 
             this.lblLocationTIPLOC.AutoSize = true;
-            this.lblLocationTIPLOC.Location = new System.Drawing.Point(410, 64);
+            this.lblLocationTIPLOC.Location = new System.Drawing.Point(547, 79);
+            this.lblLocationTIPLOC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationTIPLOC.Name = "lblLocationTIPLOC";
-            this.lblLocationTIPLOC.Size = new System.Drawing.Size(48, 13);
+            this.lblLocationTIPLOC.Size = new System.Drawing.Size(61, 17);
             this.lblLocationTIPLOC.TabIndex = 20;
             this.lblLocationTIPLOC.Text = "TIPLOC:";
             // 
             // lblLocationActiveTo
             // 
             this.lblLocationActiveTo.AutoSize = true;
-            this.lblLocationActiveTo.Location = new System.Drawing.Point(996, 26);
+            this.lblLocationActiveTo.Location = new System.Drawing.Point(1328, 32);
+            this.lblLocationActiveTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationActiveTo.Name = "lblLocationActiveTo";
-            this.lblLocationActiveTo.Size = new System.Drawing.Size(19, 13);
+            this.lblLocationActiveTo.Size = new System.Drawing.Size(24, 17);
             this.lblLocationActiveTo.TabIndex = 19;
             this.lblLocationActiveTo.Text = "to:";
             // 
             // dateTimeLocationActiveFrom
             // 
             this.dateTimeLocationActiveFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLocationActiveFrom.Location = new System.Drawing.Point(888, 22);
+            this.dateTimeLocationActiveFrom.Location = new System.Drawing.Point(1184, 27);
+            this.dateTimeLocationActiveFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeLocationActiveFrom.Name = "dateTimeLocationActiveFrom";
-            this.dateTimeLocationActiveFrom.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeLocationActiveFrom.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLocationActiveFrom.TabIndex = 16;
             this.dateTimeLocationActiveFrom.ValueChanged += new System.EventHandler(this.dateTimeLocationActiveFrom_ValueChanged);
             // 
@@ -1362,35 +1473,39 @@
             // 
             this.dateTimeLocationActiveTo.Enabled = false;
             this.dateTimeLocationActiveTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLocationActiveTo.Location = new System.Drawing.Point(1019, 22);
+            this.dateTimeLocationActiveTo.Location = new System.Drawing.Point(1359, 27);
+            this.dateTimeLocationActiveTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeLocationActiveTo.Name = "dateTimeLocationActiveTo";
             this.dateTimeLocationActiveTo.ShowCheckBox = true;
-            this.dateTimeLocationActiveTo.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeLocationActiveTo.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLocationActiveTo.TabIndex = 18;
             // 
             // lblLocationActiveFrom
             // 
             this.lblLocationActiveFrom.AutoSize = true;
-            this.lblLocationActiveFrom.Location = new System.Drawing.Point(773, 26);
+            this.lblLocationActiveFrom.Location = new System.Drawing.Point(1031, 32);
+            this.lblLocationActiveFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationActiveFrom.Name = "lblLocationActiveFrom";
-            this.lblLocationActiveFrom.Size = new System.Drawing.Size(110, 13);
+            this.lblLocationActiveFrom.Size = new System.Drawing.Size(144, 17);
             this.lblLocationActiveFrom.TabIndex = 17;
             this.lblLocationActiveFrom.Text = "Location Active From:";
             // 
             // txtLocationName
             // 
-            this.txtLocationName.Location = new System.Drawing.Point(482, 23);
+            this.txtLocationName.Location = new System.Drawing.Point(643, 28);
+            this.txtLocationName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLocationName.Name = "txtLocationName";
-            this.txtLocationName.Size = new System.Drawing.Size(257, 20);
+            this.txtLocationName.Size = new System.Drawing.Size(341, 22);
             this.txtLocationName.TabIndex = 12;
             this.txtLocationName.TextChanged += new System.EventHandler(this.txtLocationName_TextChanged);
             // 
             // lblLocationName
             // 
             this.lblLocationName.AutoSize = true;
-            this.lblLocationName.Location = new System.Drawing.Point(410, 26);
+            this.lblLocationName.Location = new System.Drawing.Point(547, 32);
+            this.lblLocationName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationName.Name = "lblLocationName";
-            this.lblLocationName.Size = new System.Drawing.Size(38, 13);
+            this.lblLocationName.Size = new System.Drawing.Size(49, 17);
             this.lblLocationName.TabIndex = 11;
             this.lblLocationName.Text = "Name:";
             // 
@@ -1398,33 +1513,36 @@
             // 
             this.treeViewLocations.ContextMenuStrip = this.contextMenuStripLocationTreeView;
             this.treeViewLocations.HideSelection = false;
-            this.treeViewLocations.Location = new System.Drawing.Point(19, 64);
+            this.treeViewLocations.Location = new System.Drawing.Point(25, 79);
+            this.treeViewLocations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.treeViewLocations.Name = "treeViewLocations";
-            this.treeViewLocations.Size = new System.Drawing.Size(375, 367);
+            this.treeViewLocations.Size = new System.Drawing.Size(499, 451);
             this.treeViewLocations.TabIndex = 10;
             this.treeViewLocations.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewLocations_AfterSelect);
             this.treeViewLocations.MouseUp += new System.Windows.Forms.MouseEventHandler(this.treeViewLocations_MouseUp);
             // 
             // contextMenuStripLocationTreeView
             // 
+            this.contextMenuStripLocationTreeView.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripLocationTreeView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newChildLocationToolStripMenuItem});
             this.contextMenuStripLocationTreeView.Name = "contextMenuStripLocationTreeView";
-            this.contextMenuStripLocationTreeView.Size = new System.Drawing.Size(173, 26);
+            this.contextMenuStripLocationTreeView.Size = new System.Drawing.Size(214, 28);
             // 
             // newChildLocationToolStripMenuItem
             // 
             this.newChildLocationToolStripMenuItem.Name = "newChildLocationToolStripMenuItem";
-            this.newChildLocationToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.newChildLocationToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
             this.newChildLocationToolStripMenuItem.Text = "New Child Location..";
             this.newChildLocationToolStripMenuItem.Click += new System.EventHandler(this.newChildLocationToolStripMenuItem_Click);
             // 
             // linkLocationEdit
             // 
             this.linkLocationEdit.AutoSize = true;
-            this.linkLocationEdit.Location = new System.Drawing.Point(322, 26);
+            this.linkLocationEdit.Location = new System.Drawing.Point(429, 32);
+            this.linkLocationEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLocationEdit.Name = "linkLocationEdit";
-            this.linkLocationEdit.Size = new System.Drawing.Size(31, 13);
+            this.linkLocationEdit.Size = new System.Drawing.Size(40, 17);
             this.linkLocationEdit.TabIndex = 9;
             this.linkLocationEdit.TabStop = true;
             this.linkLocationEdit.Text = "Edit..";
@@ -1433,9 +1551,10 @@
             // linkLocationNew
             // 
             this.linkLocationNew.AutoSize = true;
-            this.linkLocationNew.Location = new System.Drawing.Point(359, 26);
+            this.linkLocationNew.Location = new System.Drawing.Point(479, 32);
+            this.linkLocationNew.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLocationNew.Name = "linkLocationNew";
-            this.linkLocationNew.Size = new System.Drawing.Size(35, 13);
+            this.linkLocationNew.Size = new System.Drawing.Size(43, 17);
             this.linkLocationNew.TabIndex = 8;
             this.linkLocationNew.TabStop = true;
             this.linkLocationNew.Text = "New..";
@@ -1444,28 +1563,31 @@
             // lblLocationLocation
             // 
             this.lblLocationLocation.AutoSize = true;
-            this.lblLocationLocation.Location = new System.Drawing.Point(16, 26);
+            this.lblLocationLocation.Location = new System.Drawing.Point(21, 32);
+            this.lblLocationLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationLocation.Name = "lblLocationLocation";
-            this.lblLocationLocation.Size = new System.Drawing.Size(51, 13);
+            this.lblLocationLocation.Size = new System.Drawing.Size(66, 17);
             this.lblLocationLocation.TabIndex = 7;
             this.lblLocationLocation.Text = "Location:";
             // 
             // comboLocationLocation
             // 
             this.comboLocationLocation.FormattingEnabled = true;
-            this.comboLocationLocation.Location = new System.Drawing.Point(91, 23);
+            this.comboLocationLocation.Location = new System.Drawing.Point(121, 28);
+            this.comboLocationLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLocationLocation.Name = "comboLocationLocation";
-            this.comboLocationLocation.Size = new System.Drawing.Size(225, 21);
+            this.comboLocationLocation.Size = new System.Drawing.Size(299, 24);
             this.comboLocationLocation.TabIndex = 6;
             this.comboLocationLocation.SelectedIndexChanged += new System.EventHandler(this.comboLocationLocation_SelectedIndexChanged);
             // 
             // tabPageTraction
             // 
             this.tabPageTraction.Controls.Add(this.groupBoxTractionClass);
-            this.tabPageTraction.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTraction.Location = new System.Drawing.Point(4, 25);
+            this.tabPageTraction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageTraction.Name = "tabPageTraction";
-            this.tabPageTraction.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTraction.Size = new System.Drawing.Size(1162, 477);
+            this.tabPageTraction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageTraction.Size = new System.Drawing.Size(1552, 590);
             this.tabPageTraction.TabIndex = 2;
             this.tabPageTraction.Text = "Traction";
             this.tabPageTraction.UseVisualStyleBackColor = true;
@@ -1476,9 +1598,11 @@
             this.groupBoxTractionClass.Controls.Add(this.listViewTractionClasses);
             this.groupBoxTractionClass.Controls.Add(this.comboTractionType);
             this.groupBoxTractionClass.Controls.Add(this.lblTractionType);
-            this.groupBoxTractionClass.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxTractionClass.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxTractionClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxTractionClass.Name = "groupBoxTractionClass";
-            this.groupBoxTractionClass.Size = new System.Drawing.Size(394, 447);
+            this.groupBoxTractionClass.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxTractionClass.Size = new System.Drawing.Size(525, 550);
             this.groupBoxTractionClass.TabIndex = 0;
             this.groupBoxTractionClass.TabStop = false;
             this.groupBoxTractionClass.Text = "Class";
@@ -1500,14 +1624,16 @@
             this.panelTractionClassDetails.Controls.Add(this.lblTractionTractionClassInServiceEndDate);
             this.panelTractionClassDetails.Controls.Add(this.dateTimeTractionTractionClassStartDate);
             this.panelTractionClassDetails.Controls.Add(this.lblTractionTractionClassInServiceStartDate);
-            this.panelTractionClassDetails.Location = new System.Drawing.Point(6, 165);
+            this.panelTractionClassDetails.Location = new System.Drawing.Point(8, 203);
+            this.panelTractionClassDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTractionClassDetails.Name = "panelTractionClassDetails";
-            this.panelTractionClassDetails.Size = new System.Drawing.Size(382, 276);
+            this.panelTractionClassDetails.Size = new System.Drawing.Size(509, 340);
             this.panelTractionClassDetails.TabIndex = 3;
             // 
             // numericUpDownTractionTractionClassRA
             // 
-            this.numericUpDownTractionTractionClassRA.Location = new System.Drawing.Point(330, 226);
+            this.numericUpDownTractionTractionClassRA.Location = new System.Drawing.Point(440, 278);
+            this.numericUpDownTractionTractionClassRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownTractionTractionClassRA.Maximum = new decimal(new int[] {
             9,
             0,
@@ -1519,7 +1645,7 @@
             0,
             0});
             this.numericUpDownTractionTractionClassRA.Name = "numericUpDownTractionTractionClassRA";
-            this.numericUpDownTractionTractionClassRA.Size = new System.Drawing.Size(43, 20);
+            this.numericUpDownTractionTractionClassRA.Size = new System.Drawing.Size(57, 22);
             this.numericUpDownTractionTractionClassRA.TabIndex = 32;
             this.numericUpDownTractionTractionClassRA.Value = new decimal(new int[] {
             1,
@@ -1530,9 +1656,10 @@
             // lblTractionTractionClassRA
             // 
             this.lblTractionTractionClassRA.AutoSize = true;
-            this.lblTractionTractionClassRA.Location = new System.Drawing.Point(221, 228);
+            this.lblTractionTractionClassRA.Location = new System.Drawing.Point(295, 281);
+            this.lblTractionTractionClassRA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassRA.Name = "lblTractionTractionClassRA";
-            this.lblTractionTractionClassRA.Size = new System.Drawing.Size(91, 13);
+            this.lblTractionTractionClassRA.Size = new System.Drawing.Size(120, 17);
             this.lblTractionTractionClassRA.TabIndex = 31;
             this.lblTractionTractionClassRA.Text = "Route Availability:";
             // 
@@ -1544,57 +1671,63 @@
             0,
             0,
             131072});
-            this.numericUpDownTractionTractionClassLength.Location = new System.Drawing.Point(100, 226);
+            this.numericUpDownTractionTractionClassLength.Location = new System.Drawing.Point(133, 278);
+            this.numericUpDownTractionTractionClassLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownTractionTractionClassLength.Maximum = new decimal(new int[] {
             300,
             0,
             0,
             0});
             this.numericUpDownTractionTractionClassLength.Name = "numericUpDownTractionTractionClassLength";
-            this.numericUpDownTractionTractionClassLength.Size = new System.Drawing.Size(66, 20);
+            this.numericUpDownTractionTractionClassLength.Size = new System.Drawing.Size(88, 22);
             this.numericUpDownTractionTractionClassLength.TabIndex = 30;
             // 
             // lblTractionTractionClassLength
             // 
             this.lblTractionTractionClassLength.AutoSize = true;
-            this.lblTractionTractionClassLength.Location = new System.Drawing.Point(12, 228);
+            this.lblTractionTractionClassLength.Location = new System.Drawing.Point(16, 281);
+            this.lblTractionTractionClassLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassLength.Name = "lblTractionTractionClassLength";
-            this.lblTractionTractionClassLength.Size = new System.Drawing.Size(43, 13);
+            this.lblTractionTractionClassLength.Size = new System.Drawing.Size(56, 17);
             this.lblTractionTractionClassLength.TabIndex = 29;
             this.lblTractionTractionClassLength.Text = "Length:";
             // 
             // lblTractionTractionClassParent
             // 
             this.lblTractionTractionClassParent.AutoSize = true;
-            this.lblTractionTractionClassParent.Location = new System.Drawing.Point(12, 258);
+            this.lblTractionTractionClassParent.Location = new System.Drawing.Point(16, 318);
+            this.lblTractionTractionClassParent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassParent.Name = "lblTractionTractionClassParent";
-            this.lblTractionTractionClassParent.Size = new System.Drawing.Size(38, 13);
+            this.lblTractionTractionClassParent.Size = new System.Drawing.Size(50, 17);
             this.lblTractionTractionClassParent.TabIndex = 28;
             this.lblTractionTractionClassParent.Text = "Parent";
             // 
             // comboTractionTractionClassType
             // 
             this.comboTractionTractionClassType.FormattingEnabled = true;
-            this.comboTractionTractionClassType.Location = new System.Drawing.Point(100, 194);
+            this.comboTractionTractionClassType.Location = new System.Drawing.Point(133, 239);
+            this.comboTractionTractionClassType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboTractionTractionClassType.Name = "comboTractionTractionClassType";
-            this.comboTractionTractionClassType.Size = new System.Drawing.Size(121, 21);
+            this.comboTractionTractionClassType.Size = new System.Drawing.Size(160, 24);
             this.comboTractionTractionClassType.TabIndex = 27;
             this.comboTractionTractionClassType.SelectedIndexChanged += new System.EventHandler(this.comboTractionTractionClassType_SelectedIndexChanged);
             // 
             // lblTractionTractionClassType
             // 
             this.lblTractionTractionClassType.AutoSize = true;
-            this.lblTractionTractionClassType.Location = new System.Drawing.Point(10, 197);
+            this.lblTractionTractionClassType.Location = new System.Drawing.Point(13, 242);
+            this.lblTractionTractionClassType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassType.Name = "lblTractionTractionClassType";
-            this.lblTractionTractionClassType.Size = new System.Drawing.Size(34, 13);
+            this.lblTractionTractionClassType.Size = new System.Drawing.Size(44, 17);
             this.lblTractionTractionClassType.TabIndex = 26;
             this.lblTractionTractionClassType.Text = "Type:";
             // 
             // txtTractionTractionClassDescription
             // 
-            this.txtTractionTractionClassDescription.Location = new System.Drawing.Point(102, 42);
+            this.txtTractionTractionClassDescription.Location = new System.Drawing.Point(136, 52);
+            this.txtTractionTractionClassDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTractionTractionClassDescription.Name = "txtTractionTractionClassDescription";
-            this.txtTractionTractionClassDescription.Size = new System.Drawing.Size(271, 98);
+            this.txtTractionTractionClassDescription.Size = new System.Drawing.Size(360, 120);
             this.txtTractionTractionClassDescription.TabIndex = 25;
             this.txtTractionTractionClassDescription.Text = "";
             this.txtTractionTractionClassDescription.TextChanged += new System.EventHandler(this.txtTractionTractionClassDescription_TextChanged);
@@ -1602,17 +1735,19 @@
             // lblTractionTractionClassDescription
             // 
             this.lblTractionTractionClassDescription.AutoSize = true;
-            this.lblTractionTractionClassDescription.Location = new System.Drawing.Point(12, 39);
+            this.lblTractionTractionClassDescription.Location = new System.Drawing.Point(16, 48);
+            this.lblTractionTractionClassDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassDescription.Name = "lblTractionTractionClassDescription";
-            this.lblTractionTractionClassDescription.Size = new System.Drawing.Size(63, 13);
+            this.lblTractionTractionClassDescription.Size = new System.Drawing.Size(83, 17);
             this.lblTractionTractionClassDescription.TabIndex = 24;
             this.lblTractionTractionClassDescription.Text = "Description:";
             // 
             // txtTractionTractionClassName
             // 
-            this.txtTractionTractionClassName.Location = new System.Drawing.Point(102, 6);
+            this.txtTractionTractionClassName.Location = new System.Drawing.Point(136, 7);
+            this.txtTractionTractionClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTractionTractionClassName.Name = "txtTractionTractionClassName";
-            this.txtTractionTractionClassName.Size = new System.Drawing.Size(137, 20);
+            this.txtTractionTractionClassName.Size = new System.Drawing.Size(181, 22);
             this.txtTractionTractionClassName.TabIndex = 23;
             this.txtTractionTractionClassName.TextChanged += new System.EventHandler(this.txtTractionTractionClassName_TextChanged);
             this.txtTractionTractionClassName.Validating += new System.ComponentModel.CancelEventHandler(this.txtTractionTractionClassName_Validating);
@@ -1620,19 +1755,21 @@
             // lblTractionTractionClassName
             // 
             this.lblTractionTractionClassName.AutoSize = true;
-            this.lblTractionTractionClassName.Location = new System.Drawing.Point(12, 9);
+            this.lblTractionTractionClassName.Location = new System.Drawing.Point(16, 11);
+            this.lblTractionTractionClassName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassName.Name = "lblTractionTractionClassName";
-            this.lblTractionTractionClassName.Size = new System.Drawing.Size(38, 13);
+            this.lblTractionTractionClassName.Size = new System.Drawing.Size(49, 17);
             this.lblTractionTractionClassName.TabIndex = 22;
             this.lblTractionTractionClassName.Text = "Name:";
             // 
             // dateTimeTractionTractionClassEndDate
             // 
             this.dateTimeTractionTractionClassEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeTractionTractionClassEndDate.Location = new System.Drawing.Point(270, 155);
+            this.dateTimeTractionTractionClassEndDate.Location = new System.Drawing.Point(360, 191);
+            this.dateTimeTractionTractionClassEndDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeTractionTractionClassEndDate.Name = "dateTimeTractionTractionClassEndDate";
             this.dateTimeTractionTractionClassEndDate.ShowCheckBox = true;
-            this.dateTimeTractionTractionClassEndDate.Size = new System.Drawing.Size(103, 20);
+            this.dateTimeTractionTractionClassEndDate.Size = new System.Drawing.Size(136, 22);
             this.dateTimeTractionTractionClassEndDate.TabIndex = 21;
             this.dateTimeTractionTractionClassEndDate.ValueChanged += new System.EventHandler(this.dateTimeTractionTractionClassEndDate_ValueChanged);
             this.dateTimeTractionTractionClassEndDate.Validating += new System.ComponentModel.CancelEventHandler(this.dateTimeTractionTractionClassEndDate_Validating);
@@ -1640,18 +1777,20 @@
             // lblTractionTractionClassInServiceEndDate
             // 
             this.lblTractionTractionClassInServiceEndDate.AutoSize = true;
-            this.lblTractionTractionClassInServiceEndDate.Location = new System.Drawing.Point(221, 161);
+            this.lblTractionTractionClassInServiceEndDate.Location = new System.Drawing.Point(295, 198);
+            this.lblTractionTractionClassInServiceEndDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassInServiceEndDate.Name = "lblTractionTractionClassInServiceEndDate";
-            this.lblTractionTractionClassInServiceEndDate.Size = new System.Drawing.Size(29, 13);
+            this.lblTractionTractionClassInServiceEndDate.Size = new System.Drawing.Size(37, 17);
             this.lblTractionTractionClassInServiceEndDate.TabIndex = 20;
             this.lblTractionTractionClassInServiceEndDate.Text = "End:";
             // 
             // dateTimeTractionTractionClassStartDate
             // 
             this.dateTimeTractionTractionClassStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeTractionTractionClassStartDate.Location = new System.Drawing.Point(100, 155);
+            this.dateTimeTractionTractionClassStartDate.Location = new System.Drawing.Point(133, 191);
+            this.dateTimeTractionTractionClassStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeTractionTractionClassStartDate.Name = "dateTimeTractionTractionClassStartDate";
-            this.dateTimeTractionTractionClassStartDate.Size = new System.Drawing.Size(103, 20);
+            this.dateTimeTractionTractionClassStartDate.Size = new System.Drawing.Size(136, 22);
             this.dateTimeTractionTractionClassStartDate.TabIndex = 19;
             this.dateTimeTractionTractionClassStartDate.ValueChanged += new System.EventHandler(this.dateTimeTractionTractionClassStartDate_ValueChanged);
             this.dateTimeTractionTractionClassStartDate.Validating += new System.ComponentModel.CancelEventHandler(this.dateTimeTractionTractionClassStartDate_Validating);
@@ -1659,9 +1798,10 @@
             // lblTractionTractionClassInServiceStartDate
             // 
             this.lblTractionTractionClassInServiceStartDate.AutoSize = true;
-            this.lblTractionTractionClassInServiceStartDate.Location = new System.Drawing.Point(10, 161);
+            this.lblTractionTractionClassInServiceStartDate.Location = new System.Drawing.Point(13, 198);
+            this.lblTractionTractionClassInServiceStartDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionTractionClassInServiceStartDate.Name = "lblTractionTractionClassInServiceStartDate";
-            this.lblTractionTractionClassInServiceStartDate.Size = new System.Drawing.Size(83, 13);
+            this.lblTractionTractionClassInServiceStartDate.Size = new System.Drawing.Size(108, 17);
             this.lblTractionTractionClassInServiceStartDate.TabIndex = 18;
             this.lblTractionTractionClassInServiceStartDate.Text = "In Service Start:";
             // 
@@ -1674,10 +1814,11 @@
             this.columnHeaderClassEndYMDV});
             this.listViewTractionClasses.FullRowSelect = true;
             this.listViewTractionClasses.HideSelection = false;
-            this.listViewTractionClasses.Location = new System.Drawing.Point(19, 64);
+            this.listViewTractionClasses.Location = new System.Drawing.Point(25, 79);
+            this.listViewTractionClasses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewTractionClasses.MultiSelect = false;
             this.listViewTractionClasses.Name = "listViewTractionClasses";
-            this.listViewTractionClasses.Size = new System.Drawing.Size(358, 95);
+            this.listViewTractionClasses.Size = new System.Drawing.Size(476, 116);
             this.listViewTractionClasses.TabIndex = 2;
             this.listViewTractionClasses.UseCompatibleStateImageBehavior = false;
             this.listViewTractionClasses.View = System.Windows.Forms.View.Details;
@@ -1706,31 +1847,35 @@
             // comboTractionType
             // 
             this.comboTractionType.FormattingEnabled = true;
-            this.comboTractionType.Location = new System.Drawing.Point(86, 23);
+            this.comboTractionType.Location = new System.Drawing.Point(115, 28);
+            this.comboTractionType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboTractionType.Name = "comboTractionType";
-            this.comboTractionType.Size = new System.Drawing.Size(121, 21);
+            this.comboTractionType.Size = new System.Drawing.Size(160, 24);
             this.comboTractionType.TabIndex = 1;
             this.comboTractionType.SelectedIndexChanged += new System.EventHandler(this.comboTractionType_SelectedIndexChanged);
             // 
             // lblTractionType
             // 
             this.lblTractionType.AutoSize = true;
-            this.lblTractionType.Location = new System.Drawing.Point(16, 26);
+            this.lblTractionType.Location = new System.Drawing.Point(21, 32);
+            this.lblTractionType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTractionType.Name = "lblTractionType";
-            this.lblTractionType.Size = new System.Drawing.Size(34, 13);
+            this.lblTractionType.Size = new System.Drawing.Size(44, 17);
             this.lblTractionType.TabIndex = 0;
             this.lblTractionType.Text = "Type:";
             // 
             // statusStripMain
             // 
             this.statusStripMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.statusStripMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTab,
             this.toolStripRecord,
             this.toolStripStatus});
-            this.statusStripMain.Location = new System.Drawing.Point(0, 553);
+            this.statusStripMain.Location = new System.Drawing.Point(0, 679);
             this.statusStripMain.Name = "statusStripMain";
-            this.statusStripMain.Size = new System.Drawing.Size(1194, 22);
+            this.statusStripMain.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStripMain.Size = new System.Drawing.Size(1592, 29);
             this.statusStripMain.SizingGrip = false;
             this.statusStripMain.TabIndex = 1;
             this.statusStripMain.Text = "Status Bar";
@@ -1740,7 +1885,7 @@
             this.toolStripTab.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.toolStripTab.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.toolStripTab.Name = "toolStripTab";
-            this.toolStripTab.Size = new System.Drawing.Size(43, 17);
+            this.toolStripTab.Size = new System.Drawing.Size(61, 24);
             this.toolStripTab.Text = "Logical";
             this.toolStripTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1749,7 +1894,7 @@
             this.toolStripRecord.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.toolStripRecord.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.toolStripRecord.Name = "toolStripRecord";
-            this.toolStripRecord.Size = new System.Drawing.Size(80, 17);
+            this.toolStripRecord.Size = new System.Drawing.Size(110, 24);
             this.toolStripRecord.Text = "None Selected";
             this.toolStripRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1759,13 +1904,14 @@
             this.toolStripStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripStatus.ImageTransparentColor = System.Drawing.Color.White;
             this.toolStripStatus.Name = "toolStripStatus";
-            this.toolStripStatus.Size = new System.Drawing.Size(1056, 17);
+            this.toolStripStatus.Size = new System.Drawing.Size(1401, 24);
             this.toolStripStatus.Spring = true;
             this.toolStripStatus.Text = "Status";
             this.toolStripStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // menuStripMain
             // 
+            this.menuStripMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripLocationFile,
             this.ToolStripTractionFile,
@@ -1773,7 +1919,8 @@
             this.ToolStripTractionTraction});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(1194, 24);
+            this.menuStripMain.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStripMain.Size = new System.Drawing.Size(1592, 28);
             this.menuStripMain.TabIndex = 2;
             this.menuStripMain.Text = "menuStrip1";
             // 
@@ -1784,25 +1931,26 @@
             this.toolStripMenuItem1,
             this.saveLocationToolStripMenuItem});
             this.ToolStripLocationFile.Name = "ToolStripLocationFile";
-            this.ToolStripLocationFile.Size = new System.Drawing.Size(35, 20);
+            this.ToolStripLocationFile.Size = new System.Drawing.Size(44, 24);
             this.ToolStripLocationFile.Text = "&File";
             // 
             // newLocationToolStripMenuItem
             // 
             this.newLocationToolStripMenuItem.Name = "newLocationToolStripMenuItem";
-            this.newLocationToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.newLocationToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
             this.newLocationToolStripMenuItem.Text = "New Location..";
+            this.newLocationToolStripMenuItem.Click += new System.EventHandler(this.newLocationToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(184, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(229, 6);
             // 
             // saveLocationToolStripMenuItem
             // 
             this.saveLocationToolStripMenuItem.Name = "saveLocationToolStripMenuItem";
             this.saveLocationToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+S";
-            this.saveLocationToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.saveLocationToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
             this.saveLocationToolStripMenuItem.Text = "Save Location..";
             this.saveLocationToolStripMenuItem.Click += new System.EventHandler(this.saveLocationToolStripMenuItem_Click);
             // 
@@ -1813,7 +1961,7 @@
             this.toolStripMenuItem2,
             this.saveTractionClassToolStripMenuItem});
             this.ToolStripTractionFile.Name = "ToolStripTractionFile";
-            this.ToolStripTractionFile.Size = new System.Drawing.Size(35, 20);
+            this.ToolStripTractionFile.Size = new System.Drawing.Size(44, 24);
             this.ToolStripTractionFile.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -1822,31 +1970,31 @@
             this.tractionClassToolStripMenuItem,
             this.tractionToolStripMenuItem1});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
             this.newToolStripMenuItem.Text = "New..";
             // 
             // tractionClassToolStripMenuItem
             // 
             this.tractionClassToolStripMenuItem.Name = "tractionClassToolStripMenuItem";
-            this.tractionClassToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.tractionClassToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.tractionClassToolStripMenuItem.Text = "Traction Class..";
             // 
             // tractionToolStripMenuItem1
             // 
             this.tractionToolStripMenuItem1.Name = "tractionToolStripMenuItem1";
-            this.tractionToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.tractionToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
             this.tractionToolStripMenuItem1.Text = "Traction";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(211, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(262, 6);
             // 
             // saveTractionClassToolStripMenuItem
             // 
             this.saveTractionClassToolStripMenuItem.Name = "saveTractionClassToolStripMenuItem";
             this.saveTractionClassToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveTractionClassToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.saveTractionClassToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
             this.saveTractionClassToolStripMenuItem.Text = "Save Traction Class..";
             // 
             // ToolStripLocationLocation
@@ -1854,33 +2002,34 @@
             this.ToolStripLocationLocation.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editPathsToolStripMenuItem});
             this.ToolStripLocationLocation.Name = "ToolStripLocationLocation";
-            this.ToolStripLocationLocation.Size = new System.Drawing.Size(59, 20);
+            this.ToolStripLocationLocation.Size = new System.Drawing.Size(78, 24);
             this.ToolStripLocationLocation.Text = "Location";
             // 
             // editPathsToolStripMenuItem
             // 
             this.editPathsToolStripMenuItem.Name = "editPathsToolStripMenuItem";
-            this.editPathsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editPathsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.editPathsToolStripMenuItem.Text = "Edit Paths..";
             this.editPathsToolStripMenuItem.Click += new System.EventHandler(this.editPathsToolStripMenuItem_Click);
             // 
             // ToolStripTractionTraction
             // 
             this.ToolStripTractionTraction.Name = "ToolStripTractionTraction";
-            this.ToolStripTractionTraction.Size = new System.Drawing.Size(58, 20);
+            this.ToolStripTractionTraction.Size = new System.Drawing.Size(74, 24);
             this.ToolStripTractionTraction.Text = "Traction";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 575);
+            this.ClientSize = new System.Drawing.Size(1592, 708);
             this.Controls.Add(this.statusStripMain);
             this.Controls.Add(this.menuStripMain);
             this.Controls.Add(this.tabControlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStripMain;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";

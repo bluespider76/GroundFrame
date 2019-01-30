@@ -829,7 +829,7 @@ namespace Horizon4.GF.Network
                         SqlDataReader SQLReader = cmd.ExecuteReader();
 
                         //If no record are found then throw an error. This should never happen
-                        if (SQLReader.HasRows == false) { throw new Exception(string.Format(@"Location with System ID {0} doesn't exist on YMDV {1} in the GF Database", SystemLocation.ID, YMDV.Value)); };
+                        //if (SQLReader.HasRows == false) { throw new Exception(string.Format(@"Location with System ID {0} doesn't exist on YMDV {1} in the GF Database", SystemLocation.ID, YMDV.Value)); };
 
                         //Parse the record returned by the reader
                         while (SQLReader.Read())

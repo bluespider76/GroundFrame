@@ -762,6 +762,7 @@
             this.dateTimeLocationActiveFrom.Name = "dateTimeLocationActiveFrom";
             this.dateTimeLocationActiveFrom.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLocationActiveFrom.TabIndex = 67;
+            this.dateTimeLocationActiveFrom.ValueChanged += new System.EventHandler(this.dateTimeLocationActiveFrom_ValueChanged);
             // 
             // dateTimeLocationActiveTo
             // 
@@ -895,20 +896,20 @@
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(178, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(164, 6);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 

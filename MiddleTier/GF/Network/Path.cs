@@ -464,7 +464,7 @@ namespace Horizon4.GF.Network
         {
             this._ID = 0;
             this._PathID = SystemPath;
-            this._RecordStartYMDV = new YMDV(18500101);
+            this._RecordStartYMDV = new YMDV(DateTime.Today);
             this._RecordEndYMDV = new YMDV(0);
             this._RouteAvailability = 7;
             this._Score = 10;
@@ -597,9 +597,10 @@ namespace Horizon4.GF.Network
                     using (SqlCommand cmd = new SqlCommand("network.Usp_SAVE_TPATH", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        //cmd.Parameters.AddWithValue("@itemno", this._ID);
+                        cmd.Parameters.AddWithValue("@itemno", this._ID);
+                        cmd.Parameters.AddWithValue("@start_ymdv", this._RecordStartYMDV.Value);
+                        cmd.Parameters.AddWithValue("@end_ymdv", this._RecordEndYMDV.Value);
                         cmd.Parameters.AddWithValue("@path_itemno", this._PathID.ID);
-                        cmd.Parameters.AddWithValue("@ymdv", this._RecordStartYMDV.Value);
                         cmd.Parameters.AddWithValue("@start_location_itemno", this._Start.ID);
                         cmd.Parameters.AddWithValue("@end_location_itemno", this._End.ID);
                         cmd.Parameters.AddWithValue("@distance", this._Distance.Meters);

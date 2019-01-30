@@ -797,6 +797,11 @@ namespace Horizon4.GFDataEditor
 
         #region Events
 
+        private void newLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewLocation(_SelectedSystemLocation);
+        }
+
         private void comboLocationLocation_SelectedIndexChanged(object sender, EventArgs e)
         {
             HandleLocationComboSelection();

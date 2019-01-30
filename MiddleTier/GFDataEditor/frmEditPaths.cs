@@ -567,9 +567,11 @@ namespace Horizon4.GFDataEditor
 
         private void dateTimeLocationActiveFrom_ValueChanged(object sender, EventArgs e)
         {
+            _SelectedPath.RecordStartYMDV = new YMDV(dateTimeLocationActiveFrom.Value);
             PopulateStartAndEndLocationCollections();
             PopulateStartLocationCombo();
             PopulateEndLocationCombo();
+            PathHasChanged = true;
         }
 
         private void listViewPaths_SelectedIndexChanged(object sender, EventArgs e)

@@ -89,7 +89,7 @@ namespace Sandpit
             Common.Tokens = new TokenCollection();
             Location Start = new Location(23);
             Location End = new Location(2);
-            YMDV YMDV = new YMDV(19000101);
+            YMDV YMDV = new YMDV(19820101);
 
             Console.WriteLine("Dijkstra:");
             List<Node> Test = ShortestPath.Calculate(Start, End, YMDV, ShortestPathMethod.DijkstraSearch);
