@@ -3,8 +3,8 @@ MiddleTier/.vs/Horizon4/v15/.suo
 *.ide
 MiddleTier/GF/bin/
 MiddleTier/GF/obj/
-MiddleTier/GFDataEditor/GF/bin/
-MiddleTier/GFDataEditor/GF/obj/
+MiddleTier/GFDataEditor/bin/
+MiddleTier/GFDataEditor/obj/
 MiddleTier/Sandpit/bin/
 MiddleTier/Sandpit/obj/
 MiddleTier/GF.Build/bin/
