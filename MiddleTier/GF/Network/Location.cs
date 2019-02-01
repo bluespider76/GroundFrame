@@ -73,10 +73,8 @@ namespace Horizon4.GF.Network
         /// Saves the System Location record to the GroundFrame DB
         /// </summary>
         /// <returns></returns>
-        public DBResponse SaveToDB()
+        public GFResponse SaveToDB()
         {
-            DBResponse Response = new DBResponse(0, AuditType.Information);
-
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
                 try
@@ -95,17 +93,14 @@ namespace Horizon4.GF.Network
                             this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                         }
 
-                        return Audit.WriteLog(AuditType.Information, string.Format(@"SystemLocation {0} saved to the database:-", this._ID));
+                        return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"SystemLocation {0} sucessfully saved to the database:-", this.Name)));
                     }
                 }
                 catch (Exception Ex)
                 {
-                    Response = Audit.WriteLog(AuditType.Error, string.Format(@"Error saving SystemLocation {0} to the database:- {1}", this._Name, Ex.GetAuditMessage()), 1, this);
-                    Response.Exception = new Exception(string.Format("Error trying to save SystemLocation {0} to the GF Database", this._Name), Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving SystemLocation {0} to the database", this.Name), Ex), 1, this);
                 }
             }
-
-            return Response;
         }
 
         #endregion Methods
@@ -363,7 +358,7 @@ namespace Horizon4.GF.Network
         /// <summary>
         /// Gets the record end YMDV
         /// </summary>
-        public YMDV RecordEndYMDV { get { return this._RecordEndYMDV; } }
+        public YMDV RecordEndYMDV { get { return this._RecordEndYMDV; } set { this._RecordEndYMDV = value; } }
 
         /// <summary>
         /// Gets a flag to indicate whether the location is a child location
@@ -489,20 +484,19 @@ namespace Horizon4.GF.Network
         /// Saves the location record to the GroundFrame DB
         /// </summary>
         /// <returns></returns>
-        public DBResponse SaveToDB()
+        public GFResponse SaveToDB()
         {
-            DBResponse Response = new DBResponse(0, AuditType.Information);
-
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
                 try
                 {
                     conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("network.Usp_SAVE_LOCATION", conn))
+                    using (SqlCommand cmd = new SqlCommand("network.Usp_SAVE_TLOCATION", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@itemno", this._ID);
-                        cmd.Parameters.AddWithValue("@ymdv", this._RecordStartYMDV.Value);
+                        cmd.Parameters.AddWithValue("@start_ymdv", this._RecordStartYMDV.Value);
+                        cmd.Parameters.AddWithValue("@end_ymdv", this._RecordEndYMDV.Value);
                         cmd.Parameters.AddWithValue("@location_itemno", IsChild == true ? (object)DBNull.Value : this._SystemLocation.ID);
                         cmd.Parameters.AddWithValue("@name", this._Name);
                         cmd.Parameters.AddWithValue("@tiploc", IsChild == true ? (object)DBNull.Value : string.IsNullOrEmpty(this._TIPLOC) ? (object)DBNull.Value : this._TIPLOC);
@@ -535,17 +529,14 @@ namespace Horizon4.GF.Network
                             this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                         }
 
-                        return Audit.WriteLog(AuditType.Information, string.Format(@"Location {0} saved to the database:-", this._ID));
+                        return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"Location {0} saved to the database:-", this.Name)));
                     }
                 }
                 catch (Exception Ex)
                 {
-                    Response = Audit.WriteLog(AuditType.Error, string.Format(@"Error saving Location {0} to the database:- {1}", this._Name, Ex.GetAuditMessage()), 1, this);
-                    Response.Exception = new Exception(string.Format("Error trying to save Location {0} to the GF Database", this._Name), Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving Location {0} to the database", this.Name), Ex), 1, this);
                 }
             }
-
-            return Response;
         }
 
         /// <summary>
@@ -812,7 +803,7 @@ namespace Horizon4.GF.Network
         /// </summary>
         /// <param name="Location"></param>
         /// <param name="YMDV"></param>
-        private void GetLocationBySystemLocationAndYMDVFromDatabase(SystemLocation SystemLocation, YMDV YMDV, bool GetChildren)
+        private GFResponse GetLocationBySystemLocationAndYMDVFromDatabase(SystemLocation SystemLocation, YMDV YMDV, bool GetChildren)
         {
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
@@ -828,19 +819,18 @@ namespace Horizon4.GF.Network
                         cmd.Parameters.AddWithValue("@ymdv", YMDV.Value);
                         SqlDataReader SQLReader = cmd.ExecuteReader();
 
-                        //If no record are found then throw an error. This should never happen
-                        //if (SQLReader.HasRows == false) { throw new Exception(string.Format(@"Location with System ID {0} doesn't exist on YMDV {1} in the GF Database", SystemLocation.ID, YMDV.Value)); };
-
                         //Parse the record returned by the reader
                         while (SQLReader.Read())
                         {
                             _Locations.Add(new Location(SQLReader, GetChildren));
                         }
                     }
+
+                    return new GFResponse(AuditType.Information, string.Format("Locations with System Loction ID {0} retreived successfully from the GF Database", SystemLocation.ID));
                 }
                 catch (Exception Ex)
                 {
-                    throw new Exception(string.Format("Error trying to retreive all the Locations with System Loction ID {0} from the GF Database", SystemLocation.ID), Ex);
+                    return new GFResponse(AuditType.Error, string.Format("Error trying to retreive all the Locations with System Loction ID {0} from the GF Database", SystemLocation.ID), Ex);
                 }
             }
         }

@@ -297,8 +297,8 @@ namespace Horizon4.GFDataEditor
                     //Initialise Status Bar
                     toolStripTab.Text = "Sector";
                     toolStripStatus.Image = Resources.error;
-                    toolStripStatus.Text = "Error:- Please see log for details";
-                    Audit.WriteLog(AuditType.Error, Ex.GetAuditMessage());
+                    GFResponse Reponse = Audit.WriteLog(new GFResponse(AuditType.Error, "The application experienced an error at frmMain.SaveSectorToDB()", Ex));
+                    toolStripStatus.Text = string.Format("Error:- Please see log ID {0} for details", Reponse.AuditID);
                 }
 
             }
@@ -353,8 +353,9 @@ namespace Horizon4.GFDataEditor
                     //Initialise Status Bar
                     toolStripTab.Text = "Region";
                     toolStripStatus.Image = Resources.error;
-                    toolStripStatus.Text = "Error:- Please see log for details";
-                    Audit.WriteLog(AuditType.Error, Ex.GetAuditMessage());
+
+                    GFResponse Response = Audit.WriteLog(new GFResponse(AuditType.Error, "GF Data Editor experienced an error tring to save a region", Ex));
+                    toolStripStatus.Text = string.Format("Error:- Please see log ID {0} for details", Response.AuditID);
                 }
 
             }
@@ -363,7 +364,6 @@ namespace Horizon4.GFDataEditor
                 toolStripTab.Text = "Region";
                 toolStripStatus.Image = Resources.warning;
                 toolStripStatus.Text = "Validation errors found. Please review";
-
                 frmValidationErrors ErrorsForm = new frmValidationErrors(_SelectedRegion.ValidateData(), string.Format(@"Region {0} Data Validation Errors", _SelectedRegion.Name));
                 ErrorsForm.ShowDialog();
             };

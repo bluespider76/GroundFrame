@@ -241,7 +241,7 @@ namespace Horizon4.GFDataEditor
                 }
                 else
                 {
-                    DBResponse Response;
+                    GFResponse Response;
 
                     try
                     {
@@ -280,16 +280,15 @@ namespace Horizon4.GFDataEditor
                             //Something has errored when saving the object. Show a nice error.
                             toolStripDepotRecord.Text = _SelectedDepot.Code;
                             toolStripDepotStatus.Image = Resources.error;
-                            toolStripDepotStatus.Text = string.Format("An error has occured trying to save Location {0} | ErrorID {1} : - {2}", _SelectedDepot.Code, Response.LogID, Response.Exception.GetCleanMessage());
+                            toolStripDepotStatus.Text = string.Format("An error has occured trying to save Location {0} | ErrorID {1} : - {2}", _SelectedDepot.Code, Response.AuditID, Response.Exception.GetCleanMessage());
 
                         }
                     }
                     catch (Exception Ex)
                     {
                         //This is unexpected. Log the error and quit the application
-                        DBResponse ExceptionResonse = Audit.WriteLog(AuditType.Fatal, string.Format("An unexpected error has occured at frmMain.Locations.SaveToDB:- {0}", Ex.GetAuditMessage()));
-                        MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.LogID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        System.Windows.Forms.Application.Exit();
+                        GFResponse ExceptionResonse = Audit.WriteLog(new GFResponse(AuditType.Fatal, "An unexpected error has occured at frmMain.Locations.SaveToDB", Ex));
+                        MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.AuditID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

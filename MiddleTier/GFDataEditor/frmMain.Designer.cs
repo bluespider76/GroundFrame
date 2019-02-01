@@ -222,7 +222,7 @@
             this.tabControlMain.Controls.Add(this.tabPageLocation);
             this.tabControlMain.Controls.Add(this.tabPageTraction);
             this.tabControlMain.Location = new System.Drawing.Point(16, 46);
-            this.tabControlMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
             this.tabControlMain.Size = new System.Drawing.Size(1560, 619);
@@ -234,9 +234,9 @@
             this.tabPageLogical.Controls.Add(this.groupBoxSectorCodes);
             this.tabPageLogical.Controls.Add(this.groupBoxRegions);
             this.tabPageLogical.Location = new System.Drawing.Point(4, 25);
-            this.tabPageLogical.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLogical.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageLogical.Name = "tabPageLogical";
-            this.tabPageLogical.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLogical.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageLogical.Size = new System.Drawing.Size(1552, 590);
             this.tabPageLogical.TabIndex = 0;
             this.tabPageLogical.Text = "Logical";
@@ -251,9 +251,9 @@
             this.groupBoxSectorCodes.Controls.Add(this.lblLogicalSectorCodeLabel);
             this.groupBoxSectorCodes.Controls.Add(this.comboLogicalSystemSectors);
             this.groupBoxSectorCodes.Location = new System.Drawing.Point(672, 15);
-            this.groupBoxSectorCodes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxSectorCodes.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxSectorCodes.Name = "groupBoxSectorCodes";
-            this.groupBoxSectorCodes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxSectorCodes.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxSectorCodes.Size = new System.Drawing.Size(860, 554);
             this.groupBoxSectorCodes.TabIndex = 1;
             this.groupBoxSectorCodes.TabStop = false;
@@ -294,9 +294,9 @@
             this.groupBoxLogicalSectorDetails.Controls.Add(this.dateTimeLogicalSectorEndYMDV);
             this.groupBoxLogicalSectorDetails.Controls.Add(this.lblLogicalSectorActiveFrom);
             this.groupBoxLogicalSectorDetails.Location = new System.Drawing.Point(20, 268);
-            this.groupBoxLogicalSectorDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLogicalSectorDetails.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLogicalSectorDetails.Name = "groupBoxLogicalSectorDetails";
-            this.groupBoxLogicalSectorDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLogicalSectorDetails.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxLogicalSectorDetails.Size = new System.Drawing.Size(820, 267);
             this.groupBoxLogicalSectorDetails.TabIndex = 3;
             this.groupBoxLogicalSectorDetails.TabStop = false;
@@ -305,7 +305,7 @@
             // butLogicalSectorNew
             // 
             this.butLogicalSectorNew.Location = new System.Drawing.Point(644, 218);
-            this.butLogicalSectorNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butLogicalSectorNew.Margin = new System.Windows.Forms.Padding(4);
             this.butLogicalSectorNew.Name = "butLogicalSectorNew";
             this.butLogicalSectorNew.Size = new System.Drawing.Size(71, 28);
             this.butLogicalSectorNew.TabIndex = 17;
@@ -315,7 +315,7 @@
             // txtLogicalSectorDescription
             // 
             this.txtLogicalSectorDescription.Location = new System.Drawing.Point(167, 33);
-            this.txtLogicalSectorDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogicalSectorDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogicalSectorDescription.Name = "txtLogicalSectorDescription";
             this.txtLogicalSectorDescription.Size = new System.Drawing.Size(625, 120);
             this.txtLogicalSectorDescription.TabIndex = 11;
@@ -325,7 +325,7 @@
             // butLogicalSectorSave
             // 
             this.butLogicalSectorSave.Location = new System.Drawing.Point(723, 218);
-            this.butLogicalSectorSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butLogicalSectorSave.Margin = new System.Windows.Forms.Padding(4);
             this.butLogicalSectorSave.Name = "butLogicalSectorSave";
             this.butLogicalSectorSave.Size = new System.Drawing.Size(71, 28);
             this.butLogicalSectorSave.TabIndex = 16;
@@ -357,7 +357,7 @@
             // 
             this.dateTimeLogicalSectorStartYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeLogicalSectorStartYMDV.Location = new System.Drawing.Point(167, 174);
-            this.dateTimeLogicalSectorStartYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeLogicalSectorStartYMDV.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeLogicalSectorStartYMDV.Name = "dateTimeLogicalSectorStartYMDV";
             this.dateTimeLogicalSectorStartYMDV.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLogicalSectorStartYMDV.TabIndex = 12;
@@ -368,7 +368,7 @@
             this.dateTimeLogicalSectorEndYMDV.Enabled = false;
             this.dateTimeLogicalSectorEndYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeLogicalSectorEndYMDV.Location = new System.Drawing.Point(341, 174);
-            this.dateTimeLogicalSectorEndYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeLogicalSectorEndYMDV.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeLogicalSectorEndYMDV.Name = "dateTimeLogicalSectorEndYMDV";
             this.dateTimeLogicalSectorEndYMDV.ShowCheckBox = true;
             this.dateTimeLogicalSectorEndYMDV.Size = new System.Drawing.Size(132, 22);
@@ -394,7 +394,7 @@
             this.listViewSectors.FullRowSelect = true;
             this.listViewSectors.HideSelection = false;
             this.listViewSectors.Location = new System.Drawing.Point(20, 76);
-            this.listViewSectors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewSectors.Margin = new System.Windows.Forms.Padding(4);
             this.listViewSectors.Name = "listViewSectors";
             this.listViewSectors.Size = new System.Drawing.Size(819, 184);
             this.listViewSectors.TabIndex = 2;
@@ -431,7 +431,7 @@
             // 
             this.comboLogicalSystemSectors.FormattingEnabled = true;
             this.comboLogicalSystemSectors.Location = new System.Drawing.Point(120, 31);
-            this.comboLogicalSystemSectors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLogicalSystemSectors.Margin = new System.Windows.Forms.Padding(4);
             this.comboLogicalSystemSectors.Name = "comboLogicalSystemSectors";
             this.comboLogicalSystemSectors.Size = new System.Drawing.Size(192, 24);
             this.comboLogicalSystemSectors.TabIndex = 0;
@@ -442,9 +442,9 @@
             this.groupBoxRegions.Controls.Add(this.groupBoxRegionsDetails);
             this.groupBoxRegions.Controls.Add(this.listViewRegions);
             this.groupBoxRegions.Location = new System.Drawing.Point(16, 15);
-            this.groupBoxRegions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRegions.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxRegions.Name = "groupBoxRegions";
-            this.groupBoxRegions.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRegions.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxRegions.Size = new System.Drawing.Size(640, 554);
             this.groupBoxRegions.TabIndex = 0;
             this.groupBoxRegions.TabStop = false;
@@ -463,9 +463,9 @@
             this.groupBoxRegionsDetails.Controls.Add(this.txtLogicalRegionName);
             this.groupBoxRegionsDetails.Controls.Add(this.lblLogicalRegionName);
             this.groupBoxRegionsDetails.Location = new System.Drawing.Point(20, 234);
-            this.groupBoxRegionsDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRegionsDetails.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxRegionsDetails.Name = "groupBoxRegionsDetails";
-            this.groupBoxRegionsDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRegionsDetails.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxRegionsDetails.Size = new System.Drawing.Size(600, 302);
             this.groupBoxRegionsDetails.TabIndex = 1;
             this.groupBoxRegionsDetails.TabStop = false;
@@ -474,7 +474,7 @@
             // butLogicalRegionNew
             // 
             this.butLogicalRegionNew.Location = new System.Drawing.Point(428, 252);
-            this.butLogicalRegionNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butLogicalRegionNew.Margin = new System.Windows.Forms.Padding(4);
             this.butLogicalRegionNew.Name = "butLogicalRegionNew";
             this.butLogicalRegionNew.Size = new System.Drawing.Size(71, 28);
             this.butLogicalRegionNew.TabIndex = 9;
@@ -485,7 +485,7 @@
             // butLogicalRegionSave
             // 
             this.butLogicalRegionSave.Location = new System.Drawing.Point(507, 252);
-            this.butLogicalRegionSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butLogicalRegionSave.Margin = new System.Windows.Forms.Padding(4);
             this.butLogicalRegionSave.Name = "butLogicalRegionSave";
             this.butLogicalRegionSave.Size = new System.Drawing.Size(71, 28);
             this.butLogicalRegionSave.TabIndex = 8;
@@ -507,7 +507,7 @@
             // 
             this.dateTimeLogicalRegionEndYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeLogicalRegionEndYMDV.Location = new System.Drawing.Point(348, 208);
-            this.dateTimeLogicalRegionEndYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeLogicalRegionEndYMDV.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeLogicalRegionEndYMDV.Name = "dateTimeLogicalRegionEndYMDV";
             this.dateTimeLogicalRegionEndYMDV.ShowCheckBox = true;
             this.dateTimeLogicalRegionEndYMDV.Size = new System.Drawing.Size(132, 22);
@@ -528,7 +528,7 @@
             // 
             this.dateTimeLogicalRegionStartYMDV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeLogicalRegionStartYMDV.Location = new System.Drawing.Point(173, 208);
-            this.dateTimeLogicalRegionStartYMDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeLogicalRegionStartYMDV.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeLogicalRegionStartYMDV.Name = "dateTimeLogicalRegionStartYMDV";
             this.dateTimeLogicalRegionStartYMDV.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLogicalRegionStartYMDV.TabIndex = 4;
@@ -537,7 +537,7 @@
             // txtLogicalRegionDescription
             // 
             this.txtLogicalRegionDescription.Location = new System.Drawing.Point(173, 68);
-            this.txtLogicalRegionDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogicalRegionDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogicalRegionDescription.Name = "txtLogicalRegionDescription";
             this.txtLogicalRegionDescription.Size = new System.Drawing.Size(403, 120);
             this.txtLogicalRegionDescription.TabIndex = 3;
@@ -557,7 +557,7 @@
             // txtLogicalRegionName
             // 
             this.txtLogicalRegionName.Location = new System.Drawing.Point(173, 27);
-            this.txtLogicalRegionName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogicalRegionName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogicalRegionName.Name = "txtLogicalRegionName";
             this.txtLogicalRegionName.Size = new System.Drawing.Size(403, 22);
             this.txtLogicalRegionName.TabIndex = 1;
@@ -582,7 +582,7 @@
             this.listViewRegions.FullRowSelect = true;
             this.listViewRegions.HideSelection = false;
             this.listViewRegions.Location = new System.Drawing.Point(20, 31);
-            this.listViewRegions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewRegions.Margin = new System.Windows.Forms.Padding(4);
             this.listViewRegions.Name = "listViewRegions";
             this.listViewRegions.Size = new System.Drawing.Size(599, 184);
             this.listViewRegions.TabIndex = 0;
@@ -609,9 +609,9 @@
             // 
             this.tabPageLocation.Controls.Add(this.groupBoxLocations);
             this.tabPageLocation.Location = new System.Drawing.Point(4, 25);
-            this.tabPageLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLocation.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageLocation.Name = "tabPageLocation";
-            this.tabPageLocation.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLocation.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageLocation.Size = new System.Drawing.Size(1552, 590);
             this.tabPageLocation.TabIndex = 1;
             this.tabPageLocation.Text = "Location";
@@ -673,9 +673,9 @@
             this.groupBoxLocations.Controls.Add(this.lblLocationLocation);
             this.groupBoxLocations.Controls.Add(this.comboLocationLocation);
             this.groupBoxLocations.Location = new System.Drawing.Point(16, 15);
-            this.groupBoxLocations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocations.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLocations.Name = "groupBoxLocations";
-            this.groupBoxLocations.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocations.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxLocations.Size = new System.Drawing.Size(1513, 554);
             this.groupBoxLocations.TabIndex = 0;
             this.groupBoxLocations.TabStop = false;
@@ -730,9 +730,9 @@
             this.groupBoxLocationOptions.Controls.Add(this.checkBoxLocationOptionCallOn);
             this.groupBoxLocationOptions.Controls.Add(this.labelLocationOptionCallOn);
             this.groupBoxLocationOptions.Location = new System.Drawing.Point(1067, 352);
-            this.groupBoxLocationOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocationOptions.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLocationOptions.Name = "groupBoxLocationOptions";
-            this.groupBoxLocationOptions.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocationOptions.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxLocationOptions.Size = new System.Drawing.Size(425, 178);
             this.groupBoxLocationOptions.TabIndex = 58;
             this.groupBoxLocationOptions.TabStop = false;
@@ -742,7 +742,7 @@
             // 
             this.checkBoxLocationOptionCannotSurrenderToken.AutoSize = true;
             this.checkBoxLocationOptionCannotSurrenderToken.Location = new System.Drawing.Point(320, 80);
-            this.checkBoxLocationOptionCannotSurrenderToken.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationOptionCannotSurrenderToken.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationOptionCannotSurrenderToken.Name = "checkBoxLocationOptionCannotSurrenderToken";
             this.checkBoxLocationOptionCannotSurrenderToken.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionCannotSurrenderToken.TabIndex = 73;
@@ -763,7 +763,7 @@
             // 
             this.checkBoxLocationOptionPassengerTrainCannotStop.AutoSize = true;
             this.checkBoxLocationOptionPassengerTrainCannotStop.Location = new System.Drawing.Point(140, 126);
-            this.checkBoxLocationOptionPassengerTrainCannotStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationOptionPassengerTrainCannotStop.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationOptionPassengerTrainCannotStop.Name = "checkBoxLocationOptionPassengerTrainCannotStop";
             this.checkBoxLocationOptionPassengerTrainCannotStop.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionPassengerTrainCannotStop.TabIndex = 71;
@@ -775,7 +775,7 @@
             // 
             this.checkBoxLocationOptionOnlyStopIfReversing.AutoSize = true;
             this.checkBoxLocationOptionOnlyStopIfReversing.Location = new System.Drawing.Point(141, 80);
-            this.checkBoxLocationOptionOnlyStopIfReversing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationOptionOnlyStopIfReversing.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationOptionOnlyStopIfReversing.Name = "checkBoxLocationOptionOnlyStopIfReversing";
             this.checkBoxLocationOptionOnlyStopIfReversing.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionOnlyStopIfReversing.TabIndex = 70;
@@ -805,7 +805,7 @@
             // 
             this.checkBoxLocationOptionCannotStop.AutoSize = true;
             this.checkBoxLocationOptionCannotStop.Location = new System.Drawing.Point(141, 33);
-            this.checkBoxLocationOptionCannotStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationOptionCannotStop.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationOptionCannotStop.Name = "checkBoxLocationOptionCannotStop";
             this.checkBoxLocationOptionCannotStop.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionCannotStop.TabIndex = 67;
@@ -827,7 +827,7 @@
             // 
             this.checkBoxLocationOptionCallOn.AutoSize = true;
             this.checkBoxLocationOptionCallOn.Location = new System.Drawing.Point(320, 33);
-            this.checkBoxLocationOptionCallOn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationOptionCallOn.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationOptionCallOn.Name = "checkBoxLocationOptionCallOn";
             this.checkBoxLocationOptionCallOn.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationOptionCallOn.TabIndex = 65;
@@ -866,9 +866,9 @@
             this.groupBoxLocationPower.Controls.Add(this.labelLocationPowerDiesel);
             this.groupBoxLocationPower.Controls.Add(this.labelLocationPowerSteam);
             this.groupBoxLocationPower.Location = new System.Drawing.Point(551, 352);
-            this.groupBoxLocationPower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocationPower.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLocationPower.Name = "groupBoxLocationPower";
-            this.groupBoxLocationPower.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxLocationPower.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxLocationPower.Size = new System.Drawing.Size(499, 178);
             this.groupBoxLocationPower.TabIndex = 57;
             this.groupBoxLocationPower.TabStop = false;
@@ -878,7 +878,7 @@
             // 
             this.checkBoxLocationPowerBattery.AutoSize = true;
             this.checkBoxLocationPowerBattery.Location = new System.Drawing.Point(468, 124);
-            this.checkBoxLocationPowerBattery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPowerBattery.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPowerBattery.Name = "checkBoxLocationPowerBattery";
             this.checkBoxLocationPowerBattery.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerBattery.TabIndex = 65;
@@ -890,7 +890,7 @@
             // 
             this.checkBoxLocationPowerOHead25.AutoSize = true;
             this.checkBoxLocationPowerOHead25.Location = new System.Drawing.Point(468, 79);
-            this.checkBoxLocationPowerOHead25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPowerOHead25.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPowerOHead25.Name = "checkBoxLocationPowerOHead25";
             this.checkBoxLocationPowerOHead25.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerOHead25.TabIndex = 64;
@@ -902,7 +902,7 @@
             // 
             this.checkBoxLocationPowerOH625.AutoSize = true;
             this.checkBoxLocationPowerOH625.Location = new System.Drawing.Point(468, 32);
-            this.checkBoxLocationPowerOH625.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPowerOH625.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPowerOH625.Name = "checkBoxLocationPowerOH625";
             this.checkBoxLocationPowerOH625.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerOH625.TabIndex = 63;
@@ -914,7 +914,7 @@
             // 
             this.checkBoxLocationPowerOH1500.AutoSize = true;
             this.checkBoxLocationPowerOH1500.Location = new System.Drawing.Point(308, 126);
-            this.checkBoxLocationPowerOH1500.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPowerOH1500.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPowerOH1500.Name = "checkBoxLocationPowerOH1500";
             this.checkBoxLocationPowerOH1500.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerOH1500.TabIndex = 62;
@@ -926,7 +926,7 @@
             // 
             this.checkBoxLocationPower3rd1500.AutoSize = true;
             this.checkBoxLocationPower3rd1500.Location = new System.Drawing.Point(308, 79);
-            this.checkBoxLocationPower3rd1500.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPower3rd1500.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPower3rd1500.Name = "checkBoxLocationPower3rd1500";
             this.checkBoxLocationPower3rd1500.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPower3rd1500.TabIndex = 61;
@@ -938,7 +938,7 @@
             // 
             this.checkBoxLocationPower3rd750.AutoSize = true;
             this.checkBoxLocationPower3rd750.Location = new System.Drawing.Point(308, 32);
-            this.checkBoxLocationPower3rd750.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPower3rd750.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPower3rd750.Name = "checkBoxLocationPower3rd750";
             this.checkBoxLocationPower3rd750.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPower3rd750.TabIndex = 60;
@@ -950,7 +950,7 @@
             // 
             this.checkBoxLocationPower4th600.AutoSize = true;
             this.checkBoxLocationPower4th600.Location = new System.Drawing.Point(127, 124);
-            this.checkBoxLocationPower4th600.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPower4th600.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPower4th600.Name = "checkBoxLocationPower4th600";
             this.checkBoxLocationPower4th600.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPower4th600.TabIndex = 59;
@@ -962,7 +962,7 @@
             // 
             this.checkBoxLocationPowerDiesel.AutoSize = true;
             this.checkBoxLocationPowerDiesel.Location = new System.Drawing.Point(127, 79);
-            this.checkBoxLocationPowerDiesel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPowerDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPowerDiesel.Name = "checkBoxLocationPowerDiesel";
             this.checkBoxLocationPowerDiesel.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerDiesel.TabIndex = 58;
@@ -974,7 +974,7 @@
             // 
             this.checkBoxLocationPowerSteam.AutoSize = true;
             this.checkBoxLocationPowerSteam.Location = new System.Drawing.Point(127, 31);
-            this.checkBoxLocationPowerSteam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationPowerSteam.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationPowerSteam.Name = "checkBoxLocationPowerSteam";
             this.checkBoxLocationPowerSteam.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationPowerSteam.TabIndex = 57;
@@ -1075,7 +1075,7 @@
             // numericUpDownLocationScore
             // 
             this.numericUpDownLocationScore.Location = new System.Drawing.Point(1067, 310);
-            this.numericUpDownLocationScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownLocationScore.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownLocationScore.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -1100,7 +1100,7 @@
             // 
             this.checkBoxLocationUseAsTimingPoint.AutoSize = true;
             this.checkBoxLocationUseAsTimingPoint.Location = new System.Drawing.Point(1067, 265);
-            this.checkBoxLocationUseAsTimingPoint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationUseAsTimingPoint.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationUseAsTimingPoint.Name = "checkBoxLocationUseAsTimingPoint";
             this.checkBoxLocationUseAsTimingPoint.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationUseAsTimingPoint.TabIndex = 54;
@@ -1121,7 +1121,7 @@
             // 
             this.checkBoxLocationTOPSOffice.AutoSize = true;
             this.checkBoxLocationTOPSOffice.Location = new System.Drawing.Point(1284, 267);
-            this.checkBoxLocationTOPSOffice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationTOPSOffice.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationTOPSOffice.Name = "checkBoxLocationTOPSOffice";
             this.checkBoxLocationTOPSOffice.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationTOPSOffice.TabIndex = 52;
@@ -1142,7 +1142,7 @@
             // 
             this.checkBoxLocationDisembarkPassengers.AutoSize = true;
             this.checkBoxLocationDisembarkPassengers.Location = new System.Drawing.Point(847, 313);
-            this.checkBoxLocationDisembarkPassengers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationDisembarkPassengers.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationDisembarkPassengers.Name = "checkBoxLocationDisembarkPassengers";
             this.checkBoxLocationDisembarkPassengers.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationDisembarkPassengers.TabIndex = 50;
@@ -1163,7 +1163,7 @@
             // 
             this.checkBoxLocationEmbarkPassengers.AutoSize = true;
             this.checkBoxLocationEmbarkPassengers.Location = new System.Drawing.Point(847, 266);
-            this.checkBoxLocationEmbarkPassengers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationEmbarkPassengers.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationEmbarkPassengers.Name = "checkBoxLocationEmbarkPassengers";
             this.checkBoxLocationEmbarkPassengers.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationEmbarkPassengers.TabIndex = 48;
@@ -1184,7 +1184,7 @@
             // 
             this.checkBoxLocationFreightOnly.AutoSize = true;
             this.checkBoxLocationFreightOnly.Location = new System.Drawing.Point(643, 266);
-            this.checkBoxLocationFreightOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationFreightOnly.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationFreightOnly.Name = "checkBoxLocationFreightOnly";
             this.checkBoxLocationFreightOnly.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationFreightOnly.TabIndex = 46;
@@ -1205,7 +1205,7 @@
             // 
             this.checkBoxLocationSingleTrainWorking.AutoSize = true;
             this.checkBoxLocationSingleTrainWorking.Location = new System.Drawing.Point(1284, 219);
-            this.checkBoxLocationSingleTrainWorking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLocationSingleTrainWorking.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxLocationSingleTrainWorking.Name = "checkBoxLocationSingleTrainWorking";
             this.checkBoxLocationSingleTrainWorking.Size = new System.Drawing.Size(18, 17);
             this.checkBoxLocationSingleTrainWorking.TabIndex = 44;
@@ -1226,7 +1226,7 @@
             // 
             this.comboLocationToken.FormattingEnabled = true;
             this.comboLocationToken.Location = new System.Drawing.Point(643, 215);
-            this.comboLocationToken.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLocationToken.Margin = new System.Windows.Forms.Padding(4);
             this.comboLocationToken.Name = "comboLocationToken";
             this.comboLocationToken.Size = new System.Drawing.Size(341, 24);
             this.comboLocationToken.TabIndex = 42;
@@ -1236,7 +1236,7 @@
             // 
             this.comboLocationDirections.FormattingEnabled = true;
             this.comboLocationDirections.Location = new System.Drawing.Point(1284, 167);
-            this.comboLocationDirections.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLocationDirections.Margin = new System.Windows.Forms.Padding(4);
             this.comboLocationDirections.Name = "comboLocationDirections";
             this.comboLocationDirections.Size = new System.Drawing.Size(207, 24);
             this.comboLocationDirections.TabIndex = 41;
@@ -1265,7 +1265,7 @@
             // numericUpDownLocationBerths
             // 
             this.numericUpDownLocationBerths.Location = new System.Drawing.Point(1067, 172);
-            this.numericUpDownLocationBerths.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownLocationBerths.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownLocationBerths.Name = "numericUpDownLocationBerths";
             this.numericUpDownLocationBerths.Size = new System.Drawing.Size(72, 22);
             this.numericUpDownLocationBerths.TabIndex = 38;
@@ -1299,7 +1299,7 @@
             // txtLocationLength
             // 
             this.txtLocationLength.Location = new System.Drawing.Point(643, 169);
-            this.txtLocationLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationLength.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationLength.Name = "txtLocationLength";
             this.txtLocationLength.Size = new System.Drawing.Size(96, 22);
             this.txtLocationLength.TabIndex = 35;
@@ -1318,7 +1318,7 @@
             // txtLocationLongitude
             // 
             this.txtLocationLongitude.Location = new System.Drawing.Point(1284, 122);
-            this.txtLocationLongitude.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationLongitude.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationLongitude.Name = "txtLocationLongitude";
             this.txtLocationLongitude.Size = new System.Drawing.Size(96, 22);
             this.txtLocationLongitude.TabIndex = 33;
@@ -1337,7 +1337,7 @@
             // txtLocationLatitude
             // 
             this.txtLocationLatitude.Location = new System.Drawing.Point(1067, 122);
-            this.txtLocationLatitude.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationLatitude.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationLatitude.Name = "txtLocationLatitude";
             this.txtLocationLatitude.Size = new System.Drawing.Size(96, 22);
             this.txtLocationLatitude.TabIndex = 31;
@@ -1357,7 +1357,7 @@
             // 
             this.comboLocationType.FormattingEnabled = true;
             this.comboLocationType.Location = new System.Drawing.Point(643, 122);
-            this.comboLocationType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLocationType.Margin = new System.Windows.Forms.Padding(4);
             this.comboLocationType.Name = "comboLocationType";
             this.comboLocationType.Size = new System.Drawing.Size(199, 24);
             this.comboLocationType.TabIndex = 29;
@@ -1376,7 +1376,7 @@
             // txtLocationNLC
             // 
             this.txtLocationNLC.Location = new System.Drawing.Point(1284, 75);
-            this.txtLocationNLC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationNLC.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationNLC.Name = "txtLocationNLC";
             this.txtLocationNLC.Size = new System.Drawing.Size(96, 22);
             this.txtLocationNLC.TabIndex = 27;
@@ -1395,7 +1395,7 @@
             // txtLocationSTANME
             // 
             this.txtLocationSTANME.Location = new System.Drawing.Point(1067, 75);
-            this.txtLocationSTANME.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationSTANME.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationSTANME.Name = "txtLocationSTANME";
             this.txtLocationSTANME.Size = new System.Drawing.Size(96, 22);
             this.txtLocationSTANME.TabIndex = 25;
@@ -1414,7 +1414,7 @@
             // txtLocationSTANOX
             // 
             this.txtLocationSTANOX.Location = new System.Drawing.Point(852, 75);
-            this.txtLocationSTANOX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationSTANOX.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationSTANOX.Name = "txtLocationSTANOX";
             this.txtLocationSTANOX.Size = new System.Drawing.Size(96, 22);
             this.txtLocationSTANOX.TabIndex = 23;
@@ -1433,7 +1433,7 @@
             // txtLocationTIPLOC
             // 
             this.txtLocationTIPLOC.Location = new System.Drawing.Point(643, 75);
-            this.txtLocationTIPLOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationTIPLOC.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationTIPLOC.Name = "txtLocationTIPLOC";
             this.txtLocationTIPLOC.Size = new System.Drawing.Size(96, 22);
             this.txtLocationTIPLOC.TabIndex = 21;
@@ -1463,7 +1463,7 @@
             // 
             this.dateTimeLocationActiveFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeLocationActiveFrom.Location = new System.Drawing.Point(1184, 27);
-            this.dateTimeLocationActiveFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeLocationActiveFrom.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeLocationActiveFrom.Name = "dateTimeLocationActiveFrom";
             this.dateTimeLocationActiveFrom.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLocationActiveFrom.TabIndex = 16;
@@ -1471,14 +1471,14 @@
             // 
             // dateTimeLocationActiveTo
             // 
-            this.dateTimeLocationActiveTo.Enabled = false;
             this.dateTimeLocationActiveTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeLocationActiveTo.Location = new System.Drawing.Point(1359, 27);
-            this.dateTimeLocationActiveTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeLocationActiveTo.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeLocationActiveTo.Name = "dateTimeLocationActiveTo";
             this.dateTimeLocationActiveTo.ShowCheckBox = true;
             this.dateTimeLocationActiveTo.Size = new System.Drawing.Size(132, 22);
             this.dateTimeLocationActiveTo.TabIndex = 18;
+            this.dateTimeLocationActiveTo.ValueChanged += new System.EventHandler(this.dateTimeLocationActiveTo_ValueChanged);
             // 
             // lblLocationActiveFrom
             // 
@@ -1493,7 +1493,7 @@
             // txtLocationName
             // 
             this.txtLocationName.Location = new System.Drawing.Point(643, 28);
-            this.txtLocationName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocationName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.Size = new System.Drawing.Size(341, 22);
             this.txtLocationName.TabIndex = 12;
@@ -1514,7 +1514,7 @@
             this.treeViewLocations.ContextMenuStrip = this.contextMenuStripLocationTreeView;
             this.treeViewLocations.HideSelection = false;
             this.treeViewLocations.Location = new System.Drawing.Point(25, 79);
-            this.treeViewLocations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.treeViewLocations.Margin = new System.Windows.Forms.Padding(4);
             this.treeViewLocations.Name = "treeViewLocations";
             this.treeViewLocations.Size = new System.Drawing.Size(499, 451);
             this.treeViewLocations.TabIndex = 10;
@@ -1574,7 +1574,7 @@
             // 
             this.comboLocationLocation.FormattingEnabled = true;
             this.comboLocationLocation.Location = new System.Drawing.Point(121, 28);
-            this.comboLocationLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLocationLocation.Margin = new System.Windows.Forms.Padding(4);
             this.comboLocationLocation.Name = "comboLocationLocation";
             this.comboLocationLocation.Size = new System.Drawing.Size(299, 24);
             this.comboLocationLocation.TabIndex = 6;
@@ -1584,9 +1584,9 @@
             // 
             this.tabPageTraction.Controls.Add(this.groupBoxTractionClass);
             this.tabPageTraction.Location = new System.Drawing.Point(4, 25);
-            this.tabPageTraction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageTraction.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageTraction.Name = "tabPageTraction";
-            this.tabPageTraction.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageTraction.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageTraction.Size = new System.Drawing.Size(1552, 590);
             this.tabPageTraction.TabIndex = 2;
             this.tabPageTraction.Text = "Traction";
@@ -1599,9 +1599,9 @@
             this.groupBoxTractionClass.Controls.Add(this.comboTractionType);
             this.groupBoxTractionClass.Controls.Add(this.lblTractionType);
             this.groupBoxTractionClass.Location = new System.Drawing.Point(16, 15);
-            this.groupBoxTractionClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxTractionClass.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxTractionClass.Name = "groupBoxTractionClass";
-            this.groupBoxTractionClass.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxTractionClass.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxTractionClass.Size = new System.Drawing.Size(525, 550);
             this.groupBoxTractionClass.TabIndex = 0;
             this.groupBoxTractionClass.TabStop = false;
@@ -1625,7 +1625,7 @@
             this.panelTractionClassDetails.Controls.Add(this.dateTimeTractionTractionClassStartDate);
             this.panelTractionClassDetails.Controls.Add(this.lblTractionTractionClassInServiceStartDate);
             this.panelTractionClassDetails.Location = new System.Drawing.Point(8, 203);
-            this.panelTractionClassDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTractionClassDetails.Margin = new System.Windows.Forms.Padding(4);
             this.panelTractionClassDetails.Name = "panelTractionClassDetails";
             this.panelTractionClassDetails.Size = new System.Drawing.Size(509, 340);
             this.panelTractionClassDetails.TabIndex = 3;
@@ -1633,7 +1633,7 @@
             // numericUpDownTractionTractionClassRA
             // 
             this.numericUpDownTractionTractionClassRA.Location = new System.Drawing.Point(440, 278);
-            this.numericUpDownTractionTractionClassRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownTractionTractionClassRA.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownTractionTractionClassRA.Maximum = new decimal(new int[] {
             9,
             0,
@@ -1672,7 +1672,7 @@
             0,
             131072});
             this.numericUpDownTractionTractionClassLength.Location = new System.Drawing.Point(133, 278);
-            this.numericUpDownTractionTractionClassLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownTractionTractionClassLength.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownTractionTractionClassLength.Maximum = new decimal(new int[] {
             300,
             0,
@@ -1706,7 +1706,7 @@
             // 
             this.comboTractionTractionClassType.FormattingEnabled = true;
             this.comboTractionTractionClassType.Location = new System.Drawing.Point(133, 239);
-            this.comboTractionTractionClassType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboTractionTractionClassType.Margin = new System.Windows.Forms.Padding(4);
             this.comboTractionTractionClassType.Name = "comboTractionTractionClassType";
             this.comboTractionTractionClassType.Size = new System.Drawing.Size(160, 24);
             this.comboTractionTractionClassType.TabIndex = 27;
@@ -1725,7 +1725,7 @@
             // txtTractionTractionClassDescription
             // 
             this.txtTractionTractionClassDescription.Location = new System.Drawing.Point(136, 52);
-            this.txtTractionTractionClassDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTractionTractionClassDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtTractionTractionClassDescription.Name = "txtTractionTractionClassDescription";
             this.txtTractionTractionClassDescription.Size = new System.Drawing.Size(360, 120);
             this.txtTractionTractionClassDescription.TabIndex = 25;
@@ -1745,7 +1745,7 @@
             // txtTractionTractionClassName
             // 
             this.txtTractionTractionClassName.Location = new System.Drawing.Point(136, 7);
-            this.txtTractionTractionClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTractionTractionClassName.Margin = new System.Windows.Forms.Padding(4);
             this.txtTractionTractionClassName.Name = "txtTractionTractionClassName";
             this.txtTractionTractionClassName.Size = new System.Drawing.Size(181, 22);
             this.txtTractionTractionClassName.TabIndex = 23;
@@ -1766,7 +1766,7 @@
             // 
             this.dateTimeTractionTractionClassEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeTractionTractionClassEndDate.Location = new System.Drawing.Point(360, 191);
-            this.dateTimeTractionTractionClassEndDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeTractionTractionClassEndDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeTractionTractionClassEndDate.Name = "dateTimeTractionTractionClassEndDate";
             this.dateTimeTractionTractionClassEndDate.ShowCheckBox = true;
             this.dateTimeTractionTractionClassEndDate.Size = new System.Drawing.Size(136, 22);
@@ -1788,7 +1788,7 @@
             // 
             this.dateTimeTractionTractionClassStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeTractionTractionClassStartDate.Location = new System.Drawing.Point(133, 191);
-            this.dateTimeTractionTractionClassStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeTractionTractionClassStartDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeTractionTractionClassStartDate.Name = "dateTimeTractionTractionClassStartDate";
             this.dateTimeTractionTractionClassStartDate.Size = new System.Drawing.Size(136, 22);
             this.dateTimeTractionTractionClassStartDate.TabIndex = 19;
@@ -1815,7 +1815,7 @@
             this.listViewTractionClasses.FullRowSelect = true;
             this.listViewTractionClasses.HideSelection = false;
             this.listViewTractionClasses.Location = new System.Drawing.Point(25, 79);
-            this.listViewTractionClasses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewTractionClasses.Margin = new System.Windows.Forms.Padding(4);
             this.listViewTractionClasses.MultiSelect = false;
             this.listViewTractionClasses.Name = "listViewTractionClasses";
             this.listViewTractionClasses.Size = new System.Drawing.Size(476, 116);
@@ -1848,7 +1848,7 @@
             // 
             this.comboTractionType.FormattingEnabled = true;
             this.comboTractionType.Location = new System.Drawing.Point(115, 28);
-            this.comboTractionType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboTractionType.Margin = new System.Windows.Forms.Padding(4);
             this.comboTractionType.Name = "comboTractionType";
             this.comboTractionType.Size = new System.Drawing.Size(160, 24);
             this.comboTractionType.TabIndex = 1;
@@ -2008,7 +2008,7 @@
             // editPathsToolStripMenuItem
             // 
             this.editPathsToolStripMenuItem.Name = "editPathsToolStripMenuItem";
-            this.editPathsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.editPathsToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.editPathsToolStripMenuItem.Text = "Edit Paths..";
             this.editPathsToolStripMenuItem.Click += new System.EventHandler(this.editPathsToolStripMenuItem_Click);
             // 
@@ -2029,7 +2029,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStripMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";

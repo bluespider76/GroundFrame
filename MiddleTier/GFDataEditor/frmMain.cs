@@ -101,10 +101,10 @@ namespace Horizon4.GFDataEditor
                 //Token Collection
                 PopulateTokenCollection();
             }
-            catch (Exception ex)
+            catch (Exception Ex)
             {
-                Audit.WriteLog(AuditType.Error, ex.GetCleanMessage());
-                MessageBox.Show("The Data Editor has experienced a fatal error. Please see logs for details. The application will now quit.", "Groundframe Data Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                GFResponse Response = Audit.WriteLog(new GFResponse(AuditType.Error, "The Data Editor experienced an error on frmMain at SetGFCollections()", Ex));
+                MessageBox.Show(string.Format("The Data Editor has experienced a fatal error. Please see log ID {0} for details. The application will now quit.",Response.AuditID), "Groundframe Data Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(1);
             }
         }

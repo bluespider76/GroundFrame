@@ -13,7 +13,7 @@ namespace Horizon4.GF
 
         string Description { get; set; }
 
-        DBResponse SaveToDB();
+        GFResponse SaveToDB();
     }
 
 }

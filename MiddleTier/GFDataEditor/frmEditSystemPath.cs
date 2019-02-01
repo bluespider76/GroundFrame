@@ -168,7 +168,7 @@ namespace Horizon4.GFDataEditor
         /// </summary>
         private void SaveToDB()
         {
-            DBResponse Response; //Variable to store the audit log ID
+            GFResponse Response; //Variable to store the audit log ID
 
             try
             {
@@ -185,7 +185,7 @@ namespace Horizon4.GFDataEditor
                 else
                 {
                     //Something has errored when saving the SystemPath. Show a nice error.
-                    MessageBox.Show(string.Format("An error has occured trying to save SystemPath {0} | ErrorID {1} : - {2}", _SystemPath.Name, Response.LogID, Response.Exception.GetCleanMessage()), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(string.Format("An error has occured trying to save SystemPath {0} | ErrorID {1} : - {2}", _SystemPath.Name, Response.AuditID, Response.Exception.GetCleanMessage()), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.Close();
                 }
 
@@ -194,9 +194,8 @@ namespace Horizon4.GFDataEditor
             catch (Exception Ex)
             {
                 //This is unexpected. Log the error and quit the application
-                DBResponse ExceptionResonse = Audit.WriteLog(AuditType.Fatal, string.Format("An unexpected error has occured at frmEditSystemPath.SaveToDB:- {0}", Ex.GetAuditMessage()));
-                MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.LogID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                System.Windows.Forms.Application.Exit();  
+                GFResponse ExceptionResonse = Audit.WriteLog(new GFResponse(AuditType.Fatal, "An unexpected error has occured at frmEditSystemPath.SaveToDB()", Ex));
+                MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.AuditID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

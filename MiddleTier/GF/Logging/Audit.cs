@@ -19,10 +19,8 @@ namespace Horizon4.GF
         /// Writes an entry to the log table in the GF Database
         /// </summary>
         /// <param name="Message"></param>
-        public static DBResponse WriteLog(AuditType Type, string Message, int ErrorNumber = 0, object ErrorObject = null)
+        public static GFResponse WriteLog(GFResponse Response, int ErrorNumber = 0, object ErrorObject = null)
         {
-            DBResponse Response = new DBResponse(0, Type);
-
             //The Common.Application must be set before you can use the GroundFrame
             if (Common.Application == null)
             {
@@ -39,8 +37,8 @@ namespace Horizon4.GF
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@application_itemno", (byte)Common.Application);
-                        cmd.Parameters.AddWithValue("@audit_type_itemno", (byte)Type);
-                        cmd.Parameters.AddWithValue("@message", Message);
+                        cmd.Parameters.AddWithValue("@audit_type_itemno", (byte)Response.Type);
+                        cmd.Parameters.AddWithValue("@message", Response.Message);
                         cmd.Parameters.AddWithValue("@error_number", ErrorNumber);
                         cmd.Parameters.AddWithValue("@error_object_xml", ErrorObject == null ? (object)DBNull.Value : ErrorObject.Serialize().ToString());
                         SqlDataReader SQLReader = cmd.ExecuteReader();
@@ -48,18 +46,17 @@ namespace Horizon4.GF
                         //Parse the record returned by the reader
                         while (SQLReader.Read())
                         {
-                            Response = new DBResponse(SQLReader.GetInt32(SQLReader.GetOrdinal("itemno")), Type);
-                            return Response;
+                            Response.AuditID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                         }
                     }
+
+                    return Response;
                 }
                 catch (Exception Ex)
                 {
-                    throw new Exception("Horizon4|GF|Audit|WriteLog|Error trying to write to the audit", Ex);
+                    return new GFResponse(AuditType.Fatal, @"Error trying to write a Repsonse to the GroundFrame audit log", Ex);
                 }
             }
-
-            return Response;
         }
     }
 }

@@ -53,7 +53,7 @@ namespace Horizon4.GFDataEditor
             }
             else
             {
-                tabControlMain.TabPages[1].Text = "Traction";
+                tabControlMain.TabPages[2].Text = "Traction";
             }
         }
 
@@ -165,6 +165,8 @@ namespace Horizon4.GFDataEditor
             txtTractionTractionClassDescription.Text = _SelectedTractionClass.Description;
             dateTimeTractionTractionClassStartDate.Value = _SelectedTractionClass.InServiceStartYMDV.Date;
 
+            dateTimeTractionTractionClassEndDate.ValueChanged -= dateTimeTractionTractionClassEndDate_ValueChanged;
+
             if (_SelectedTractionClass.InServiceEndYMDV.Value == 0)
             {
                 dateTimeTractionTractionClassEndDate.Checked = false;
@@ -177,6 +179,8 @@ namespace Horizon4.GFDataEditor
                 dateTimeTractionTractionClassEndDate.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
                 dateTimeTractionTractionClassEndDate.Value = _SelectedTractionClass.InServiceEndYMDV.Date;
             }
+
+            dateTimeTractionTractionClassEndDate.ValueChanged += dateTimeTractionTractionClassEndDate_ValueChanged;
 
             comboTractionTractionClassType.SelectedItem = _SelectedTractionClass.TractionType;
             numericUpDownTractionTractionClassLength.Value = _SelectedTractionClass.Length.Meters;

@@ -159,10 +159,8 @@ namespace Horizon4.GF.Network
         /// Saves the SystemPath to the GroundFrame DB
         /// </summary>
         /// <returns></returns>
-        public DBResponse SaveToDB()
+        public GFResponse SaveToDB()
         {
-            DBResponse Response = new DBResponse(0, AuditType.Information);
-
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
                 try
@@ -184,17 +182,14 @@ namespace Horizon4.GF.Network
                             this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("system_itemno"));
                         }
 
-                        return Audit.WriteLog(AuditType.Information, string.Format(@"SystemPath {0} saved to the database:-", this._ID));
+                        return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"SystemPath {0} saved to the database:-", this.Name)));
                     }
                 }
                 catch (Exception Ex)
                 {
-                    Response = Audit.WriteLog(AuditType.Error, string.Format(@"Error saving SystemPath {0} to the database:- {1}", this._Name, Ex.GetAuditMessage()), 1, this);
-                    Response.Exception = new Exception(string.Format("Error trying to save SystemPath {0} to the GF Database", this._Name), Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving SystemPath {0} to the database", this.Name), Ex), 1, this);
                 }
             }
-
-            return Response;
         }
 
         #endregion Methods
@@ -430,7 +425,7 @@ namespace Horizon4.GF.Network
         /// <summary>
         /// Gets the record end YMDV
         /// </summary>
-        public YMDV RecordEndYMDV { get { return this._RecordEndYMDV; } }
+        public YMDV RecordEndYMDV { get { return this._RecordEndYMDV; } set { this._RecordEndYMDV = value; } }
 
         /// <summary>
         /// Gets the straight line distance in meters
@@ -585,10 +580,8 @@ namespace Horizon4.GF.Network
         /// Saves the path record to the GroundFrame DB
         /// </summary>
         /// <returns></returns>
-        public DBResponse SaveToDB()
+        public GFResponse SaveToDB()
         {
-            DBResponse Response = new DBResponse(0, AuditType.Information);
-
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
                 try
@@ -626,17 +619,14 @@ namespace Horizon4.GF.Network
                             this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                         }
 
-                        return Audit.WriteLog(AuditType.Information, string.Format(@"Path {0} saved to the database:-", this._ID));
+                        return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"Path {0} saved to the database:-", this.ID)));
                     }
                 }
                 catch (Exception Ex)
                 {
-                    Response = Audit.WriteLog(AuditType.Error, string.Format(@"Error saving Path {0} to the database:- {1}", this.Label, Ex.GetAuditMessage()), 1, this);
-                    Response.Exception = new Exception(string.Format("Error trying to save Path {0} to the GF Database", this.Label), Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving Path {0} to the database", this.Label), Ex), 1, this);
                 }
             }
-
-            return Response;
         }
 
         /// <summary>

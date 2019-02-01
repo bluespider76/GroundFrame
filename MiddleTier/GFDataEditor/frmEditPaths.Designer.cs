@@ -80,7 +80,7 @@
             this.comboStartLocation = new System.Windows.Forms.ComboBox();
             this.lblLocationActiveTo = new System.Windows.Forms.Label();
             this.dateTimeLocationActiveFrom = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeLocationActiveTo = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePathActiveTo = new System.Windows.Forms.DateTimePicker();
             this.lblLocationActiveFrom = new System.Windows.Forms.Label();
             this.listViewPaths = new System.Windows.Forms.ListView();
             this.columnHeaderStartLocation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -164,7 +164,7 @@
             this.panelPathControls.Controls.Add(this.comboStartLocation);
             this.panelPathControls.Controls.Add(this.lblLocationActiveTo);
             this.panelPathControls.Controls.Add(this.dateTimeLocationActiveFrom);
-            this.panelPathControls.Controls.Add(this.dateTimeLocationActiveTo);
+            this.panelPathControls.Controls.Add(this.dateTimePathActiveTo);
             this.panelPathControls.Controls.Add(this.lblLocationActiveFrom);
             this.panelPathControls.Location = new System.Drawing.Point(540, 23);
             this.panelPathControls.Margin = new System.Windows.Forms.Padding(4);
@@ -764,16 +764,16 @@
             this.dateTimeLocationActiveFrom.TabIndex = 67;
             this.dateTimeLocationActiveFrom.ValueChanged += new System.EventHandler(this.dateTimeLocationActiveFrom_ValueChanged);
             // 
-            // dateTimeLocationActiveTo
+            // dateTimePathActiveTo
             // 
-            this.dateTimeLocationActiveTo.Enabled = false;
-            this.dateTimeLocationActiveTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeLocationActiveTo.Location = new System.Drawing.Point(333, 4);
-            this.dateTimeLocationActiveTo.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimeLocationActiveTo.Name = "dateTimeLocationActiveTo";
-            this.dateTimeLocationActiveTo.ShowCheckBox = true;
-            this.dateTimeLocationActiveTo.Size = new System.Drawing.Size(132, 22);
-            this.dateTimeLocationActiveTo.TabIndex = 69;
+            this.dateTimePathActiveTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePathActiveTo.Location = new System.Drawing.Point(333, 4);
+            this.dateTimePathActiveTo.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePathActiveTo.Name = "dateTimePathActiveTo";
+            this.dateTimePathActiveTo.ShowCheckBox = true;
+            this.dateTimePathActiveTo.Size = new System.Drawing.Size(132, 22);
+            this.dateTimePathActiveTo.TabIndex = 69;
+            this.dateTimePathActiveTo.ValueChanged += new System.EventHandler(this.dateTimePathActiveTo_ValueChanged);
             // 
             // lblLocationActiveFrom
             // 
@@ -1073,7 +1073,7 @@
         private System.Windows.Forms.ComboBox comboStartLocation;
         private System.Windows.Forms.Label lblLocationActiveTo;
         private System.Windows.Forms.DateTimePicker dateTimeLocationActiveFrom;
-        private System.Windows.Forms.DateTimePicker dateTimeLocationActiveTo;
+        private System.Windows.Forms.DateTimePicker dateTimePathActiveTo;
         private System.Windows.Forms.Label lblLocationActiveFrom;
     }
 }

@@ -81,7 +81,7 @@ namespace Horizon4.GF.Logical
         /// <summary>
         /// Saves the region back to the Groundframe DB
         /// </summary>
-        public void SaveToDB()
+        public GFResponse SaveToDB()
         {
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
@@ -104,13 +104,12 @@ namespace Horizon4.GF.Logical
                             this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                         }
 
-                        Audit.WriteLog(AuditType.Information, string.Format(@"Region ID {0} saved to the database.", this._ID));
+                        return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"Region ID {0} saved successfully to the GroundFrame database.", this.Name)));
                     }
                 }
                 catch (Exception Ex)
                 {
-                    Audit.WriteLog(AuditType.Error, string.Format(@"Error saving region to the database:- {0}", Ex.GetAuditMessage()), 1, this);
-                    throw new Exception(string.Format("Error trying to save the Region with the ID {0} to the GF Database", this.ID), Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving region {0} to the GroundFrame database.", this.Name), Ex), 1, this);
                 }
             }
         }
@@ -248,7 +247,7 @@ namespace Horizon4.GF.Logical
         /// <summary>
         /// Gets a list of all region from the GF Database and populates _Regions
         /// </summary>
-        private void GetAllRegionsFromDB()
+        private GFResponse GetAllRegionsFromDB()
         {
             //Check to see if the DB Connection string is set
             if (string.IsNullOrEmpty(Common.SQLDBConn))
@@ -279,13 +278,12 @@ namespace Horizon4.GF.Logical
                     conn.Close();
 
                     //Write Log
-                    Audit.WriteLog(AuditType.Information, "All regions retrieved from the Database");
+                    return Audit.WriteLog(new GFResponse(AuditType.Information, "All regions retrieved from the Database"));
                 }
                 catch (Exception Ex)
                 {
                     //Write Log
-                    Audit.WriteLog(AuditType.Error, string.Format(@"Error reading all regions from the database:- {0}", Ex.GetAuditMessage()), 1);
-                    throw new Exception("Error trying to retreive all the Regions from the GF Database", Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, @"Error reading all regions from the database", Ex), 1);
                 }
             }
         }

@@ -171,10 +171,8 @@ namespace Horizon4.GF.RollingStock
         /// <summary>
         /// Saves the TractionClass object to the GroundFrame DB
         /// </summary>
-        public DBResponse SaveToDB()
+        public GFResponse SaveToDB()
         {
-            DBResponse Response = new DBResponse(0, AuditType.Information);
-
             using (SqlConnection conn = new SqlConnection(Common.SQLDBConn))
             {
                 try
@@ -201,17 +199,14 @@ namespace Horizon4.GF.RollingStock
                             this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                         }
 
-                        return Audit.WriteLog(AuditType.Information, string.Format(@"Traction Class {0} saved to the database:-", this._ID));
+                        return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"Traction Class {0} saved successfully to the database:-", this.Name)));
                     }
                 }
                 catch (Exception Ex)
                 {
-                    Response = Audit.WriteLog(AuditType.Error, string.Format(@"Error saving Traction Class {0} to the database:- {1}", this._Name, Ex.GetAuditMessage()), 1, this);
-                    Response.Exception = new Exception(string.Format("Error trying to save Traction Class {0} to the GF Database", this._Name), Ex);
+                    return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving Traction Class {0} to the database", this.Name), Ex), 1, this);
                 }
             }
-
-            return Response;
         }
     
         #endregion Methods

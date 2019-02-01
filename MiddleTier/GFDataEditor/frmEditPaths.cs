@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Horizon4.GF.Network;
 using Horizon4.GF;
 using Horizon4.GFDataEditor.Properties;
+using System.Globalization;
 
 namespace Horizon4.GFDataEditor
 {
@@ -24,7 +25,9 @@ namespace Horizon4.GFDataEditor
         LocationCollection _EndLocations; //Private variable to store the possible end locations
         Path _SelectedPath; //Private variable to store the selected path
         bool _PathHasChanged; //Private variable to store whether the path has changed
-        
+        private CultureInfo _UserCulture; //Private variable to store the culture of the user
+
+
         #endregion Private Variables
 
         #region Properties
@@ -128,11 +131,22 @@ namespace Horizon4.GFDataEditor
         /// </summary>
         private void InitialiseForm()
         {
+            SetUserVariables();
             PopulateSystemPathsCombo();
             PopulateLocationDirectionCombo();
             PopulateTokenCombo();
             PopulateTypeCombo();
             PopulateSignalTypeCombo();
+        }
+
+        /// <summary>
+        /// Sets the user private variables
+        /// </summary>
+        private void SetUserVariables()
+        {
+            //Get the user culture
+
+            _UserCulture = CultureInfo.CurrentCulture;
         }
 
         /// <summary>
@@ -253,6 +267,23 @@ namespace Horizon4.GFDataEditor
             if (Edit)
             {
                 dateTimeLocationActiveFrom.Value = _SelectedPath.RecordStartYMDV.Date;
+
+                if (_SelectedPath.RecordEndYMDV.Value == 0)
+                {
+                    this.dateTimePathActiveTo.ValueChanged -= dateTimePathActiveTo_ValueChanged;
+                    this.dateTimePathActiveTo.Value = DateTime.Today;
+                    this.dateTimePathActiveTo.Checked = false;
+                    this.dateTimePathActiveTo.ValueChanged += dateTimePathActiveTo_ValueChanged;
+                }
+                else
+                {
+                    this.dateTimePathActiveTo.ValueChanged -= dateTimePathActiveTo_ValueChanged;
+                    this.dateTimePathActiveTo.Checked = true;
+                    this.dateTimePathActiveTo.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
+                    this.dateTimePathActiveTo.Value = _SelectedPath.RecordEndYMDV.Date;
+                    this.dateTimePathActiveTo.ValueChanged += dateTimePathActiveTo_ValueChanged;
+                }
+
                 PopulateStartAndEndLocationCollections();
                 PopulateStartLocationCombo();
                 comboStartLocation.SelectedIndex = GetLocationComoboItemIndex(comboStartLocation, _SelectedPath.Start);
@@ -409,8 +440,19 @@ namespace Horizon4.GFDataEditor
         private void PopulateStartLocationCombo()
         {
             comboStartLocation.SelectedIndexChanged -= comboStartLocation_SelectedIndexChanged;
-            comboStartLocation.DataSource = _StartLocations.OrderBy(x => x.Name).ToList();
-            comboStartLocation.DisplayMember = "DisplayNameAndDates";
+
+            if (this._StartLocations.Count() == 0)
+            {
+                comboStartLocation.DataSource = null;
+                comboStartLocation.Enabled = false;
+            }
+            else
+            {
+                comboStartLocation.DataSource = _StartLocations.OrderBy(x => x.Name).ToList();
+                comboStartLocation.DisplayMember = "DisplayNameAndDates";
+                comboStartLocation.Enabled = true;
+            }
+
             comboStartLocation.SelectedIndexChanged += comboStartLocation_SelectedIndexChanged;
         }
 
@@ -420,8 +462,19 @@ namespace Horizon4.GFDataEditor
         private void PopulateEndLocationCombo()
         {
             comboEndLocation.SelectedIndexChanged -= comboEndLocation_SelectedIndexChanged;
-            comboEndLocation.DataSource = _EndLocations.OrderBy(x => x.Name).ToList();
-            comboEndLocation.DisplayMember = "DisplayNameAndDates";
+
+            if (this._EndLocations.Count() == 0)
+            {
+                comboEndLocation.DataSource = null;
+                comboEndLocation.Enabled = false;
+            }
+            else
+            {
+                comboEndLocation.DataSource = _EndLocations.OrderBy(x => x.Name).ToList();
+                comboEndLocation.DisplayMember = "DisplayNameAndDates";
+                comboEndLocation.Enabled = true;
+            }
+
             comboEndLocation.SelectedIndexChanged += comboEndLocation_SelectedIndexChanged;
         }
 
@@ -467,7 +520,7 @@ namespace Horizon4.GFDataEditor
                 }
                 else
                 {
-                    DBResponse Response;
+                    GFResponse Response;
 
                     try
                     {
@@ -511,16 +564,15 @@ namespace Horizon4.GFDataEditor
                             //Something has errored when saving the object. Show a nice error.
                             toolStripPathRecord.Text = _SelectedPath.Label;
                             toolStripPathStatus.Image = Resources.error;
-                            toolStripPathStatus.Text = string.Format("An error has occured trying to save Location {0} | ErrorID {1} : - {2}", _SelectedPath.Label, Response.LogID, Response.Exception.GetCleanMessage());
+                            toolStripPathStatus.Text = string.Format("An error has occured trying to save Location {0} | ErrorID {1} : - {2}", _SelectedPath.Label, Response.AuditID, Response.Exception.GetCleanMessage());
 
                         }
                     }
                     catch (Exception Ex)
                     {
                         //This is unexpected. Log the error and quit the application
-                        DBResponse ExceptionResonse = Audit.WriteLog(AuditType.Fatal, string.Format("An unexpected error has occured at frmMain.Locations.SaveToDB:- {0}", Ex.GetAuditMessage()));
-                        MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.LogID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        System.Windows.Forms.Application.Exit();
+                        GFResponse ExceptionResonse = Audit.WriteLog(new GFResponse(AuditType.Error, "An unexpected error has occured at frmMain.Locations.SaveToDB", Ex));
+                        MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.AuditID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -807,6 +859,21 @@ namespace Horizon4.GFDataEditor
         {
             ShowDistanceCalculator();
         }
+
+        private void dateTimePathActiveTo_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTimePathActiveTo.Checked == true)
+            {
+                _SelectedPath.RecordEndYMDV = new YMDV(dateTimePathActiveTo.Value);
+
+            }
+            else
+            {
+                _SelectedPath.RecordEndYMDV = new YMDV(0);
+            }
+            PathHasChanged = true;
+        }
         #endregion Events
+
     }
 }

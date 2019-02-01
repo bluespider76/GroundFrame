@@ -101,10 +101,8 @@ namespace Horizon4.GF.Network
         /// <summary>
         /// Saves the Token to the GroundFrame Database
         /// </summary>
-        public DBResponse SaveToDB()
+        public GFResponse SaveToDB()
         {
-            DBResponse Response = new DBResponse(0, AuditType.Information);
-
             //Can the record be saved? Stops "Not Applicable" being added to the database.
             if (_CannotSave == false)
             {
@@ -129,22 +127,18 @@ namespace Horizon4.GF.Network
                                 this._ID = SQLReader.GetInt32(SQLReader.GetOrdinal("itemno"));
                             }
 
-                            return Audit.WriteLog(AuditType.Information, string.Format(@"Token {0} saved to the database:-", this._ID));
+                            return Audit.WriteLog(new GFResponse(AuditType.Information, string.Format(@"Token {0} saved successfully to the GroundFrame database:-", this.ID)));
                         }
                     }
                     catch (Exception Ex)
                     {
-                        Response = Audit.WriteLog(AuditType.Error, string.Format(@"Error saving Token {0} to the database:- {1}", this._Name, Ex.GetAuditMessage()), 1, this);
-                        Response.Exception = new Exception(string.Format("Error trying to save Token {0} to the GF Database", this._Name), Ex);
+                        return Audit.WriteLog(new GFResponse(AuditType.Error, string.Format(@"Error saving Token {0} to the GroundFrame database", this.Name), Ex), 1, this);
                     }
                 }
-
-                return Response;
             }
             else
             {
-                Response = Audit.WriteLog(AuditType.Warning, string.Format(@"Error saving Token {0} to the database:- {1}", this._Name, "Cannot Save a token which is marked as 'Not Saveable'"), 1, this);
-                return Response;
+                return new GFResponse(AuditType.Information, string.Format("Token {0} cannot be saved.", this.Name));
             }
         }
 

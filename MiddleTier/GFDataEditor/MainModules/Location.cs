@@ -320,12 +320,18 @@ namespace Horizon4.GFDataEditor
 
                 if (_Location.RecordEndYMDV.Value == 0)
                 {
+                    this.dateTimeLocationActiveTo.ValueChanged -= dateTimeLocationActiveTo_ValueChanged;
+                    this.dateTimeLocationActiveTo.Value = DateTime.Today;
                     this.dateTimeLocationActiveTo.Checked = false;
+                    this.dateTimeLocationActiveTo.ValueChanged += dateTimeLocationActiveTo_ValueChanged;
                 }
                 else
                 {
+                    this.dateTimeLocationActiveTo.ValueChanged -= dateTimeLocationActiveTo_ValueChanged;
+                    this.dateTimeLocationActiveTo.Checked = true;
                     this.dateTimeLocationActiveTo.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
                     this.dateTimeLocationActiveTo.Value = _Location.RecordEndYMDV.Date;
+                    this.dateTimeLocationActiveTo.ValueChanged += dateTimeLocationActiveTo_ValueChanged;
                 }
 
                 //Power
@@ -594,7 +600,7 @@ namespace Horizon4.GFDataEditor
                 }
                 else
                 {
-                    DBResponse Response;
+                    GFResponse Response;
 
                     try
                     {
@@ -635,16 +641,15 @@ namespace Horizon4.GFDataEditor
                             toolStripTab.Text = "Location";
                             toolStripRecord.Text = _Location.Name;
                             toolStripStatus.Image = Resources.error;
-                            string ErrorMessage = string.Format("An error has occured trying to save Location {0} | ErrorID {1} : - {2}", _Location.Name, Response.LogID, Response.Exception.GetCleanMessage());
+                            string ErrorMessage = string.Format("An error has occured trying to save Location {0} | ErrorID {1} : - {2}", _Location.Name, Response.AuditID, Response.Exception.GetCleanMessage());
                             toolStripStatus.Text = ErrorMessage.Substring(0,255);
                         }
                     }
                     catch (Exception Ex)
                     {
                         //This is unexpected. Log the error and quit the application
-                        DBResponse ExceptionResonse = Audit.WriteLog(AuditType.Fatal, string.Format("An unexpected error has occured at frmMain.Locations.SaveToDB:- {0}", Ex.GetAuditMessage()));
-                        MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.LogID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        System.Windows.Forms.Application.Exit();
+                        GFResponse ExceptionResonse = Audit.WriteLog(new GFResponse(AuditType.Fatal, "An unexpected error has occured at frmMain.Locations.SaveToDB:", Ex));
+                        MessageBox.Show(string.Format("An unexpected error has occured. Please contact the administrator quoting Log ID {0}", ExceptionResonse.AuditID), CommonDataEditor.GetApplicationName(), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -1199,6 +1204,20 @@ namespace Horizon4.GFDataEditor
         private void linkDepotDetails_Click(object sender, EventArgs e)
         {
             ViewDepotDetails();
+        }
+
+        private void dateTimeLocationActiveTo_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTimeLocationActiveTo.Checked == true)
+            {
+                _Location.RecordEndYMDV = new YMDV(dateTimeLocationActiveTo.Value);
+
+            }
+            else
+            {
+                _Location.RecordEndYMDV = new YMDV(0);
+            }
+            LocationHasChanged = true;
         }
 
         #endregion Events
