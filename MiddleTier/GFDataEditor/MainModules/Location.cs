@@ -321,8 +321,9 @@ namespace Horizon4.GFDataEditor
                 if (_Location.RecordEndYMDV.Value == 0)
                 {
                     this.dateTimeLocationActiveTo.ValueChanged -= dateTimeLocationActiveTo_ValueChanged;
-                    this.dateTimeLocationActiveTo.Value = DateTime.Today;
+                    this.dateTimeLocationActiveTo.CustomFormat = " ";
                     this.dateTimeLocationActiveTo.Checked = false;
+                    this.dateTimeLocationActiveTo.Format = DateTimePickerFormat.Custom;
                     this.dateTimeLocationActiveTo.ValueChanged += dateTimeLocationActiveTo_ValueChanged;
                 }
                 else
@@ -396,7 +397,9 @@ namespace Horizon4.GFDataEditor
 
                 if (_Location.RecordEndYMDV.Value == 0)
                 {
-                    this.dateTimeLocationActiveTo.Checked = true;
+                    this.dateTimeLocationActiveTo.CustomFormat = " ";
+                    this.dateTimeLocationActiveTo.Checked = false;
+                    this.dateTimeLocationActiveTo.Format = DateTimePickerFormat.Custom;
                 }
                 else
                 {
@@ -1210,11 +1213,15 @@ namespace Horizon4.GFDataEditor
         {
             if (dateTimeLocationActiveTo.Checked == true)
             {
+                this.dateTimeLocationActiveTo.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
                 _Location.RecordEndYMDV = new YMDV(dateTimeLocationActiveTo.Value);
 
             }
             else
             {
+                this.dateTimeLocationActiveTo.CustomFormat = " ";
+                this.dateTimeLocationActiveTo.Checked = false;
+                this.dateTimeLocationActiveTo.Format = DateTimePickerFormat.Custom;
                 _Location.RecordEndYMDV = new YMDV(0);
             }
             LocationHasChanged = true;

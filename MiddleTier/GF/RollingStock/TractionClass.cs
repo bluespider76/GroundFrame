@@ -86,7 +86,7 @@ namespace Horizon4.GF.RollingStock
         #region Constructors
 
         /// <summary>
-        /// Initialises a new istnace of a Traction Class based on the DB ID
+        /// Initialises a new instance of a Traction Class based on the DB ID
         /// </summary>
         /// <param name="ID">Database ID</param>
         public TractionClass(int ID)
@@ -95,6 +95,24 @@ namespace Horizon4.GF.RollingStock
             
             //Load data from GF DB
             GetTractionClassByIDFromDatabase();
+        }
+
+        /// <summary>
+        /// Initialises a new instance of a traction class object
+        /// </summary>
+        public TractionClass(TractionType TractionType)
+        {
+            CreateNewTractionClass(TractionType);
+        }
+
+        /// <summary>
+        /// Initialises a new instance of a child Traction Class
+        /// </summary>
+        /// <param name="ParentClass">The parent class</param>
+        public TractionClass(TractionClass ParentClass)
+        {
+            //Create child traction class
+            CreateNewTractionClass(ParentClass);
         }
 
         /// <summary>
@@ -208,7 +226,41 @@ namespace Horizon4.GF.RollingStock
                 }
             }
         }
-    
+
+        /// <summary>
+        /// Creates the default Traction Class record based on the passed traction type
+        /// </summary>
+        private void CreateNewTractionClass(TractionType TractionType)
+        {
+            this._ID = 0;
+            this._Name = string.Empty;
+            this._Description = string.Empty;
+            this._InServiceStartYMDV = new YMDV(DateTime.Today);
+            this._InServiceEndYMDV = new YMDV(0);
+            this._ParentClass = null;
+            this._Length = new Distance(0);
+            this._RA = 5;
+            this._TractionProfile = null;
+            this._TractionType = TractionType;
+        }
+
+        /// <summary>
+        /// Creates the default Traction Class record
+        /// </summary>
+        private void CreateNewTractionClass(TractionClass ParentClass)
+        {
+            this._ID = 0;
+            this._Name = string.Empty;
+            this._Description = string.Empty;
+            this._InServiceStartYMDV = ParentClass.InServiceStartYMDV;
+            this._InServiceEndYMDV = ParentClass.InServiceEndYMDV;
+            this._ParentClass = ParentClass;
+            this._Length = new Distance(0);
+            this._RA = 5;
+            this._TractionProfile = ParentClass.TractionProfile;
+            this._TractionType = ParentClass.TractionType;
+        }
+
         #endregion Methods
     }
 

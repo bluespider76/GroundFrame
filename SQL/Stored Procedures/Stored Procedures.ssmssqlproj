@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Stored Procedures">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="(local):LAP001\timca">
+          <Created>2019-01-30T19:47:56.7889578+00:00</Created>
+          <Type>SQL</Type>
+          <Server>(local)</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="LAP001:LAP001\timca">
+          <Created>2018-07-29T13:25:39.2430709+01:00</Created>
+          <Type>SQL</Type>
+          <Server>LAP001</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>GF_DEV</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="app.Usp_GENERATE_ENCRYPTION_TOKEN.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>app.Usp_GENERATE_ENCRYPTION_TOKEN.sql</FullPath>
+        </FileNode>
+        <FileNode Name="app.Usp_WRITE_AUDITLOG.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>app.Usp_WRITE_AUDITLOG.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_ALL_SYSTEMSECTORS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_ALL_SYSTEMSECTORS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_REGION_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_REGION_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_REGIONS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_REGIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_REGIONS_BY_YMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_REGIONS_BY_YMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_SECTOR_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_SECTOR_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_SECTORS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_SECTORS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_GET_SECTORS_BY_YMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_GET_SECTORS_BY_YMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_SAVE_REGION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_SAVE_REGION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_SAVE_SECTOR.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_SAVE_SECTOR.sql</FullPath>
+        </FileNode>
+        <FileNode Name="logical.Usp_SAVE_SYSTEMSECTOR.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>logical.Usp_SAVE_SYSTEMSECTOR.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_CHILD_LOCATIONS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_CHILD_LOCATIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_DEPOT_BY_LOCATIONANDYMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_DEPOT_BY_LOCATIONANDYMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_DEPOT_BY_SYSTEMLOCATIONANDYMDV.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_DEPOT_BY_SYSTEMLOCATIONANDYMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_DEPOTS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_DEPOTS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_DEPOTS_BY_LOCATION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_DEPOTS_BY_LOCATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_LOCATION_BY_ID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_LOCATION_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_LOCATION_BY_SYSTEMLOCATION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_LOCATION_BY_SYSTEMLOCATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_LOCATION_BY_SYSTEMLOCATIONANDYMDV.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_LOCATION_BY_SYSTEMLOCATIONANDYMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_LOCATION_BY_SYSTEMPATHANDYMDV.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_LOCATION_BY_SYSTEMPATHANDYMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_LOCATIONS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_LOCATIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_PATH_BY_ID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_PATH_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_PATH_BY_SYSTEMPATHANDYMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_PATH_BY_SYSTEMPATHANDYMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_PATHS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_PATHS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_PATHS_BY_LOCATION_AND_YMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_PATHS_BY_LOCATION_AND_YMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_PATHS_BY_SYSTEM_PATH.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_PATHS_BY_SYSTEM_PATH.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_PATHS_BY_YMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_PATHS_BY_YMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_SYSTEMPATH_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_SYSTEMPATH_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_SYSTEMPATHS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_SYSTEMPATHS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_SYSTEMPATHS_BY_LOCATION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_SYSTEMPATHS_BY_LOCATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_TOKEN_BY_ID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_TOKEN_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_TOKENS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_TOKENS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_TSYSTEMLOCATIONS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_TSYSTEMLOCATIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_GET_TSYSTEMPATHS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_GET_TSYSTEMPATHS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_HAS_LOCATION_GOT_CHILDREN.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_HAS_LOCATION_GOT_CHILDREN.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_LOCATION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_LOCATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_SYSTEMLOCATION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_SYSTEMLOCATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_SYSTEMPATH.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_SYSTEMPATH.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_TDEPOT.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_TDEPOT.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_TLOCATION.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_TLOCATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_TOKEN.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_TOKEN.sql</FullPath>
+        </FileNode>
+        <FileNode Name="network.Usp_SAVE_TPATH.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>network.Usp_SAVE_TPATH.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKE_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKE_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKE_DEPOTS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKE_DEPOTS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKE_ELEMENT_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKE_ELEMENT_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKE_ELEMENTS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKE_ELEMENTS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKE_REGIONS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKE_REGIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKE_SECTORS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKE_SECTORS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_RAKES.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_RAKES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_STOCK_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_STOCK_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_STOCKS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_STOCKS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_TTRACTIONCLASS_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_TTRACTIONCLASS_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_TTRACTIONCLASSES_BY_TYPE.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_TTRACTIONCLASSES_BY_TYPE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_TTRACTIONCLASSES_BY_YMDV.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_TTRACTIONCLASSES_BY_YMDV.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_TTRACTIONPROFILE_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_TTRACTIONPROFILE_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_GET_TTRACTIONPROFILES.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_GET_TTRACTIONPROFILES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_SAVE_TSTOCK.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_SAVE_TSTOCK.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_SAVE_TTRACTIONCLASS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_SAVE_TTRACTIONCLASS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rollingstock.Usp_SAVE_TTRACTIONPROFILE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>rollingstock.Usp_SAVE_TTRACTIONPROFILE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rolllingstock.Usp_SAVE_TTRACTIONTYPE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>rolllingstock.Usp_SAVE_TTRACTIONTYPE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_CALLINGPOINT_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_CALLINGPOINT_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_CALLINGPOINTS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_CALLINGPOINTS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_TRAIN_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_TRAIN_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_TRAINRAKEALLOCATIONS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_TRAINRAKEALLOCATIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_TRAINS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_TRAINS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_TRAINTRACTIONALLOCATIONS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_TRAINTRACTIONALLOCATIONS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_TTRAINRAKEALLOCATION_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_TTRAINRAKEALLOCATION_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_GET_TTRAINTRACTIONALLOCATION_BY_ID.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_GET_TTRAINTRACTIONALLOCATION_BY_ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="wtt.Usp_SAVE_TSECTOR.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>wtt.Usp_SAVE_TSECTOR.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

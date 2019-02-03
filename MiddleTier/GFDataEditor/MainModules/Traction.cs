@@ -102,7 +102,17 @@ namespace Horizon4.GFDataEditor
             foreach (TractionClass Class in _TractionClasses.OrderBy(x => x.Name))
             {
                 listViewTractionClasses.Items.Add(GetListViewItemFromTractionClass(Class));
-            }   
+            }
+
+            if (listViewTractionClasses.Items.Count == 0)
+            {
+                toolStripMenuItemProfile.Enabled = false;
+            }
+            else
+            {
+                toolStripMenuItemProfile.Enabled = true;
+            }
+
         }
 
         /// <summary>
@@ -152,58 +162,110 @@ namespace Horizon4.GFDataEditor
             if (listViewTractionClasses.SelectedItems.Count != 0)
             {
                 _SelectedTractionClass = (TractionClass)listViewTractionClasses.SelectedItems[0].Tag;
-                EditTractionClass();
+                EditTractionClass(true);
+                toolStripMenuItemProfile.Enabled = true;
+            }
+            else
+            {
+                toolStripMenuItemProfile.Enabled = false;
             }
         }
 
         /// <summary>
         /// Handles the editing the selected Traction Class 
         /// </summary>
-        private void EditTractionClass()
+        private void EditTractionClass(bool Edit)
         {
-            txtTractionTractionClassName.Text = _SelectedTractionClass.Name;
-            txtTractionTractionClassDescription.Text = _SelectedTractionClass.Description;
-            dateTimeTractionTractionClassStartDate.Value = _SelectedTractionClass.InServiceStartYMDV.Date;
-
-            dateTimeTractionTractionClassEndDate.ValueChanged -= dateTimeTractionTractionClassEndDate_ValueChanged;
-
-            if (_SelectedTractionClass.InServiceEndYMDV.Value == 0)
+            if (Edit)
             {
-                dateTimeTractionTractionClassEndDate.Checked = false;
-                dateTimeTractionTractionClassEndDate.CustomFormat = " ";
-                dateTimeTractionTractionClassEndDate.Format = DateTimePickerFormat.Custom;
+                //Edit existing record
+                txtTractionTractionClassName.Text = _SelectedTractionClass.Name;
+                txtTractionTractionClassDescription.Text = _SelectedTractionClass.Description;
+                dateTimeTractionTractionClassStartDate.Value = _SelectedTractionClass.InServiceStartYMDV.Date;
+
+                dateTimeTractionTractionClassEndDate.ValueChanged -= dateTimeTractionTractionClassEndDate_ValueChanged;
+
+                if (_SelectedTractionClass.InServiceEndYMDV.Value == 0)
+                {
+                    dateTimeTractionTractionClassEndDate.Checked = false;
+                    dateTimeTractionTractionClassEndDate.CustomFormat = " ";
+                    dateTimeTractionTractionClassEndDate.Format = DateTimePickerFormat.Custom;
+                }
+                else
+                {
+                    dateTimeTractionTractionClassEndDate.Checked = true;
+                    dateTimeTractionTractionClassEndDate.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
+                    dateTimeTractionTractionClassEndDate.Value = _SelectedTractionClass.InServiceEndYMDV.Date;
+                }
+
+                dateTimeTractionTractionClassEndDate.ValueChanged += dateTimeTractionTractionClassEndDate_ValueChanged;
+
+                comboTractionTractionClassType.SelectedItem = _SelectedTractionClass.TractionType;
+                numericUpDownTractionTractionClassLength.Value = _SelectedTractionClass.Length.Meters;
+                numericUpDownTractionTractionClassRA.Value = _SelectedTractionClass.RA;
+
+                if (_SelectedTractionClass.ParentClass != null)
+                {
+                    lblTractionTractionClassParent.Visible = true;
+                    lblTractionTractionClassParent.Text = string.Format(@"Parent Class: {0}", _SelectedTractionClass.ParentClass.Name);
+                }
+                else
+                {
+                    lblTractionTractionClassParent.Visible = false;
+                }
+
+                toolStripTab.Text = "Traction Class";
+                toolStripRecord.Text = _SelectedTractionClass.Name;
+                toolStripStatus.Text = string.Empty;
+
+                TractionClassHasChanged = false;
             }
             else
             {
-                dateTimeTractionTractionClassEndDate.Checked = true;
-                dateTimeTractionTractionClassEndDate.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
-                dateTimeTractionTractionClassEndDate.Value = _SelectedTractionClass.InServiceEndYMDV.Date;
+                EditTractionClass(true);
+                panelTractionClassDetails.Enabled = true;
+                toolStripTab.Text = "Traction Class";
+                toolStripRecord.Text = "New";
+                toolStripStatus.Text = string.Empty;
+
+                txtTractionTractionClassName.Focus();
             }
-
-            dateTimeTractionTractionClassEndDate.ValueChanged += dateTimeTractionTractionClassEndDate_ValueChanged;
-
-            comboTractionTractionClassType.SelectedItem = _SelectedTractionClass.TractionType;
-            numericUpDownTractionTractionClassLength.Value = _SelectedTractionClass.Length.Meters;
-            numericUpDownTractionTractionClassRA.Value = _SelectedTractionClass.RA;
-
-            if (_SelectedTractionClass.ParentClass != null)
-            {
-                lblTractionTractionClassParent.Visible = true;
-                lblTractionTractionClassParent.Text = string.Format(@"Parent Class: {0}", _SelectedTractionClass.ParentClass.Name);
-            }
-            else
-            {
-                lblTractionTractionClassParent.Visible = false;
-            }
-
-            toolStripTab.Text = "Traction";
-            toolStripRecord.Text = _SelectedTractionClass.Name;
-            toolStripStatus.Text = string.Empty;
-
-            TractionClassHasChanged = false;
         }
 
+        private void NewTractionClass(TractionClass ParentClass)
+        {
+            if (TractionClassHasChanged)
+            {
+                if (MessageBox.Show("You have unsaved traction class changes are you sure you want to continue?", "GroundFrame Data Editor", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+                {
+                    return;
+                }
+            }
+
+            if (comboTractionType.SelectedItem == null)
+            {
+                MessageBox.Show("You must select a traction type to continue.", "GroundFrame Data Editor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            if (ParentClass == null)
+            {
+                TractionType NewTractionType = (TractionType)comboTractionType.SelectedItem;
+                this._SelectedTractionClass = new TractionClass(NewTractionType);
+            }
+            else
+            {
+                this._SelectedTractionClass = new TractionClass(ParentClass);
+            }
+
+            EditTractionClass(false);
+        }
+
+        
+
         #endregion Methods
+
+        #region Events
 
         private void comboTractionType_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -296,5 +358,57 @@ namespace Horizon4.GFDataEditor
                 e.Cancel = true;
             }
         }
+
+        private void tractionClassToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewTractionClass(null);
+        }
+
+
+        private void contextMenuStripTractionClassList_Opening(object sender, CancelEventArgs e)
+        {
+            if (listViewTractionClasses.SelectedItems.Count == 0 || this._SelectedTractionClass.ID == 0)
+            {
+                contextMenuStripTractionClassList.Enabled = false;
+            }
+            else
+            {
+                contextMenuStripTractionClassList.Enabled = true;
+
+                TractionClass SelectedTractionClass = (TractionClass)listViewTractionClasses.SelectedItems[0].Tag;
+
+                if (SelectedTractionClass.ParentClass != null)
+                {
+                    contextMenuStripTractionClassListItem1.Enabled = false;
+                }
+                else
+                {
+                    contextMenuStripTractionClassListItem1.Enabled = true;
+                }
+            }
+        }
+
+
+        private void contextMenuStripTractionClassListItem1_Click(object sender, EventArgs e)
+        {
+            TractionClass SelectedTractionClass = (TractionClass)listViewTractionClasses.SelectedItems[0].Tag;
+
+            NewTractionClass(SelectedTractionClass);           
+        }
+
+
+        private void listViewTractionClasses_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (listViewTractionClasses.SelectedItems.Count == 0 || this._SelectedTractionClass.ID == 0)
+            {
+                toolStripMenuItemProfile.Enabled = false;
+            }
+            else
+            {
+                toolStripMenuItemProfile.Enabled = true;
+            }
+        }
+
+        #endregion Events
     }
 }

@@ -20,16 +20,18 @@ GO
 
 CREATE PROC [network].[Usp_SAVE_TPATH]
 (
-	@ymdv INT,
+	@itemno INT = 0,
+	@start_ymdv INT,
+	@end_ymdv INT,
 	@path_itemno INT,
 	@start_location_itemno INT,
 	@end_location_itemno INT,
-	@distance NUMERIC(16,6), -- Meters
+	@distance INT, -- Meters
 	@direction TINYINT,
 	@token_itemno INT,
 	@type_itemno SMALLINT,
 	@route_availability SMALLINT,
-	@berths INT,
+	@berths SMALLINT,
 	@permissible_power SMALLINT,
 	@cross_count SMALLINT,
 	@score SMALLINT,
@@ -52,32 +54,26 @@ BEGIN
 		RETURN;
 	END
 	
-	IF NOT EXISTS (SELECT 1 FROM [network].[TLOCATION] AS L WHERE L.[itemno] = @start_location_itemno AND @ymdv BETWEEN L.[start_ymdv] AND ISNULL(L.[end_ymdv], @ymdv))
-	BEGIN
-		SET @message = N'Error executing [network].[Usp_SAVE_TPATH]:- No location exists with a @start_location_itemno of ' + CONVERT(NVARCHAR(8), @start_location_itemno) + ' which was active at YMDV ' + CONVERT(NVARCHAR(8), @ymdv) + '.';
-		RAISERROR (@message, 16 ,1);
-		RETURN;
-	END
+	--IF NOT EXISTS (SELECT 1 FROM [network].[TLOCATION] AS L WHERE L.[itemno] = @start_location_itemno AND @start_ymdv BETWEEN L.[start_ymdv] AND ISNULL(L.[end_ymdv], @start_ymdv))
+	--BEGIN
+	--	SET @message = N'Error executing [network].[Usp_SAVE_TPATH]:- No location exists with a @start_location_itemno of ' + CONVERT(NVARCHAR(8), @start_location_itemno) + ' which was active at YMDV ' + CONVERT(NVARCHAR(8), @start_ymdv) + '.';
+	--	RAISERROR (@message, 16 ,1);
+	--	RETURN;
+	--END
 	
-	IF NOT EXISTS (SELECT 1 FROM [network].[TLOCATION] AS L WHERE L.[itemno] = @end_location_itemno AND @ymdv BETWEEN L.[start_ymdv] AND ISNULL(L.[end_ymdv], @ymdv))
-	BEGIN
-		SET @message = N'Error executing [network].[Usp_SAVE_TPATH]:- No location exists with a @end_location_itemno of ' + CONVERT(NVARCHAR(8), @end_location_itemno) + ' which was active at YMDV ' + CONVERT(NVARCHAR(8), @ymdv) + '.';
-		RAISERROR (@message, 16 ,1);
-		RETURN;
-	END
+	--IF NOT EXISTS (SELECT 1 FROM [network].[TLOCATION] AS L WHERE L.[itemno] = @end_location_itemno AND @start_ymdv BETWEEN L.[start_ymdv] AND ISNULL(L.[end_ymdv], @start_ymdv))
+	--BEGIN
+	--	SET @message = N'Error executing [network].[Usp_SAVE_TPATH]:- No location exists with a @end_location_itemno of ' + CONVERT(NVARCHAR(8), @end_location_itemno) + ' which was active at YMDV ' + CONVERT(NVARCHAR(8), @start_ymdv) + '.';
+	--	RAISERROR (@message, 16 ,1);
+	--	RETURN;
+	--END
 	
-	IF @ymdv = 0 
-	BEGIN
-		SET @ymdv = 18500101;
-	END
-	
-	--Check to see if a record has been created for @ymdv. If so we'll need to update this record
-	DECLARE @existing_record_itemno INT = ISNULL((SELECT [itemno] FROM [network].[TPATH] WHERE [start_ymdv] = @ymdv AND [path_itemno] = @path_itemno AND [start_location_itemno] = @start_location_itemno AND [end_location_itemno] = @end_location_itemno),0);
-	
-	IF @existing_record_itemno != 0
+	IF @itemno != 0
 	BEGIN
 		UPDATE [network].[TPATH]
 		SET
+			[start_ymdv] = @start_ymdv,
+			[end_ymdv] = NULLIF(@end_ymdv,0),
 			[start_location_itemno] = @start_location_itemno,
 			[end_location_itemno] = @end_location_itemno,
 			[distance] = @distance,
@@ -95,18 +91,18 @@ BEGIN
 			[signal_type_itemno] = @signal_type_itemno,
 			[options] = @options 
 		WHERE
-			[itemno] = @existing_record_itemno
+			[itemno] = @itemno
 			
 		SELECT
-			itemno = @existing_record_itemno;
+			itemno = @itemno;
 		
 		RETURN;
 	END
 	ELSE
 	BEGIN
-		DECLARE @prev_start_ymdv INT = ISNULL((SELECT [start_ymdv] FROM [network].[TPATH] WHERE [path_itemno] = @path_itemno AND [end_ymdv] IS NULL AND [start_location_itemno] = @start_location_itemno AND [end_location_itemno] = @end_location_itemno AND [start_location_itemno] = @start_location_itemno),18500101);
-		DECLARE @prev_record_itemno INT = ISNULL((SELECT [itemno] FROM [network].[TPATH] WHERE [path_itemno] = @path_itemno AND [start_ymdv] = @prev_start_ymdv AND [end_location_itemno] = @end_location_itemno AND [start_location_itemno] = @start_location_itemno),0);
-		DECLARE @new_end_ymdv INT = (SELECT [common].[Fn_YMDV_ADD](@ymdv,-1));
+		DECLARE @prev_start_ymdv INT = ISNULL((SELECT [start_ymdv] FROM [network].[TPATH] WHERE [path_itemno] = @path_itemno AND [end_ymdv] IS NULL AND [start_location_itemno] = @start_location_itemno AND [end_location_itemno] = @end_location_itemno),18500101);
+		DECLARE @prev_record_itemno INT = ISNULL((SELECT [itemno] FROM [network].[TPATH] WHERE [path_itemno] = @path_itemno AND [start_ymdv] = @prev_start_ymdv AND [end_location_itemno] = @end_location_itemno),0);
+		DECLARE @new_end_ymdv INT = (SELECT [common].[Fn_YMDV_ADD](@start_ymdv,-1));
 	
 		IF @prev_record_itemno != 0
 		BEGIN
@@ -141,7 +137,7 @@ BEGIN
 		VALUES
 		(
 			@path_itemno,
-			@ymdv,
+			@start_ymdv,
 			ISNULL(@start_location_itemno,0),
 			ISNULL(@end_location_itemno,0),
 			@distance,
@@ -161,7 +157,7 @@ BEGIN
 		);
 		
 		SELECT
-			itemno = CONVERT(INT,SCOPE_IDENTITY());
+			itemno = SCOPE_IDENTITY();
 	END
 	
 	SET NOCOUNT OFF;

@@ -272,7 +272,9 @@ namespace Horizon4.GFDataEditor
                 {
                     this.dateTimePathActiveTo.ValueChanged -= dateTimePathActiveTo_ValueChanged;
                     this.dateTimePathActiveTo.Value = DateTime.Today;
+                    this.dateTimePathActiveTo.CustomFormat = " ";
                     this.dateTimePathActiveTo.Checked = false;
+                    this.dateTimePathActiveTo.Format = DateTimePickerFormat.Custom;
                     this.dateTimePathActiveTo.ValueChanged += dateTimePathActiveTo_ValueChanged;
                 }
                 else
@@ -346,6 +348,10 @@ namespace Horizon4.GFDataEditor
                 checkBoxLocationPowerOH625.Checked = GetPowerOptions(_SelectedPath.PermissiblePowerSources, PowerType.ElectricOverhead6500);
                 checkBoxLocationPowerOHead25.Checked = GetPowerOptions(_SelectedPath.PermissiblePowerSources, PowerType.ElectricOverhead25000);
                 checkBoxLocationPowerBattery.Checked = GetPowerOptions(_SelectedPath.PermissiblePowerSources, PowerType.Battery);
+
+                this.dateTimePathActiveTo.Value = DateTime.Today;
+                this.dateTimePathActiveTo.CustomFormat = " ";
+                this.dateTimePathActiveTo.Checked = false;
             }
 
             PathHasChanged = false;
@@ -864,11 +870,15 @@ namespace Horizon4.GFDataEditor
         {
             if (dateTimePathActiveTo.Checked == true)
             {
+                this.dateTimePathActiveTo.CustomFormat = _UserCulture.DateTimeFormat.ShortDatePattern;
                 _SelectedPath.RecordEndYMDV = new YMDV(dateTimePathActiveTo.Value);
 
             }
             else
             {
+                this.dateTimePathActiveTo.CustomFormat = " ";
+                this.dateTimePathActiveTo.Checked = false;
+                this.dateTimePathActiveTo.Format = DateTimePickerFormat.Custom;
                 _SelectedPath.RecordEndYMDV = new YMDV(0);
             }
             PathHasChanged = true;
