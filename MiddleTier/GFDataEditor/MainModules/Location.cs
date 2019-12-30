@@ -343,7 +343,7 @@ namespace Horizon4.GFDataEditor
                 checkBoxLocationPower3rd750.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.Electric3rdRail750);
                 checkBoxLocationPower3rd1500.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.Electric3rdRail1500);
                 checkBoxLocationPowerOH1500.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead1500);
-                checkBoxLocationPowerOH625.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead6500);
+                checkBoxLocationPowerOH625.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead6250);
                 checkBoxLocationPowerOHead25.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead25000);
                 checkBoxLocationPowerBattery.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.Battery);
 
@@ -415,7 +415,7 @@ namespace Horizon4.GFDataEditor
                 checkBoxLocationPower3rd750.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.Electric3rdRail750);
                 checkBoxLocationPower3rd1500.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.Electric3rdRail1500);
                 checkBoxLocationPowerOH1500.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead1500);
-                checkBoxLocationPowerOH625.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead6500);
+                checkBoxLocationPowerOH625.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead6250);
                 checkBoxLocationPowerOHead25.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.ElectricOverhead25000);
                 checkBoxLocationPowerBattery.Checked = GetPowerOptions(_Location.PermissiblePowerSources, PowerType.Battery);
 

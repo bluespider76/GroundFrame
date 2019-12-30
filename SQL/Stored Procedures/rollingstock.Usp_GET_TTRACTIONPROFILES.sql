@@ -27,7 +27,12 @@ BEGIN
 	SET NOCOUNT ON;
 	
 	SELECT
-		[itemno]
+		[itemno],
+		[max_speed],
+		[max_speed_light_loco],
+		[power_itemno],
+		[tractive_effort],
+		[horse_power]
 	FROM [rollingstock].TTRACTIONPROFILE
 	WHERE
 		[traction_class_itemno] = @traction_class_itemno

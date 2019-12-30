@@ -261,7 +261,11 @@ namespace Horizon4.GFDataEditor
             EditTractionClass(false);
         }
 
-        
+        private void EditTractionProfile()
+        {
+            frmTractionClassProfile ProfileForm = new frmTractionClassProfile(this._SelectedTractionClass);
+            ProfileForm.ShowDialog(this);
+        }
 
         #endregion Methods
 
@@ -407,6 +411,11 @@ namespace Horizon4.GFDataEditor
             {
                 toolStripMenuItemProfile.Enabled = true;
             }
+        }
+
+        private void toolStripMenuItemProfile_Click(object sender, EventArgs e)
+        {
+            EditTractionProfile();
         }
 
         #endregion Events

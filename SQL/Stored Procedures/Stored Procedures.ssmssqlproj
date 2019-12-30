@@ -43,6 +43,12 @@
           <AssociatedConnUserName />
           <FullPath>app.Usp_WRITE_AUDITLOG.sql</FullPath>
         </FileNode>
+        <FileNode Name="common.Usp_GET_POWERTYPES.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>common.Usp_GET_POWERTYPES.sql</FullPath>
+        </FileNode>
         <FileNode Name="logical.Usp_GET_ALL_SYSTEMSECTORS.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -338,8 +344,8 @@
           <FullPath>rollingstock.Usp_GET_STOCK_BY_ID.sql</FullPath>
         </FileNode>
         <FileNode Name="rollingstock.Usp_GET_STOCKS.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>rollingstock.Usp_GET_STOCKS.sql</FullPath>
         </FileNode>
@@ -362,14 +368,14 @@
           <FullPath>rollingstock.Usp_GET_TTRACTIONCLASSES_BY_YMDV.sql</FullPath>
         </FileNode>
         <FileNode Name="rollingstock.Usp_GET_TTRACTIONPROFILE_BY_ID.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAP001:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAP001</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>rollingstock.Usp_GET_TTRACTIONPROFILE_BY_ID.sql</FullPath>
         </FileNode>
         <FileNode Name="rollingstock.Usp_GET_TTRACTIONPROFILES.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>rollingstock.Usp_GET_TTRACTIONPROFILES.sql</FullPath>
         </FileNode>

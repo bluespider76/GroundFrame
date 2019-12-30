@@ -20,7 +20,7 @@ GO
 
 CREATE PROC [rollingstock].[Usp_SAVE_TTRACTIONPROFILE]
 (
-	@traction_class_itemno NVARCHAR(128),
+	@traction_class_itemno INT,
 	@max_speed INT,
 	@max_speed_light_loco INT,
 	@power_itemno INT,

@@ -90,6 +90,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTractionClassProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTractionClassProfile.Designer.cs">
+      <DependentUpon>frmTractionClassProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmValidationErrors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTractionClassProfile.resx">
+      <DependentUpon>frmTractionClassProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmValidationErrors.resx">
       <DependentUpon>frmValidationErrors.cs</DependentUpon>
